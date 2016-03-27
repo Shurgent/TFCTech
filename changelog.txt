@@ -1,0 +1,27 @@
+Changelog
+---------
+
+0.2.0-A5:
+  * Added Buildcraft integration
+  * Added Quartz drops from stone
+  * Added Gears
+  * Added Steel Buckets for mod liquids (Oil, Fuel etc.)
+  * Added Hevea Trees, Latex and Rubber
+
+0.1.4-A4:
+  * Now required Forge 10.13.4.1558+
+  * Amount of metal now can be set in config
+  * Number of nuggets obtained from ingot now can be set in config
+  * Dense Plates added to Ore Dictionary as plateDoubleXXXXX
+  * Added check for updates
+
+0.1.3-A3:
+  * Added missed metal textures for Constantan, Electrum and Invar
+  * Now required TFC 0.79.26.881+
+  * Small bugfixes
+
+0.1.1-A2:
+  * Fixed missed weld recipes
+
+0.1.0-A1:
+  * Initial build

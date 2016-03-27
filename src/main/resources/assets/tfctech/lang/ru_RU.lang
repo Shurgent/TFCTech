@@ -1,0 +1,411 @@
+﻿#ru_RU
+#Файл русской локализации
+#
+#=========
+#= Items =
+#=========
+
+#// Ingots //
+item.Aluminum Ingot.name=Алюминиевый слиток
+item.Aluminum Double Ingot.name=Алюминиевый двойной слиток
+item.Electrum Ingot.name=Слиток электрума
+item.Electrum Double Ingot.name=Двойной слиток электрума
+item.Constantan Ingot.name=Слиток константана
+item.Constantan Double Ingot.name=Двойной слиток константана
+item.Invar Ingot.name=Слиток инвара
+item.Invar Double Ingot.name=Двойной слиток инвара
+
+#// Unshaped //
+item.Aluminum Unshaped.name=Алюминиевая заготовка
+item.Electrum Unshaped.name=Заготовка электрума
+item.Constantan Unshaped.name=Заготовка константана
+item.Invar Unshaped.name=Заготовка инвара
+
+#// Dust //
+item.Aluminum Dust.name=Алюминиевая пыль
+item.Bauxite Dust.name=Бокситовая пыль
+item.Electrum Dust.name=Пыль электрума
+item.Constantan Dust.name=Пыль электрума
+item.Invar Dust.name=Пыль инвара
+item.Bismuth Bronze Dust.name=Пыль висмутовой бронзы
+item.Bismuth Dust.name=Висмутовая пыль
+item.Black Bronze Dust.name=Пыль чёрной бронзы
+item.Black Steel Dust.name=Пыль чёрной стали
+item.Blue Steel Dust.name=Пыль синей стали
+item.Brass Dust.name=Латунная пыль
+item.Bronze Dust.name=Бронзовая пыль
+item.Copper Dust.name=Медная пыль
+item.Gold Dust.name=Золотая пыль
+item.Lead Dust.name=Свинцовая пыль
+item.Nickel Dust.name=Никелевая пыль
+item.Pig Iron Dust.name=Чугунная пыль
+item.Platinum Dust.name=Платиновая пыль
+item.Red Steel Dust.name=Пыль красной стали
+item.Rose Gold Dust.name=Пыль розового золота
+item.Silver Dust.name=Серебряная пыль
+item.Steel Dust.name=Стальная пыль
+item.Sterling Silver Dust.name=Стерлинговая пыль
+item.Tin Dust.name=Оловянная пыль
+item.Wrought Iron Dust.name=Пыль кованого железа
+item.Zinc Dust.name=Цинковая пыль
+
+#// Nuggets //
+item.Aluminum Nugget.name=Алюминиевый самородок
+item.Electrum Nugget.name=Самородок электрума
+item.Constantan Nugget.name=Самородок константана
+item.Invar Nugget.name=Самородок инвара
+item.Bismuth Bronze Nugget.name=Самородок висмутовой бронзы
+item.Bismuth Nugget.name=Висмутовый самородок
+item.Black Bronze Nugget.name=Самородок чёрной бронзы
+item.Black Steel Nugget.name=Самородок чёрной стали
+item.Blue Steel Nugget.name=Самородок синей стали
+item.Brass Nugget.name=Латунный самородок
+item.Bronze Nugget.name=Бронзовый самородок
+item.Copper Nugget.name=Медный самородок
+item.Gold Nugget.name=Золотой самородок
+item.Lead Nugget.name=Свинцовый самородок
+item.Nickel Nugget.name=Никелевый самородок
+item.Pig Iron Nugget.name=Чугунный самородок
+item.Platinum Nugget.name=Платиновый самородок
+item.Red Steel Nugget.name=Самородок красной стали
+item.Rose Gold Nugget.name=Самородок розового золота
+item.Silver Nugget.name=Серебряный самородок
+item.Steel Nugget.name=Стальной самородок
+item.Sterling Silver Nugget.name=Стерлинговый самородок
+item.Tin Nugget.name=Оловянный самородок
+item.Wrought Iron Nugget.name=Самородок кованого железа
+item.Zinc Nugget.name=Цинковый самородок
+
+#// Plates //
+item.Aluminum Plate.name=Алюминиевая пластина
+item.Electrum Plate.name=Пластина электрума
+item.Constantan Plate.name=Пластина константана
+item.Invar Plate.name=Пластина инвара
+item.Bismuth Bronze Plate.name=Пластина висмутовой бронзы
+item.Bismuth Plate.name=Висмутовая пластина
+item.Black Bronze Plate.name=Пластина чёрной бронзы
+item.Black Steel Plate.name=Пластина чёрной стали
+item.Blue Steel Plate.name=Пластина синей стали
+item.Brass Plate.name=Латунная пластина
+item.Bronze Plate.name=Бронзовая пластина
+item.Copper Plate.name=Медная пластина
+item.Gold Plate.name=Золотая пластина
+item.Lead Plate.name=Свинцовая пластина
+item.Nickel Plate.name=Никелевая пластина
+item.Pig Iron Plate.name=Пластина кованого железа
+item.Platinum Plate.name=Платиновая пластина
+item.Red Steel Plate.name=Пластина красной стали
+item.Rose Gold Plate.name=Пластина розового золота
+item.Silver Plate.name=Серебряная пластина
+item.Steel Plate.name=Стальная пластина
+item.Sterling Silver Plate.name=Стерлинговая пластина
+item.Tin Plate.name=Оловянная пластина
+item.Wrought Iron Plate.name=Пластина кованого железа
+item.Zinc Plate.name=Цинковая пластина
+
+#// Dense plates //
+item.Dense Aluminum Plate.name=Уплотнённая алюминиевая пластина
+item.Dense Electrum Plate.name=Уплотнённая пластина электрума
+item.Dense Constantan Plate.name=Уплотнённая пластина электрума
+item.Dense Invar Plate.name=Уплотнённая пластина инвара
+item.Dense Bismuth Bronze Plate.name=Уплотнённая пластина висмутовой бронзы
+item.Dense Bismuth Plate.name=Уплотнённая висмутовая пластина
+item.Dense Black Bronze Plate.name=Уплотнённая пластина чёрной бронзы
+item.Dense Black Steel Plate.name=Уплотнённая пластина чёрной стали
+item.Dense Blue Steel Plate.name=Уплотнённая пластина синей стали
+item.Dense Brass Plate.name=Уплотнённая латунная пластина
+item.Dense Bronze Plate.name=Уплотнённая бронзовая пластина
+item.Dense Copper Plate.name=Уплотнённая медная пластина
+item.Dense Gold Plate.name=Уплотнённая золотая пластина
+item.Dense Lead Plate.name=Уплотнённая свинцовая пластина
+item.Dense Nickel Plate.name=Уплотнённая никелевая пластина
+item.Dense Pig Iron Plate.name=Уплотнённая чугунная пластина
+item.Dense Platinum Plate.name=Уплотнённая пластиновая пластина
+item.Dense Red Steel Plate.name=Уплотнённая пластина красной стали
+item.Dense Rose Gold Plate.name=Уплотнённая пластина розового золота
+item.Dense Silver Plate.name=Уплотнённая серебряная пластина
+item.Dense Steel Plate.name=Уплотнённая стальная пластина
+item.Dense Sterling Silver Plate.name=Уплотнённая стерлинговая пластина
+item.Dense Tin Plate.name=Уплотнённая оловянная пластина
+item.Dense Wrought Iron Plate.name=Уплотнённая пластина кованого железа
+item.Dense Zinc Plate.name=Уплотнённая цинковая пластина
+
+#// Gears //
+item.Gear Piece Mold.Clay Mold Gear Piece.name=Глиняная форма части шестерни
+item.Gear Piece Mold.Ceramic Mold Gear Piece.name=Керамическая форма части шестерни
+item.Gear Piece Mold.Ceramic Mold Gear Piece Copper.name=Керамическая форма части шестерни (медь)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Bronze.name=Керамическая форма части шестерни (бронза)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Black Bronze.name=Керамическая форма части шестерни (чёрная бронза)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Bismuth Bronze.name=Керамическая форма части шестерни (висмутовая бронза)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Gold.name=Керамическая форма части шестерни (золото)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Tin.name=Керамическая форма части шестерни (олово)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Brass.name=Керамическая форма части шестерни (латунь)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Wrought Iron.name=Керамическая форма части шестерни (кованое железо)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Steel.name=Керамическая форма части шестерни (сталь)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Blue Steel.name=Керамическая форма части шестерни (синяя сталь)
+
+item.Sleeve Mold.Clay Mold Sleeve.name=Глиняная форма втулки
+item.Sleeve Mold.Ceramic Mold Sleeve.name=Керамическая форма втулки
+item.Sleeve Mold.Ceramic Mold Sleeve Brass.name=Керамическая форма втулки (латунь)
+item.Sleeve Mold.Ceramic Mold Sleeve Steel.name=Керамическая форма втулки (сталь)
+item.Sleeve Mold.Ceramic Mold Sleeve Tin.name=Керамическая форма втулки (олово)
+
+item.Copper Gear Piece.name=Медная часть шестерни
+item.Bronze Gear Piece.name=Бронзовая часть шестерни
+item.Black Bronze Gear Piece.name=Часть шестерни черной бронзы
+item.Bismuth Bronze Gear Piece.name=Часть шестерни висмутовой бронзы
+item.Gold Gear Piece.name=Золотая часть шестерни
+item.Tin Gear Piece.name=Оловянная часть шестерни
+item.Brass Gear Piece.name=Латунная часть шестерни
+item.Wrought Iron Gear Piece.name=Часть шестерни кованого железа
+item.Steel Gear Piece.name=Стальная часть шестерни
+item.Blue Steel Gear Piece.name=Часть шестерни синей стали
+
+item.Copper Rackwheel.name=Медное зубчатое колесо
+item.Bronze Rackwheel.name=Бронзовое зубчатое колесо
+item.Black Bronze Rackwheel.name=Зубчатое колесо черной бронзы
+item.Bismuth Bronze Rackwheel.name=Зубчатое колесо висмутовой бронзы
+item.Gold Rackwheel.name=Золотое зубчатое колесо
+item.Tin Rackwheel.name=Оловянное зубчатое колесо
+item.Brass Rackwheel.name=Латунное зубчатое колесо
+item.Wrought Iron Rackwheel.name=Зубчатое колесо кованого железа
+item.Steel Rackwheel.name=Стальное зубчатое колесо
+item.Blue Steel Rackwheel.name=Зубчатое колесо синей стали
+
+item.Copper Gear.name=Медная шестерня
+item.Bronze Gear.name=Бронзовая шестерня
+item.Black Bronze Gear.name=Шестерня черной бронзы
+item.Bismuth Bronze Gear.name=Шестерня висмутовой бронзы
+item.Gold Gear.name=Золотая шестерня
+item.Tin Gear.name=Оловянная шестерня
+item.Brass Gear.name=Латунная шестерня
+item.Wrought Iron Gear.name=Шестерня кованого железа
+item.Steel Gear.name=Стальная шестерня
+item.Blue Steel Gear.name=Шестерня синей стали
+
+item.Brass Sleeve.name=Латунная втулка
+item.Steel Sleeve.name=Стальная втулка
+item.Tin Sleeve.name=Оловянная втулка
+
+#// Flora //
+item.Log.Hevea.name=Бревно гевеи
+
+#// Tools //
+item.Latex Bowl.Clay Latex Bowl.name=Глиняная чаша для латекса
+item.Latex Bowl.Ceramic Latex Bowl.name=Керамическая чаша для латекса
+
+#// Rubber components //
+item.Chalk Powder.name=Меловой порошок
+item.Vulcanizing Agents.name=Вулканизирующие агенты
+item.Rubber Mix.name=Резиновая смесь
+item.Rubber.name=Резина
+
+#// Dyes //
+item.Dye Bottle.lime.name=Бутылка красителя (лаймовый)
+item.Dye Bottle.black.name=Бутылка красителя (черный)
+item.Dye Bottle.blue.name=Бутылка красителя (синий)
+item.Dye Bottle.cyan.name=Бутылка красителя (голубой)
+item.Dye Bottle.gray.name=Бутылка красителя (серый)
+item.Dye Bottle.yellow.name=Бутылка красителя (желтый)
+item.Dye Bottle.orange.name=Бутылка красителя (оранжевый)
+item.Dye Bottle.green.name=Бутылка красителя (зеленый)
+item.Dye Bottle.brown.name=Бутылка красителя (коричневый)
+item.Dye Bottle.pink.name=Бутылка красителя (розовый)
+item.Dye Bottle.silver.name=Бутылка красителя (серебристый)
+item.Dye Bottle.light_blue.name=Бутылка красителя (светло синий)
+item.Dye Bottle.white.name=Бутылка красителя (белый)
+item.Dye Bottle.red.name=Бутылка красителя (красный)
+item.Dye Bottle.purple.name=Бутылка красителя (фиолетовый)
+item.Dye Bottle.magenta.name=Бутылка красителя (малиновый)
+
+#// Device parts //
+item.Bowl Mount.name=Крепление для чаши
+item.Groove.name=Желоб
+item.Wrought Iron Stripe.name=Полоска кованого железа
+
+#// Integration //
+item.Drill Head.name=Наконечник бура
+item.Quartz.name=Кварц
+
+item.Steel Bucket Empty.name=Стальное ведро (Пустое)
+item.Steel Bucket Fuel.name=Стальное ведро (Топливо)
+item.Steel Bucket Oil.name=Стальное ведро (Нефть)
+item.Steel Bucket Latex.name=Стальное ведро (Латекс)
+
+item.PipeStructureLead.name=Свинцовая конструкционная труба
+
+item.PipeItemsLead.name=Свинцовая транспортная труба
+item.PipeItemsBlueSteel.name=Транспортная труба синей стали
+item.PipeItemsMarker.name=Маркирующая транспортная труба
+item.PipeItemsFilter.name=Фильтрующая транспортная труба
+item.PipeItemsCopper.name=Медная транспортная труба
+item.PipeItemsRedSteel.name=Транспортная труба красной стали
+item.PipeItemsMarkerExtractor.name=Маркирующая извлекающая транспортная труба
+item.PipeItemsElectrum.name=Транспортная труба электрума
+item.PipeItemsWroughtIron.name=Транспортная труба кованого железа
+item.PipeItemsBlackSteel.name=Транспортная труба черной стали
+item.PipeItemsSilver.name=Серебряная транспортная труба
+item.PipeItemsBronze.name=Бронзовая транспортная труба
+item.PipeItemsSterlingSilver.name=Транспортная труба стерлингового серебра
+item.PipeItemsZinc.name=Цинковая транспортная труба
+item.PipeItemsNullify.name=Уничтожающая транспортная труба
+
+item.PipeFluidsLead.name=Свинцовая жидкостная труба
+item.PipeFluidsCopper.name=Медная жидкостная труба
+item.PipeFluidsRedSteel.name=Жидкостная труба красной стали
+item.PipeFluidsSterlingSilver.name=Жидкостная труба стерлингового серебра
+item.PipeFluidsElectrum.name=Жидкостная труба электрума
+item.PipeFluidsWroughtIron.name=Жидкостная труба кованого железа
+item.PipeFluidsSilver.name=Серебряная жидкостная труба
+item.PipeFluidsBronze.name=Бронзовая жидкостная труба
+item.PipeFluidsNullify.name=Уничтожающая жидкостная труба
+item.PipeFluidsZinc.name=Цинковая жидкостная труба
+item.PipeFluidsBlueSteel.name=Жидкостная труба синей стали
+
+item.PipePowerBlueSteel.name=Кинетичесткая труба синей стали
+item.PipePowerElectrum.name=Кинетичесткая труба электрума
+item.PipePowerSterlingSilver.name=Кинетичесткая труба стерлингового серебра
+item.PipePowerBronze.name=Бронзовая кинетичесткая труба
+item.PipePowerSilver.name=Серебряная кинетичесткая труба
+item.PipePowerLead.name=Свинцовая кинетичесткая труба
+item.PipePowerCopper.name=Медная кинетичесткая труба
+item.PipePowerRedSteel.name=Кинетичесткая труба красной стали
+item.PipePowerWroughtIron.name=Кинетичесткая труба кованого железа
+
+item.Zinc Pipe Frame.name=Цинковая рама трубы
+item.Lead Pipe Frame.name=Свинцовая рама трубы
+item.Blue Steel Pipe Frame.name=Рама трубы синей стали
+item.Red Steel Pipe Frame.name=Рама трубы красной стали
+item.Electrum Pipe Frame.name=Рама трубы электрума
+item.Wrought Iron Pipe Frame.name=Рама трубы кованого железа
+item.Steel Pipe Frame.name=Стальная рама трубы
+item.Black Steel Pipe Frame.name=Рама трубы черной стали
+item.Sterling Silver Pipe Frame.name=Рама трубы стерлингового серебра
+item.Silver Pipe Frame.name=Серебряная рама трубы
+item.Bronze Pipe Frame.name=Бронзовая рама трубы
+item.Copper Pipe Frame.name=Медная рама трубы
+
+item.Glue.name=Клей
+item.Dixie.name=Котелок (пустой)
+item.Dixie Bones.name=Котелок (вода+кости)
+item.Dixie Glue.name=Котелок (клей)
+
+#=======
+#= Ore =
+#=======
+#== Ore Items ==
+
+item.Ore.Bauxite.name=Боксит
+item.Ore.Rich Bauxite.name=Богатый боксит
+item.Ore.Poor Bauxite.name=Бедный боксит
+item.Small Ore.Bauxite.name=Кусок боксита
+
+#==========
+#= Blocks =
+#==========
+
+#== Ore Blocks ==
+tile.Ore.Bauxite.name=Боксит
+
+#== Liquid Blocks ==
+tile.Latex.name=Латекс
+
+#== Flora ==
+tile.log.Hevea.name=Бревно гевеи
+tile.Hevea.Hevea.name=Бревно гевеи
+tile.Hevea1.Hevea.name=Бревно гевеи
+tile.Hevea2.Hevea.name=Бревно гевеи
+tile.Hevea3.Hevea.name=Бревно гевеи
+tile.Hevea1.name=Бревно гевеи
+tile.Hevea2.name=Бревно гевеи
+tile.Hevea3.name=Бревно гевеи
+tile.HeveaDead.Hevea.name=Бревно мертвой гевеи
+tile.Hevea.name=Бревно гевеи
+tile.leaves.Hevea.name=Листья гевеи
+tile.sapling.Hevea.name=Саженец гевеи
+
+#== Devices ==
+tile.LatexExtractor.name=Подсочка
+
+#=======
+#= GUI =
+#=======
+gui.metal.Aluminum=Алюминий
+gui.metal.Electrum=Электрум
+gui.metal.Constantan=Константан
+gui.metal.Invar=Инвар
+
+gui.qty=Количество
+
+gui.groove.usage0=Используйте желоб для получения латекса из гевеи.
+gui.groove.usage1=§bПравым кликом §7установите его на ствол.
+gui.groove.usage2=Молот должен быть в хотбаре.
+gui.groove.heveaOnly=Только для гевеи!
+gui.groove.hammer=Без молота не установить.
+gui.groove.cantPlace=Не возможно установить здесь.
+
+gui.latexTapping.treeIsDead=Дерево засохшее.
+
+gui.plans.groove=Желоб
+gui.plans.mount=Крепление чаши
+gui.plans.wrench=Ключ
+gui.plans.frame=Рама трубы
+gui.plans.dixie=Котелок
+
+#===========
+#= Strings =
+#===========
+
+#========
+#= Misc =
+#========
+
+fluid.latex=Латекс
+
+#== Creative Tabs ==
+
+itemGroup.TFCTechTab=Shurgent's TFCTech Addon
+
+#=========
+#= WAILA =
+#=========
+
+#== Tooltips ==
+tip.PipeFluidsZinc=Вводная труба\n(Замена Глиняной трубы BC)
+tip.PipeFluidsLead=Не будет подключаться к Бронзовой и Стерлингового серебра\n(Замена Булыжниковой трубы BC)
+tip.PipeFluidsBlueSteel=Сортирует жидкости\n(Замена Алмазной трубы BC)
+tip.PipeFluidsRedSteel=Извлекающая труба\n(Замена Изумрудной трубы BC)
+tip.PipeFluidsWroughtIron=Труба с заслонкой\n(Замена Железной трубы BC)
+tip.PipeFluidsSterlingSilver=Не будет подключаться к Свинцовой и Бронзовой\n(Замена Кварцевой трубы BC)
+tip.PipeFluidsSilver=Только соединяется с другими трубами\n(Замена Песчаниковой трубы BC)
+tip.PipeFluidsBronze=Не будет подключаться к Свинцовой и Стерлингового серебра\n(Замена Каменной трубы BC)
+tip.PipeFluidsNullify=Уничтожает жидкости\n(Замена Пустотной трубы BC)
+tip.PipeFluidsCopper=Извлекающая труба\n(Замена Деревянной трубы BC)
+tip.PipeFluidsElectrum=Замена Золотой трубы BC
+tip.PipeItemsZinc=Вводная труба\n(Замена Глиняной трубы BC)
+tip.PipeItemsLead=Базовая труба, высокое сопротивление\nНе будет подключаться к Бронзовой и Стерлингового серебра\n(Замена Булыжниковой трубы BC)
+tip.PipeItemsFilter=Маршрутизирует окрашенные предметы\n(Замена Алмазуритовой трубы BC)
+tip.PipeItemsBlueSteel=Сортирует предметы\n(Замена Алмазной трубы BC)
+tip.PipeItemsRedSteel=Циклическая извлекающая труба\n(Замена Изумрудной трубы BC)
+tip.PipeItemsMarkerExtractor=Контроллируемая гейтом извлекающая труба\n(Замена Изуритовой трубы BC)
+tip.PipeItemsElectrum=Ускоряет предметы\n(Замена Золотой трубы BC)
+tip.PipeItemsWroughtIron=Маршрутизирует предметы\n(Замена Железной трубы BC)
+tip.PipeItemsMarker=Окрашивает предметы\n(Замена Лазуритовой трубы BC)
+tip.PipeItemsBlackSteel=Затягивает предметы\n(Замена Обсидиановой трубы BC)
+tip.PipeItemsSterlingSilver=Базовая труба, низкое сопротивление\nНе будет подключаться к Свинцовой и Бронзовой\n(Замена Кварцевой трубы BC)
+tip.PipeItemsSilver=Только соединяется с другими трубами\n(Замена Песчаниковой трубы BC)
+tip.PipeItemsBronze=Базовая труба, среднее сопротивление\nНе будет подключаться к Свинцовой и Стерлингового серебра\n(Замена Каменной трубы BC)
+tip.PipeItemsNullify=Уничтожает предметы\n(Замена Пустотной трубы BC)
+tip.PipeItemsCopper=Извлекающая труба\n(Замена Деревянной трубы BC)
+tip.PipePowerRedSteel=Входная энерготруба\n(Замена Изумрудной трубы BC)
+tip.PipePowerWroughtIron=Настраиваемая ограничительная труба\n(Замена Железной трубы BC)
+tip.PipePowerSilver=Только соединяется с другими трубами\n(Замена Песчаниковой трубы BC)
+tip.PipePowerCopper=Входная энерготруба\n(Замена Деревянной трубы BC)
+tip.PipeStructureLead=Поддерживающая труба\n(Замена Структурной булыжниковой трубы BC)
+tip.PipePowerBlueSteel=Замена Алмазной трубы BC
+tip.PipePowerSterlingSilver=Замена Кварцевой трубы BC
+tip.PipePowerElectrum=Замена Золотой трубы BC
+tip.PipePowerLead=Замена Булыжниковой трубы BC
+tip.PipePowerBronze=Замена Каменной трубы BC
+
+#== Options ==

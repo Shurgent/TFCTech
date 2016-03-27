@@ -1,0 +1,21 @@
+{
+    "modListVersion": 2,
+    "modList": [{
+        "modid": "tfctech",
+        "name": "Shurgent's TFCTech Addon",
+        "description": "§bAdds smeltable items for TerraFirmaCraft integration with technical mods.",
+        "version": "${mod_version}",
+        "mcversion": "${minecraft_version}",
+        "url": "http://shurgent.pp.ua/tfctech/",
+        "updateUrl": "",
+        "authorList": ["§6Shurgent§r"],
+        "credits": "",
+        "logoFile": "assets/tfctech/textures/TFCTechLogo.png",
+        "screenshots": [],
+        "parent": "",
+        "requiredMods": [ "terrafirmacraft" ],
+        "dependencies": [ "terrafirmacraft" ],
+        "dependants": [  ],
+        "useDependencyInformation": "true"
+    }]
+}

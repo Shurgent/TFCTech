@@ -1,0 +1,411 @@
+﻿#en_US
+#This is the Main language configuration file
+#
+#=========
+#= Items =
+#=========
+
+#// Ingots //
+item.Aluminum Ingot.name=Aluminum Ingot
+item.Aluminum Double Ingot.name=Aluminum Double Ingot
+item.Electrum Ingot.name=Electrum Ingot
+item.Electrum Double Ingot.name=Electrum Double Ingot
+item.Constantan Ingot.name=Constantan Ingot
+item.Constantan Double Ingot.name=Constantan Double Ingot
+item.Invar Ingot.name=Invar Ingot
+item.Invar Double Ingot.name=Invar Double Ingot
+
+#// Unshaped //
+item.Aluminum Unshaped.name=Unshaped: Aluminum
+item.Electrum Unshaped.name=Unshaped: Electrum
+item.Constantan Unshaped.name=Unshaped: Constantan
+item.Invar Unshaped.name=Unshaped: Invar
+
+#// Dust //
+item.Aluminum Dust.name=Aluminum Dust
+item.Bauxite Dust.name=Bauxite Dust
+item.Electrum Dust.name=Electrum Dust
+item.Constantan Dust.name=Constantan Dust
+item.Invar Dust.name=Invar Dust
+item.Bismuth Bronze Dust.name=Bismuth Bronze Dust
+item.Bismuth Dust.name=Bismuth Dust
+item.Black Bronze Dust.name=Black Bronze Dust
+item.Black Steel Dust.name=Black Steel Dust
+item.Blue Steel Dust.name=Blue Steel Dust
+item.Brass Dust.name=Brass Dust
+item.Bronze Dust.name=Bronze Dust
+item.Copper Dust.name=Copper Dust
+item.Gold Dust.name=Gold Dust
+item.Lead Dust.name=Lead Dust
+item.Nickel Dust.name=Nickel Dust
+item.Pig Iron Dust.name=Pig Iron Dust
+item.Platinum Dust.name=Platinum Dust
+item.Red Steel Dust.name=Red Steel Dust
+item.Rose Gold Dust.name=Rose Gold Dust
+item.Silver Dust.name=Silver Dust
+item.Steel Dust.name=Steel Dust
+item.Sterling Silver Dust.name=Sterling Silver Dust
+item.Tin Dust.name=Tin Dust
+item.Wrought Iron Dust.name=Wrought Iron Dust
+item.Zinc Dust.name=Zinc Dust
+
+#// Nuggets //
+item.Aluminum Nugget.name=Aluminum Nugget
+item.Electrum Nugget.name=Electrum Nugget
+item.Constantan Nugget.name=Constantan Nugget
+item.Invar Nugget.name=Invar Nugget
+item.Bismuth Bronze Nugget.name=Bismuth Bronze Nugget
+item.Bismuth Nugget.name=Bismuth Nugget
+item.Black Bronze Nugget.name=Black Bronze Nugget
+item.Black Steel Nugget.name=Black Steel Nugget
+item.Blue Steel Nugget.name=Blue Steel Nugget
+item.Brass Nugget.name=Brass Nugget
+item.Bronze Nugget.name=Bronze Nugget
+item.Copper Nugget.name=Copper Nugget
+item.Gold Nugget.name=Gold Nugget
+item.Lead Nugget.name=Lead Nugget
+item.Nickel Nugget.name=Nickel Nugget
+item.Pig Iron Nugget.name=Pig Iron Nugget
+item.Platinum Nugget.name=Platinum Nugget
+item.Red Steel Nugget.name=Red Steel Nugget
+item.Rose Gold Nugget.name=Rose Gold Nugget
+item.Silver Nugget.name=Silver Nugget
+item.Steel Nugget.name=Steel Nugget
+item.Sterling Silver Nugget.name=Sterling Silver Nugget
+item.Tin Nugget.name=Tin Nugget
+item.Wrought Iron Nugget.name=Wrought Iron Nugget
+item.Zinc Nugget.name=Zinc Nugget
+
+#// Plates //
+item.Aluminum Plate.name=Aluminum Plate
+item.Electrum Plate.name=Electrum Plate
+item.Constantan Plate.name=Constantan Plate
+item.Invar Plate.name=Invar Plate
+item.Bismuth Bronze Plate.name=Bismuth Bronze Plate
+item.Bismuth Plate.name=Bismuth Plate
+item.Black Bronze Plate.name=Black Bronze Plate
+item.Black Steel Plate.name=Black Steel Plate
+item.Blue Steel Plate.name=Blue Steel Plate
+item.Brass Plate.name=Brass Plate
+item.Bronze Plate.name=Bronze Plate
+item.Copper Plate.name=Copper Plate
+item.Gold Plate.name=Gold Plate
+item.Lead Plate.name=Lead Plate
+item.Nickel Plate.name=Nickel Plate
+item.Pig Iron Plate.name=Pig Iron Plate
+item.Platinum Plate.name=Platinum Plate
+item.Red Steel Plate.name=Red Steel Plate
+item.Rose Gold Plate.name=Rose Gold Plate
+item.Silver Plate.name=Silver Plate
+item.Steel Plate.name=Steel Plate
+item.Sterling Silver Plate.name=Sterling Silver Plate
+item.Tin Plate.name=Tin Plate
+item.Wrought Iron Plate.name=Wrought Iron Plate
+item.Zinc Plate.name=Zinc Plate
+
+#// Dense plates //
+item.Dense Aluminum Plate.name=Dense Aluminum Plate
+item.Dense Electrum Plate.name=Dense Electrum Plate
+item.Dense Constantan Plate.name=Dense Constantan Plate
+item.Dense Invar Plate.name=Dense Invar Plate
+item.Dense Bismuth Bronze Plate.name=Dense Bismuth Bronze Plate
+item.Dense Bismuth Plate.name=Dense Bismuth Plate
+item.Dense Black Bronze Plate.name=Dense Black Bronze Plate
+item.Dense Black Steel Plate.name=Dense Black Steel Plate
+item.Dense Blue Steel Plate.name=Dense Blue Steel Plate
+item.Dense Brass Plate.name=Dense Brass Plate
+item.Dense Bronze Plate.name=Dense Bronze Plate
+item.Dense Copper Plate.name=Dense Copper Plate
+item.Dense Gold Plate.name=Dense Gold Plate
+item.Dense Lead Plate.name=Dense Lead Plate
+item.Dense Nickel Plate.name=Dense Nickel Plate
+item.Dense Pig Iron Plate.name=Dense Pig Iron Plate
+item.Dense Platinum Plate.name=Dense Platinum Plate
+item.Dense Red Steel Plate.name=Dense Red Steel Plate
+item.Dense Rose Gold Plate.name=Dense Rose Gold Plate
+item.Dense Silver Plate.name=Dense Silver Plate
+item.Dense Steel Plate.name=Dense Steel Plate
+item.Dense Sterling Silver Plate.name=Dense Sterling Silver Plate
+item.Dense Tin Plate.name=Dense Tin Plate
+item.Dense Wrought Iron Plate.name=Dense Wrought Iron Plate
+item.Dense Zinc Plate.name=Dense Zinc Plate
+
+#// Gears //
+item.Gear Piece Mold.Clay Mold Gear Piece.name=Clay Gear Piece Mold
+item.Gear Piece Mold.Ceramic Mold Gear Piece.name=Gear Piece Mold
+item.Gear Piece Mold.Ceramic Mold Gear Piece Copper.name=Gear Piece Mold (Copper)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Bronze.name=Gear Piece Mold (Bronze)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Black Bronze.name=Gear Piece Mold (Black Bronze)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Bismuth Bronze.name=Gear Piece Mold (Bismuth Bronze)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Gold.name=Gear Piece Mold (Gold)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Tin.name=Gear Piece Mold (Tin)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Brass.name=Gear Piece Mold (Brass)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Wrought Iron.name=Gear Piece Mold (Wrought Iron)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Steel.name=Gear Piece Mold (Steel)
+item.Gear Piece Mold.Ceramic Mold Gear Piece Blue Steel.name=Gear Piece Mold (Blue Steel)
+
+item.Sleeve Mold.Clay Mold Sleeve.name=Clay Sleeve Mold
+item.Sleeve Mold.Ceramic Mold Sleeve.name=Sleeve Mold
+item.Sleeve Mold.Ceramic Mold Sleeve Brass.name=Sleeve Mold (Brass)
+item.Sleeve Mold.Ceramic Mold Sleeve Steel.name=Sleeve Mold (Steel)
+item.Sleeve Mold.Ceramic Mold Sleeve Tin.name=Sleeve Mold (Tin)
+
+item.Copper Gear Piece.name=Copper Gear Piece
+item.Bronze Gear Piece.name=Bronze Gear Piece
+item.Black Bronze Gear Piece.name=Black Bronze Gear Piece
+item.Bismuth Bronze Gear Piece.name=Bismuth Bronze Gear Piece
+item.Gold Gear Piece.name=Golden Gear Piece
+item.Tin Gear Piece.name=Tin Gear Piece
+item.Brass Gear Piece.name=Brass Gear Piece
+item.Wrought Iron Gear Piece.name=Wrought Iron Gear Piece
+item.Steel Gear Piece.name=Steel Gear Piece
+item.Blue Steel Gear Piece.name=Blue Steel Gear Piece
+
+item.Copper Rackwheel.name=Copper Rackwheel
+item.Bronze Rackwheel.name=Bronze Rackwheel
+item.Black Bronze Rackwheel.name=Black Bronze Rackwheel
+item.Bismuth Bronze Rackwheel.name=Bismuth Bronze Rackwheel
+item.Gold Rackwheel.name=Golden Rackwheel
+item.Tin Rackwheel.name=Tin Rackwheel
+item.Brass Rackwheel.name=Brass Rackwheel
+item.Wrought Iron Rackwheel.name=Wrought Iron Rackwheel
+item.Steel Rackwheel.name=Steel Rackwheel
+item.Blue Steel Rackwheel.name=Blue Steel Rackwheel
+
+item.Copper Gear.name=Copper Gear
+item.Bronze Gear.name=Bronze Gear
+item.Black Bronze Gear.name=Black Bronze Gear
+item.Bismuth Bronze Gear.name=Bismuth Bronze Gear
+item.Gold Gear.name=Golden Gear
+item.Tin Gear.name=Tin Gear
+item.Brass Gear.name=Brass Gear
+item.Wrought Iron Gear.name=Wrought Iron Gear
+item.Steel Gear.name=Steel Gear
+item.Blue Steel Gear.name=Blue Steel Gear
+
+item.Brass Sleeve.name=Brass Sleeve
+item.Steel Sleeve.name=Steel Sleeve
+item.Tin Sleeve.name=Tin Sleeve
+
+#// Flora //
+item.Log.Hevea.name=Hevea Log
+
+#// Tools //
+item.Latex Bowl.Clay Latex Bowl.name=Clay Latex Bowl
+item.Latex Bowl.Ceramic Latex Bowl.name=Ceramic Latex Bowl
+
+#// Rubber components //
+item.Chalk Powder.name=Chalk Powder
+item.Vulcanizing Agents.name=Vulcanizing Agents
+item.Rubber Mix.name=Rubber Mix
+item.Rubber.name=Rubber
+
+#// Dyes //
+item.Dye Bottle.lime.name=Dye Bottle (Lime)
+item.Dye Bottle.black.name=Dye Bottle (Black)
+item.Dye Bottle.blue.name=Dye Bottle (Blue)
+item.Dye Bottle.cyan.name=Dye Bottle (Cyan)
+item.Dye Bottle.gray.name=Dye Bottle (Gray)
+item.Dye Bottle.yellow.name=Dye Bottle (Yellow)
+item.Dye Bottle.orange.name=Dye Bottle (Orange)
+item.Dye Bottle.green.name=Dye Bottle (Green)
+item.Dye Bottle.brown.name=Dye Bottle (Brown)
+item.Dye Bottle.pink.name=Dye Bottle (Pink)
+item.Dye Bottle.silver.name=Dye Bottle (Silver)
+item.Dye Bottle.light_blue.name=Dye Bottle (Light Blue)
+item.Dye Bottle.white.name=Dye Bottle (White)
+item.Dye Bottle.red.name=Dye Bottle (Red)
+item.Dye Bottle.purple.name=Dye Bottle (Purple)
+item.Dye Bottle.magenta.name=Dye Bottle (Magenta)
+
+#// Device parts //
+item.Bowl Mount.name=Bowl Mount
+item.Groove.name=Groove
+item.Wrought Iron Stripe.name=Wrought Iron Stripe
+
+#// Integration //
+item.Drill Head.name=Drill Head
+item.Quartz.name=Quartz
+
+item.Steel Bucket Empty.name=Steel Bucket (Empty)
+item.Steel Bucket Fuel.name=Steel Bucket (Fuel)
+item.Steel Bucket Oil.name=Steel Bucket (Oil)
+item.Steel Bucket Latex.name=Steel Bucket (Latex)
+
+item.PipeStructureLead.name=Lead Structure Pipe
+
+item.PipeItemsLead.name=Lead Transport Pipe
+item.PipeItemsBlueSteel.name=Blue Steel Transport Pipe
+item.PipeItemsMarker.name=Marker Transport Pipe
+item.PipeItemsFilter.name=Filter Transport Pipe
+item.PipeItemsCopper.name=Copper Transport Pipe
+item.PipeItemsRedSteel.name=Red Steel Transport Pipe
+item.PipeItemsMarkerExtractor.name=Marker Extractor Transport Pipe
+item.PipeItemsElectrum.name=Electrum Transport Pipe
+item.PipeItemsWroughtIron.name=Wrought Iron Transport Pipe
+item.PipeItemsBlackSteel.name=Black Steel Transport Pipe
+item.PipeItemsSilver.name=Silver Transport Pipe
+item.PipeItemsBronze.name=Bronze Transport Pipe
+item.PipeItemsSterlingSilver.name=Sterling Silver Transport Pipe
+item.PipeItemsZinc.name=Zinc Transport Pipe
+item.PipeItemsNullify.name=Nullify Transport Pipe
+
+item.PipeFluidsLead.name=Lead Fluid Pipe
+item.PipeFluidsCopper.name=Copper Fluid Pipe
+item.PipeFluidsRedSteel.name=Red Steel Fluid Pipe
+item.PipeFluidsSterlingSilver.name=Sterling Silver Fluid Pipe
+item.PipeFluidsElectrum.name=Electrum Fluid Pipe
+item.PipeFluidsWroughtIron.name=Wrought Iron Fluid Pipe
+item.PipeFluidsSilver.name=Silver Fluid Pipe
+item.PipeFluidsBronze.name=Bronze Fluid Pipe
+item.PipeFluidsNullify.name=Nullify Fluid Pipe
+item.PipeFluidsZinc.name=Zinc Fluid Pipe
+item.PipeFluidsBlueSteel.name=Blue Steel Fluid Pipe
+
+item.PipePowerBlueSteel.name=Blue Steel Kinesis Pipe
+item.PipePowerElectrum.name=Electrum Kinesis Pipe
+item.PipePowerSterlingSilver.name=Sterling Silver Kinesis Pipe
+item.PipePowerBronze.name=Bronze Kinesis Pipe
+item.PipePowerSilver.name=Silver Kinesis Pipe
+item.PipePowerLead.name=Lead Kinesis Pipe
+item.PipePowerCopper.name=Copper Kinesis Pipe
+item.PipePowerRedSteel.name=Red Steel Kinesis Pipe
+item.PipePowerWroughtIron.name=Wrought Iron Kinesis Pipe
+
+item.Zinc Pipe Frame.name=Zinc Pipe Frame
+item.Lead Pipe Frame.name=Lead Pipe Frame
+item.Blue Steel Pipe Frame.name=Blue Steel Pipe Frame
+item.Red Steel Pipe Frame.name=Red Steel Pipe Frame
+item.Electrum Pipe Frame.name=Electrum Pipe Frame
+item.Wrought Iron Pipe Frame.name=Wrought Iron Pipe Frame
+item.Steel Pipe Frame.name=Steel Pipe Frame
+item.Black Steel Pipe Frame.name=Black Steel Pipe Frame
+item.Sterling Silver Pipe Frame.name=Sterling Silver Pipe Frame
+item.Silver Pipe Frame.name=Silver Pipe Frame
+item.Bronze Pipe Frame.name=Bronze Pipe Frame
+item.Copper Pipe Frame.name=Copper Pipe Frame
+
+item.Glue.name=Glue
+item.Dixie.name=Dixie (Empty)
+item.Dixie Bones.name=Dixie (Water+Bones)
+item.Dixie Glue.name=Dixie (Glue)
+
+#=======
+#= Ore =
+#=======
+#== Ore Items ==
+
+item.Ore.Bauxite.name=Bauxite
+item.Ore.Rich Bauxite.name=Rich Bauxite
+item.Ore.Poor Bauxite.name=Poor Bauxite
+item.Small Ore.Bauxite.name=Small Bauxite
+
+#==========
+#= Blocks =
+#==========
+
+#== Ore Blocks ==
+tile.Ore.Bauxite.name=Bauxite
+
+#== Liquid Blocks ==
+tile.Latex.name=Latex
+
+#== Flora ==
+tile.log.Hevea.name=Hevea Log
+tile.Hevea.Hevea.name=Hevea Log
+tile.Hevea1.Hevea.name=Hevea Log
+tile.Hevea2.Hevea.name=Hevea Log
+tile.Hevea3.Hevea.name=Hevea Log
+tile.Hevea1.name=Hevea Log
+tile.Hevea2.name=Hevea Log
+tile.Hevea3.name=Hevea Log
+tile.HeveaDead.Hevea.name=Dead Hevea Log
+tile.Hevea.name=Hevea Log
+tile.leaves.Hevea.name=Hevea Leaves
+tile.sapling.Hevea.name=Hevea Sapling
+
+#== Devices ==
+tile.LatexExtractor.name=Rubber Tapping
+
+#=======
+#= GUI =
+#=======
+gui.metal.Aluminum=Aluminum
+gui.metal.Electrum=Electrum
+gui.metal.Constantan=Constantan
+gui.metal.Invar=Invar
+
+gui.qty=Quantity
+
+gui.groove.usage0=Use groove to obtain latex from Hevea.
+gui.groove.usage1=§bRight click §7on Hevea trunk to fit it.
+gui.groove.usage2=Hammer must be at hotbar.
+gui.groove.heveaOnly=Only for Hevea!
+gui.groove.hammer=Can't fit without Hammer.
+gui.groove.cantPlace=Can't place here.
+
+gui.latexTapping.treeIsDead=The tree is dead.
+
+gui.plans.groove=Groove
+gui.plans.mount=Bowl Mount
+gui.plans.wrench=Wrench
+gui.plans.frame=Pipe Frame
+gui.plans.dixie=Dixie
+
+#===========
+#= Strings =
+#===========
+
+#========
+#= Misc =
+#========
+
+fluid.latex=Latex
+
+#== Creative Tabs ==
+
+itemGroup.TFCTechTab=Shurgent's TFCTech Addon
+
+#=========
+#= WAILA =
+#=========
+
+#== Tooltips ==
+tip.PipeFluidsZinc=Insertion pipe\n(BC Clay Pipe substitution)
+tip.PipeFluidsLead=Won't connect to Bronze or Sterling Silver\n(BC Cobblestone Pipe substitution)
+tip.PipeFluidsBlueSteel=Sorts fluids\n(BC Diamond Pipe substitution)
+tip.PipeFluidsRedSteel=Extraction pipe\n(BC Emerald Pipe substitution)
+tip.PipeFluidsWroughtIron=Valve pipe\n(BC Iron Pipe substitution)
+tip.PipeFluidsSterlingSilver=Won't connect to Lead or Bronze\n(BC Quartz Pipe substitution)
+tip.PipeFluidsSilver=Only connects to other pipes\n(BC Sandstone Pipe substitution)
+tip.PipeFluidsBronze=Won't connect to Lead or Sterling Silver\n(BC Stone Pipe substitution)
+tip.PipeFluidsNullify=Destroys fluids\n(BC Void Pipe substitution)
+tip.PipeFluidsCopper=Extraction pipe\n(BC Wood Pipe substitution)
+tip.PipeFluidsElectrum=BC Gold Pipe substitution
+tip.PipeItemsZinc=Insertion pipe\n(BC Clay Pipe substitution)
+tip.PipeItemsLead=Basic pipe, high drag\nWon't connect to Bronze or Sterling Silver\n(BC Cobblestone Pipe substitution)
+tip.PipeItemsFilter=Routes painted items\n(BC Daizuli Pipe substitution)
+tip.PipeItemsBlueSteel=Sorts items\n(BC Diamond Pipe substitution)
+tip.PipeItemsRedSteel=Round-robin extraction pipe\n(BC Emerald Pipe substitution)
+tip.PipeItemsMarkerExtractor=Gate controlled extraction pipe\n(BC Emzuli Pipe substitution)
+tip.PipeItemsElectrum=Speeds up items\n(BC Gold Pipe substitution)
+tip.PipeItemsWroughtIron=Routes items\n(BC Iron Pipe substitution)
+tip.PipeItemsMarker=Paints items\n(BC Lapis Pipe substitution)
+tip.PipeItemsBlackSteel=Sucks up items\n(BC Obsidian Pipe substitution)
+tip.PipeItemsSterlingSilver=Basic pipe, low drag\nWon't connect to Lead or Bronze\n(BC Quartz Pipe substitution)
+tip.PipeItemsSilver=Only connects to other pipes\n(BC Sandstone Pipe substitution)
+tip.PipeItemsBronze=Basic pipe, medium drag\nWon't connect to Lead or Sterling Silver\n(BC Stone Pipe substitution)
+tip.PipeItemsNullify=Destroys items\n(BC Void Pipe substitution)
+tip.PipeItemsCopper=Extraction pipe\n(BC Wood Pipe substitution)
+tip.PipePowerRedSteel=Power Input Pipe\n(BC Emerald Pipe substitution)
+tip.PipePowerWroughtIron=Selectable Limiter Pipe\n(BC Iron Pipe substitution)
+tip.PipePowerSilver=Only connects to other pipes\n(BC Sandstone Pipe substitution)
+tip.PipePowerCopper=Power Input Pipe\n(BC Wood Pipe substitution)
+tip.PipeStructureLead=Support pipe\n(BC Structure Cobblestone Pipe substitution)
+tip.PipePowerBlueSteel=BC Diamond Pipe substitution
+tip.PipePowerSterlingSilver=BC Quartz Pipe substitution
+tip.PipePowerElectrum=BC Gold Pipe substitution
+tip.PipePowerLead=BC Cobblestone Pipe substitution
+tip.PipePowerBronze=BC Stone Pipe substitution
+
+#== Options ==

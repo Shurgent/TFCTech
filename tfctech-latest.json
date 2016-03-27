@@ -1,0 +1,10 @@
+﻿{
+	"version": "0.2.0-A5",
+	"changelog": [
+		"Added Buildcraft integration",
+		"Added Quartz drops from stone",
+		"Added Gears",
+		"Added Steel Buckets for mod liquids (Oil, Fuel etc.)",
+		"Added Hevea Trees, Latex and Rubber"
+	]
+}
