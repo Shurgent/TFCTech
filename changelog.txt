@@ -7,6 +7,7 @@ Changelog
   * Added Gears
   * Added Steel Buckets for mod liquids (Oil, Fuel etc.)
   * Added Hevea Trees, Latex and Rubber
+	* Added Glue (obtained from bones, animal glue)
 
 0.1.4-A4:
   * Now required Forge 10.13.4.1558+
