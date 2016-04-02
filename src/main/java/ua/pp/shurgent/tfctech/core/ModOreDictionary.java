@@ -232,7 +232,7 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("materialGlue", new ItemStack(ModItems.glue, 1, WILD));
 		
 		for (Color color : Color.VALUES) {
-			OreDictionary.registerOre(color.getDye(), new ItemStack(ModItems.dyeBottle, 1, color.ordinal()));
+			OreDictionary.registerOre(color.getDye(), new ItemStack(ModItems.limePaint, 1, color.ordinal()));
 		}
 	}
 	

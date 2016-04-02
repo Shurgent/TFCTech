@@ -43,7 +43,7 @@ import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsZinc;
 import ua.pp.shurgent.tfctech.items.ItemCraftComponent;
 import ua.pp.shurgent.tfctech.items.ItemDixie;
 import ua.pp.shurgent.tfctech.items.ItemDust;
-import ua.pp.shurgent.tfctech.items.ItemDyeBottle;
+import ua.pp.shurgent.tfctech.items.ItemLimePaint;
 import ua.pp.shurgent.tfctech.items.ItemGear;
 import ua.pp.shurgent.tfctech.items.ItemGearPiece;
 import ua.pp.shurgent.tfctech.items.ItemGroove;
@@ -236,7 +236,7 @@ public class ModItems {
 	public static Item rubber;
 	
 	// Dyes
-	public static Item dyeBottle;
+	public static Item limePaint;
 	
 	// === Pottery ==============================
 	
@@ -658,8 +658,8 @@ public class ModItems {
 		dixieGlue = new ItemCraftComponent().setUnlocalizedName("Dixie Glue").setContainerItem(dixie);
 		glue = new ItemCraftComponent(EnumSize.TINY).setUnlocalizedName("Glue");
 		
-		// == Dyes
-		dyeBottle = new ItemDyeBottle().setUnlocalizedName("Dye Bottle");
+		// == Lime Paint
+		limePaint = new ItemLimePaint().setUnlocalizedName("Lime Paint");
 		
 		// == INTEGRATION =====================================================
 		
@@ -890,7 +890,7 @@ public class ModItems {
 		GameRegistry.registerItem(glue, glue.getUnlocalizedName());
 		
 		// Dyes
-		GameRegistry.registerItem(dyeBottle, dyeBottle.getUnlocalizedName());
+		GameRegistry.registerItem(limePaint, limePaint.getUnlocalizedName());
 		
 		// Device components
 		GameRegistry.registerItem(stripe, stripe.getUnlocalizedName());

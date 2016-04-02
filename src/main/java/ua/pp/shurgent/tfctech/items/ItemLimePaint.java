@@ -14,12 +14,12 @@ import com.bioxx.tfc.Items.ItemDyeCustom;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class ItemDyeBottle extends ItemDyeCustom {
+public class ItemLimePaint extends ItemDyeCustom {
 
 	@SideOnly(Side.CLIENT)
 	protected IIcon[] icons;
 
-	public ItemDyeBottle() {
+	public ItemLimePaint() {
 		this.textureFolder = "dyes/";
 	}
 

@@ -2,12 +2,13 @@ Changelog
 ---------
 
 0.2.0-A5:
-  * Added Buildcraft integration
+  * Added Buildcraft integration!
   * Added Quartz drops from stone
   * Added Gears
-  * Added Steel Buckets for mod liquids (Oil, Fuel etc.)
+  * Added Steel Buckets for mod liquids (Oil, Fuel, Latex)
   * Added Hevea Trees, Latex and Rubber
-	* Added Glue (obtained from bones, animal glue)
+  * Added Glue (bone glue, animal glue)
+  * Added Lime Paint
 
 0.1.4-A4:
   * Now required Forge 10.13.4.1558+

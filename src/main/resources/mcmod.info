@@ -3,7 +3,7 @@
     "modList": [{
         "modid": "tfctech",
         "name": "Shurgent's TFCTech Addon",
-        "description": "§bAdds smeltable items for TerraFirmaCraft integration with technical mods.",
+        "description": "§bCustom integration and additional items for TFC + Tech-mods fusion.\nBase for the TFCTech Modpack (in future).",
         "version": "${mod_version}",
         "mcversion": "${minecraft_version}",
         "url": "http://shurgent.pp.ua/tfctech/",

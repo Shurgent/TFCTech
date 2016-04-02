@@ -26,6 +26,7 @@ import buildcraft.silicon.ItemRedstoneChipset;
 import com.bioxx.tfc.Core.Recipes;
 import com.bioxx.tfc.Handlers.TFCFuelHandler;
 import com.bioxx.tfc.api.TFCBlocks;
+import com.bioxx.tfc.api.TFCFluids;
 import com.bioxx.tfc.api.TFCItems;
 import com.bioxx.tfc.api.Crafting.AnvilManager;
 import com.bioxx.tfc.api.Crafting.AnvilRecipe;
@@ -147,9 +148,9 @@ public class ModRecipes
 		removeRecipe(new ItemStack(Blocks.sticky_piston));
 		
 		// Remove vanila dye recipes
-		/*for (int i = 0; i < 16; i++)
+		for (int i = 0; i < 16; i++)
 			for (int j = 1; j <= 4; j++)
-				removeRecipe(new ItemStack(Items.dye, j, i));*/
+				removeRecipe(new ItemStack(Items.dye, j, i));
 	}
 
 	public static void initialiseAnvil()
@@ -369,30 +370,30 @@ public class ModRecipes
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(TFCItems.singlePlank, 8, 11), new ItemStack(ModItems.logHevea, 1), "itemSaw"));
 		
 		/**
-		 *  Dye Bottles
+		 *  Lime Paint
 		 */
 		// Base colors
-		registerDyeRecipe("black", new ItemStack(TFCItems.dye, 1, 0));
-		registerDyeRecipe("blue", new ItemStack(TFCItems.powder, 1, 6));
-		registerDyeRecipe("yellow", new ItemStack(TFCItems.powder, 1, 7));
-		registerDyeRecipe("green", new ItemStack(TFCItems.powder, 1, 8));
-		registerDyeRecipe("white", new ItemStack(TFCItems.dye, 1, 15));
-		registerDyeRecipe("red", new ItemStack(TFCItems.powder, 1, 5));
+		registerPaintRecipe("black", new ItemStack(TFCItems.dye, 1, 0));
+		registerPaintRecipe("blue", new ItemStack(TFCItems.powder, 1, 6));
+		registerPaintRecipe("yellow", new ItemStack(TFCItems.powder, 1, 7));
+		registerPaintRecipe("green", new ItemStack(TFCItems.powder, 1, 8));
+		registerPaintRecipe("white", new ItemStack(TFCItems.dye, 1, 15));
+		registerPaintRecipe("red", new ItemStack(TFCItems.powder, 1, 5));
 		
 		// Color mixes
-		registerDyeRecipe("lime", new String[] {"green", "white"});
-		registerDyeRecipe("cyan", new String[] {"blue", "green"});
-		registerDyeRecipe("gray", new String[] {"black", "white"});
-		registerDyeRecipe("orange", new String[] {"red", "yellow"});
-		registerDyeRecipe("brown", new String[] {"red", "black"});
-		registerDyeRecipe("pink", new String[] {"red", "white"});
-		registerDyeRecipe("silver", new String[] {"gray", "white"});
-		registerDyeRecipe("silver", new String[] {"black", "white", "white"});
-		registerDyeRecipe("light_blue", new String[] {"blue", "white"});
-		registerDyeRecipe("purple", new String[] {"red", "blue"});
-		registerDyeRecipe("magenta", new String[] {"purple", "pink"});
-		registerDyeRecipe("magenta", new String[] {"blue", "red", "pink"});
-		registerDyeRecipe("magenta", new String[] {"blue", "red", "red", "white"});
+		registerPaintRecipe("lime", new String[] {"green", "white"});
+		registerPaintRecipe("cyan", new String[] {"blue", "green"});
+		registerPaintRecipe("gray", new String[] {"black", "white"});
+		registerPaintRecipe("orange", new String[] {"red", "yellow"});
+		registerPaintRecipe("brown", new String[] {"red", "black"});
+		registerPaintRecipe("pink", new String[] {"red", "white"});
+		registerPaintRecipe("silver", new String[] {"gray", "white"});
+		registerPaintRecipe("silver", new String[] {"black", "white", "white"});
+		registerPaintRecipe("light_blue", new String[] {"blue", "white"});
+		registerPaintRecipe("purple", new String[] {"red", "blue"});
+		registerPaintRecipe("magenta", new String[] {"purple", "pink"});
+		registerPaintRecipe("magenta", new String[] {"blue", "red", "pink"});
+		registerPaintRecipe("magenta", new String[] {"blue", "red", "red", "white"});
 		
 		registerPottery();
 		registerKilnRecipes();
@@ -400,19 +401,16 @@ public class ModRecipes
 		
 	}
 	
-	private static void registerDyeRecipe(String resultDye, ItemStack input) {
-		ItemStack out = new ItemStack(ModItems.dyeBottle, 1, Color.fromName(resultDye).ordinal());
-		GameRegistry.addShapelessRecipe(out, new Object[] {
-				TFCItems.vodka, // FIXME: Container item dupe. Create glass jar for dyes instead of glass bottle.
-				input
-		});
+	private static void registerPaintRecipe(String resultDye, ItemStack input) {
+		ItemStack out = new ItemStack(ModItems.limePaint, 8, Color.fromName(resultDye).ordinal());
+		BarrelManager.getInstance().addRecipe(new BarrelRecipe(input, new FluidStack(TFCFluids.LIMEWATER, 100), out, new FluidStack(TFCFluids.LIMEWATER, 100)).setMinTechLevel(0));
 	}
 
-	private static void registerDyeRecipe(String resultDye, String[] inputs) {
-		ItemStack out = new ItemStack(ModItems.dyeBottle, inputs.length, Color.fromName(resultDye).ordinal());
+	private static void registerPaintRecipe(String resultDye, String[] inputs) {
+		ItemStack out = new ItemStack(ModItems.limePaint, inputs.length, Color.fromName(resultDye).ordinal());
 		Object[] in = new ItemStack[inputs.length];
 		for (int i = 0; i < inputs.length; i++) {
-			in[i] = new ItemStack(ModItems.dyeBottle, 1, Color.fromName(inputs[i]).ordinal()); // FIXME: Bottles dupe
+			in[i] = new ItemStack(ModItems.limePaint, 1, Color.fromName(inputs[i]).ordinal());
 		}
 		GameRegistry.addShapelessRecipe(out, in);
 	}

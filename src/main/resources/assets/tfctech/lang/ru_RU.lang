@@ -201,22 +201,22 @@ item.Rubber Mix.name=Резиновая смесь
 item.Rubber.name=Резина
 
 #// Dyes //
-item.Dye Bottle.lime.name=Бутылка красителя (лаймовый)
-item.Dye Bottle.black.name=Бутылка красителя (черный)
-item.Dye Bottle.blue.name=Бутылка красителя (синий)
-item.Dye Bottle.cyan.name=Бутылка красителя (голубой)
-item.Dye Bottle.gray.name=Бутылка красителя (серый)
-item.Dye Bottle.yellow.name=Бутылка красителя (желтый)
-item.Dye Bottle.orange.name=Бутылка красителя (оранжевый)
-item.Dye Bottle.green.name=Бутылка красителя (зеленый)
-item.Dye Bottle.brown.name=Бутылка красителя (коричневый)
-item.Dye Bottle.pink.name=Бутылка красителя (розовый)
-item.Dye Bottle.silver.name=Бутылка красителя (серебристый)
-item.Dye Bottle.light_blue.name=Бутылка красителя (светло синий)
-item.Dye Bottle.white.name=Бутылка красителя (белый)
-item.Dye Bottle.red.name=Бутылка красителя (красный)
-item.Dye Bottle.purple.name=Бутылка красителя (фиолетовый)
-item.Dye Bottle.magenta.name=Бутылка красителя (малиновый)
+item.Lime Paint.lime.name=Известковая краска (лаймовая)
+item.Lime Paint.black.name=Известковая краска (черная)
+item.Lime Paint.blue.name=Известковая краска (синий)
+item.Lime Paint.cyan.name=Известковая краска (голубая)
+item.Lime Paint.gray.name=Известковая краска (серая)
+item.Lime Paint.yellow.name=Известковая краска (желтая)
+item.Lime Paint.orange.name=Известковая краска (оранжевая)
+item.Lime Paint.green.name=Известковая краска (зеленая)
+item.Lime Paint.brown.name=Известковая краска (коричневая)
+item.Lime Paint.pink.name=Известковая краска (розовая)
+item.Lime Paint.silver.name=Известковая краска (серебристая)
+item.Lime Paint.light_blue.name=Известковая краска (светло синий)
+item.Lime Paint.white.name=Известковая краска (белая)
+item.Lime Paint.red.name=Известковая краска (красная)
+item.Lime Paint.purple.name=Известковая краска (фиолетовая)
+item.Lime Paint.magenta.name=Известковая краска (малиновая)
 
 #// Device parts //
 item.Bowl Mount.name=Крепление для чаши

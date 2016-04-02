@@ -201,22 +201,22 @@ item.Rubber Mix.name=Rubber Mix
 item.Rubber.name=Rubber
 
 #// Dyes //
-item.Dye Bottle.lime.name=Dye Bottle (Lime)
-item.Dye Bottle.black.name=Dye Bottle (Black)
-item.Dye Bottle.blue.name=Dye Bottle (Blue)
-item.Dye Bottle.cyan.name=Dye Bottle (Cyan)
-item.Dye Bottle.gray.name=Dye Bottle (Gray)
-item.Dye Bottle.yellow.name=Dye Bottle (Yellow)
-item.Dye Bottle.orange.name=Dye Bottle (Orange)
-item.Dye Bottle.green.name=Dye Bottle (Green)
-item.Dye Bottle.brown.name=Dye Bottle (Brown)
-item.Dye Bottle.pink.name=Dye Bottle (Pink)
-item.Dye Bottle.silver.name=Dye Bottle (Silver)
-item.Dye Bottle.light_blue.name=Dye Bottle (Light Blue)
-item.Dye Bottle.white.name=Dye Bottle (White)
-item.Dye Bottle.red.name=Dye Bottle (Red)
-item.Dye Bottle.purple.name=Dye Bottle (Purple)
-item.Dye Bottle.magenta.name=Dye Bottle (Magenta)
+item.Lime Paint.lime.name=Lime Paint (Lime)
+item.Lime Paint.black.name=Lime Paint (Black)
+item.Lime Paint.blue.name=Lime Paint (Blue)
+item.Lime Paint.cyan.name=Lime Paint (Cyan)
+item.Lime Paint.gray.name=Lime Paint (Gray)
+item.Lime Paint.yellow.name=Lime Paint (Yellow)
+item.Lime Paint.orange.name=Lime Paint (Orange)
+item.Lime Paint.green.name=Lime Paint (Green)
+item.Lime Paint.brown.name=Lime Paint (Brown)
+item.Lime Paint.pink.name=Lime Paint (Pink)
+item.Lime Paint.silver.name=Lime Paint (Silver)
+item.Lime Paint.light_blue.name=Lime Paint (Light Blue)
+item.Lime Paint.white.name=Lime Paint (White)
+item.Lime Paint.red.name=Lime Paint (Red)
+item.Lime Paint.purple.name=Lime Paint (Purple)
+item.Lime Paint.magenta.name=Lime Paint (Magenta)
 
 #// Device parts //
 item.Bowl Mount.name=Bowl Mount
