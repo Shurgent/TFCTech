@@ -1,4 +1,6 @@
-# TFCTech
+![Logo](https://raw.githubusercontent.com/Shurgent/TFCTech/master/src/main/resources/assets/tfctech/textures/TFCTechLogo.png)
+==============
+
 TFCTech - Addon for TerraFirmaCraft.
 
 Custom integration and additional items for TFC + Tech-mods fusion.
