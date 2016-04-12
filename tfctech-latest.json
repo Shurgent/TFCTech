@@ -1,12 +1,6 @@
 ﻿{
-	"version": "0.2.0-A5",
+	"version": "0.2.1-A6",
 	"changelog": [
-		"Added Buildcraft integration",
-		"Added Quartz drops from stone",
-		"Added Gears",
-		"Added Steel Buckets for mod liquids (Oil, Fuel etc.)",
-		"Added Hevea Trees, Latex and Rubber",
-		"Added Glue (obtained from bones, animal glue)",
-		"Added Lime Paint"
+		"Fixed consuming entire chisel when crafting nuggets (thanks KsterNator)"
 	]
 }

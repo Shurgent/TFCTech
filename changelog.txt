@@ -1,6 +1,9 @@
 Changelog
 ---------
 
+0.2.1-A6:
+  * Fixed consuming entire chisel when crafting nuggets (thanks KsterNator)
+
 0.2.0-A5:
   * Added Buildcraft integration!
   * Added Quartz drops from stone

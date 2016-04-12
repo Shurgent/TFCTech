@@ -1,9 +1,13 @@
 package ua.pp.shurgent.tfctech.handlers;
 
+import java.util.List;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
+import ua.pp.shurgent.tfctech.items.ItemNugget;
 import buildcraft.BuildCraftCore;
 
 import com.bioxx.tfc.api.TFCItems;
@@ -11,37 +15,39 @@ import com.bioxx.tfc.api.TFCItems;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
 
-public class CraftingHandler
-{
+public class CraftingHandler {
 	@SubscribeEvent
-	public void onCrafting(ItemCraftedEvent e)
-	{
+	public void onCrafting(ItemCraftedEvent e) {
 		EntityPlayer player = e.player;
 		ItemStack itemstack = e.crafting;
 		Item item = itemstack.getItem();
 		IInventory inventory = e.craftMatrix;
 		
-		if (item == null || inventory == null) return;
+		if (item == null || inventory == null)
+			return;
 		
-		// Shears dammage
+		// Tool dammage
 		if (item == BuildCraftCore.paintbrushItem) {
-			handleItem(player, inventory, new Item[] {TFCItems.shears});
+			handleItem(player, inventory, new Item[] {
+				TFCItems.shears
+			});
+		} else if (item instanceof ItemNugget) {
+			List<ItemStack> chisels = OreDictionary.getOres("itemChisel", false);
+			handleItem(player, inventory, chisels);
 		}
 	}
-
-	private static void damageItem(EntityPlayer entityPlayer, IInventory inventory, int index, Item shiftedIndex)
-	{
-		if (inventory.getStackInSlot(index).getItem() != shiftedIndex) 
+	
+	private static void damageItem(EntityPlayer entityPlayer, IInventory inventory, int index, Item shiftedIndex) {
+		if (inventory.getStackInSlot(index).getItem() != shiftedIndex)
 			return;
 		
 		ItemStack item = inventory.getStackInSlot(index).copy();
-		if (item == null) 
+		if (item == null)
 			return;
-
-		item.damageItem(1 , entityPlayer);
 		
-		if (item.getItemDamage() != 0 || entityPlayer.capabilities.isCreativeMode)
-		{
+		item.damageItem(1, entityPlayer);
+		
+		if (item.getItemDamage() != 0 || entityPlayer.capabilities.isCreativeMode) {
 			inventory.setInventorySlotContents(index, item);
 			inventory.getStackInSlot(index).stackSize = inventory.getStackInSlot(index).stackSize + 1;
 			
@@ -49,32 +55,24 @@ public class CraftingHandler
 				inventory.getStackInSlot(index).stackSize = 2;
 		}
 	}
-
-	/*private static ItemStack getItemStack(IInventory inventory, Item item)
-	{
-		for (int index = 0; index < inventory.getSizeInventory(); index++)
-		{
-			if(inventory.getStackInSlot(index) == null)
-				continue;
-			
-			if(inventory.getStackInSlot(index).getItem() == item)
-				return inventory.getStackInSlot(index);
-		}
-		
-		return null;
-	}*/
-
-	private static void handleItem(EntityPlayer entityPlayer, IInventory inventory, Item[] items)
-	{
-		for (int index = 0; index < inventory.getSizeInventory(); index++)
-		{
+	
+	private static void handleItem(EntityPlayer entityPlayer, IInventory inventory, Item[] items) {
+		for (int index = 0; index < inventory.getSizeInventory(); index++) {
 			if (inventory.getStackInSlot(index) == null)
 				continue;
 			
-			for (int itemIndex = 0; itemIndex < items.length; itemIndex++)
-			{
+			for (int itemIndex = 0; itemIndex < items.length; itemIndex++) {
 				damageItem(entityPlayer, inventory, index, items[itemIndex]);
 			}
+		}
+	}
+	
+	public static void handleItem(EntityPlayer entityPlayer, IInventory inventory, List<ItemStack> items) {
+		for (int index = 0; index < inventory.getSizeInventory(); index++) {
+			if (inventory.getStackInSlot(index) == null)
+				continue;
+			for (ItemStack is : items)
+				damageItem(entityPlayer, inventory, index, is.getItem());
 		}
 	}
 }
