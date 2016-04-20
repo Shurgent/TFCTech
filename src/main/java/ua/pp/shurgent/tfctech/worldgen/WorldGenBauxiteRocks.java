@@ -26,11 +26,13 @@ public class WorldGenBauxiteRocks implements IWorldGenerator {
 		if ((world.isAirBlock(i, j + 1, k) || world.getBlock(i, j + 1, k) == Blocks.snow || world.getBlock(i, j + 1, k) == TFCBlocks.tallGrass)
 				&& (world.getBlock(i, j, k).getMaterial() == Material.grass || world.getBlock(i, j, k).getMaterial() == Material.rock)
 				&& world.getBlock(i, j, k).isOpaqueCube()) {
-			if (world.setBlock(i, j + 1, k, TFCBlocks.worldItem, 0, 2)) {
-				TEWorldItem te = (TEWorldItem) world.getTileEntity(i, j + 1, k);
+			if (world.rand.nextInt(3) == 0) {
 				ItemStack is = getCoreSample(world, i, j, k);
-				if (world.rand.nextInt(3) == 0 && is != null) {
-					te.storage[0] = is;
+				if (is != null) {
+					if (world.setBlock(i, j + 1, k, TFCBlocks.worldItem, 0, 2)) {
+						TEWorldItem te = (TEWorldItem) world.getTileEntity(i, j + 1, k);
+						te.storage[0] = is;
+					}
 				}
 			}
 		}

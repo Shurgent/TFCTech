@@ -6,8 +6,8 @@ public class ModDetails {
 
 	public static final int VersionMajor = 0;
 	public static final int VersionMinor = 2;
-	public static final int VersionRevision = 1;
-	public static final String VersionSuffix = "-A6";
+	public static final int VersionRevision = 2;
+	public static final String VersionSuffix = "-A7";
 
 	public static final String ModVersion = VersionMajor + "." + VersionMinor + "." + VersionRevision + VersionSuffix;
 	public static final String ModDependencies =

@@ -55,6 +55,9 @@ public class ModOptions {
 	
 	public static boolean cfgHeveaDamage;
 	public static int cfgHeveaMaxDamage;
+	public static int cfgHeveaSpawnChanceIncRain500;
+	public static int cfgHeveaSpawnChanceIncIdealRain;
+	public static int cfgHeveaSpawnChanceIncIdealTemp;
 	
 	// TFC ore config
 	private static Configuration oresConfig;
@@ -107,6 +110,9 @@ public class ModOptions {
 		
 		cfgHeveaDamage = getBooleanFor(config, WORLDGEN, "HeveaDamageEnable", true, "Set to false to disable Hevea tree damage from tapping.");
 		cfgHeveaMaxDamage = getIntFor(config, WORLDGEN, "HeveaMaxDamage", 15, 1, 15, "Number of Hevea trunk scratches before the tree gets damaged.");
+		cfgHeveaSpawnChanceIncIdealRain = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealRain", 10, 0, 50, "Hevea spawn chance increment when rainfall value between 1500 and 2000.");
+		cfgHeveaSpawnChanceIncIdealTemp = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealTemp", 10, 0, 50, "Hevea spawn chance increment when average biome temperature between 25 and 30.");
+		cfgHeveaSpawnChanceIncRain500 = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncRain500", 5, 0, 50, "Hevea spawn chance increment when rainfall value between 500 and 1500.");
 		
 		// === Furnace
 		cfgEnableFurnaceClayFiring = getBooleanFor(config, FURNACE, "FurnaceClayFiringEnable", true, "Set to false to disable furnace clay firing recipes.");

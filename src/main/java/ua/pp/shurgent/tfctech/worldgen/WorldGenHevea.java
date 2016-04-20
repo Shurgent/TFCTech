@@ -5,6 +5,7 @@ import java.util.Random;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import ua.pp.shurgent.tfctech.core.ModOptions;
 
 import com.bioxx.tfc.Core.TFC_Climate;
 import com.bioxx.tfc.Core.TFC_Core;
@@ -78,13 +79,13 @@ public class WorldGenHevea implements IWorldGenerator {
 		int out = 0;
 
 		if (temperature >= treeTempMin && temperature <= treeTempMax)
-			out += 10;
+			out += ModOptions.cfgHeveaSpawnChanceIncIdealTemp;
 		if (rainfall >= treeRainMin && rainfall <= treeRainMax)
-			out += 10;
+			out += ModOptions.cfgHeveaSpawnChanceIncIdealRain;
 		if (rainfall >= 500 && rainfall < treeRainMin)
-			out += 5;
+			out += ModOptions.cfgHeveaSpawnChanceIncRain500;
 		if (evt < treeEVTMin || evt > treeEVTMax)
-			out += -1;
+			out = -1;
 
 		return out;
 	}

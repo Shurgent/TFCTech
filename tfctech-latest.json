@@ -1,6 +1,7 @@
 ﻿{
-	"version": "0.2.1-A6",
+	"version": "0.2.2-A7",
 	"changelog": [
-		"Fixed consuming entire chisel when crafting nuggets (thanks KsterNator)"
+		"Fixed bauxite small rocks world gen bug (I hope so)",
+		"Added Hevea Trees spawn chance options in TFCTech.cfg"
 	]
 }
