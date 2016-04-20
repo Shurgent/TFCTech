@@ -69,7 +69,10 @@ public class ModRecipes
 		
 		// == Integration
 		removeBCRecipes();
+		removeIERecipes();
+		
 		registerBCRecipes();
+		registerIERecipes();
 		
 		registerFurnaceFuel();
 		registerFurnaceRecipes();
@@ -1086,6 +1089,31 @@ public class ModRecipes
 	
 	public static void registerPowerPipeRecipe(Item out, Item itemPipe) {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(out, new Object [] { itemPipe, "dustRedstone" }));
+	}
+	
+	// === Immersive Engineering ==============================================
+	
+	public static void removeIERecipes() {
+		if (!TFCTech.enableIE)
+			return;
+		
+	}
+	
+	public static void registerIERecipes() {
+		if (!TFCTech.enableIE)
+			return;
+		
+		// Ceramic Insulator Part
+		craftingManager.addRecipe(new ItemStack(ModItems.potteryInsulatorPart, 1), new Object[] {
+			"    #",
+			"##  #",
+			"##  #",
+			"    #",
+			"    #",
+			'#', new ItemStack(TFCItems.flatClay, 1, 1)});
+		kilnCraftingManager.addRecipe(new KilnRecipe(new ItemStack(ModItems.potteryInsulatorPart, 1, 0), 0, new ItemStack(ModItems.potteryInsulatorPart, 1, 1)));		
+		
+		
 	}
 	
 }
