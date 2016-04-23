@@ -20,7 +20,7 @@ public class ModUtils {
 	public static void checkUpdate(EntityPlayer player) {
 		//TODO Add option in config to check only releases or alpha/beta builds too.
         try {
-            JsonObject object = new JsonParser().parse(getSite("http://shurgent.pp.ua/downloads/tfctech/tfctech-latest.json", "utf8")).getAsJsonObject();
+            JsonObject object = new JsonParser().parse(getSite("https://raw.githubusercontent.com/Shurgent/TFCTech/master/tfctech-latest.json", "utf8")).getAsJsonObject();
             String ver = object.get("version").getAsString(); 
             
             if (!ver.equals(ModDetails.ModVersion)) {
@@ -45,7 +45,8 @@ public class ModUtils {
                         "}");
                 player.addChatComponentMessage(component);
                 
-            	player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.WHITE + "or"));
+            	/*
+                player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.WHITE + "or"));
             	component = IChatComponent.Serializer.func_150699_a("{\n" +
                         "\"text\":\"Project Site\",\n" +
                         "\"color\":\"yellow\",\n" +
@@ -62,6 +63,7 @@ public class ModUtils {
                         "}\n" +
                         "}");
                 player.addChatComponentMessage(component);
+                */
                 
                 JsonArray cl = object.get("changelog").getAsJsonArray();
                 player.addChatComponentMessage(new ChatComponentTranslation(EnumChatFormatting.AQUA + "Changelog:"));
@@ -70,7 +72,7 @@ public class ModUtils {
                 }
                 
             } else {
-            	TFCTech.LOG.info("Mod version is up to date.");
+            	TFCTech.LOG.info("TFCTech Addon version is up to date.");
             }
         } catch (Exception e) {
             player.addChatComponentMessage(new ChatComponentTranslation("[TFCTech] Failed to check for update."));

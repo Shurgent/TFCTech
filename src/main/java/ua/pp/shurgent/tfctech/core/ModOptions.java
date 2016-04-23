@@ -55,9 +55,12 @@ public class ModOptions {
 	
 	public static boolean cfgHeveaDamage;
 	public static int cfgHeveaMaxDamage;
+	public static int cfgHeveaSpawnChanceBase;
+	public static int cfgHeveaSpawnChanceIncIdealEVT;
 	public static int cfgHeveaSpawnChanceIncRain500;
 	public static int cfgHeveaSpawnChanceIncIdealRain;
 	public static int cfgHeveaSpawnChanceIncIdealTemp;
+	public static int cfgHeveaSpawnChanceIncIdealClimate;
 	
 	// TFC ore config
 	private static Configuration oresConfig;
@@ -110,9 +113,12 @@ public class ModOptions {
 		
 		cfgHeveaDamage = getBooleanFor(config, WORLDGEN, "HeveaDamageEnable", true, "Set to false to disable Hevea tree damage from tapping.");
 		cfgHeveaMaxDamage = getIntFor(config, WORLDGEN, "HeveaMaxDamage", 15, 1, 15, "Number of Hevea trunk scratches before the tree gets damaged.");
-		cfgHeveaSpawnChanceIncIdealRain = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealRain", 10, 0, 50, "Hevea spawn chance increment when rainfall value between 1500 and 2000.");
-		cfgHeveaSpawnChanceIncIdealTemp = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealTemp", 10, 0, 50, "Hevea spawn chance increment when average biome temperature between 25 and 30.");
-		cfgHeveaSpawnChanceIncRain500 = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncRain500", 5, 0, 50, "Hevea spawn chance increment when rainfall value between 500 and 1500.");
+		cfgHeveaSpawnChanceBase = getIntFor(config, WORLDGEN, "HeveaSpawnChanceBase", 0, 0, 100, "Hevea spawn base chance. 0 = no trees.");
+		cfgHeveaSpawnChanceIncIdealEVT = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealEVT", 1, 0, 100, "Hevea spawn chance increment when EVT value within range 0-2.");
+		cfgHeveaSpawnChanceIncIdealRain = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealRain", 5, 0, 100, "Hevea spawn chance increment when rainfall value within range 1500-2000.");
+		cfgHeveaSpawnChanceIncIdealTemp = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealTemp", 5, 0, 100, "Hevea spawn chance increment when average biome temperature within range 25-30.");
+		cfgHeveaSpawnChanceIncRain500 = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncRain500", 1, 0, 100, "Hevea spawn chance increment when rainfall value within range 500-1500.");
+		cfgHeveaSpawnChanceIncIdealClimate = getIntFor(config, WORLDGEN, "HeveaSpawnChanceIncIdealClimate", 15, 0, 100, "Hevea spawn chance increment in ideal climate.");
 		
 		// === Furnace
 		cfgEnableFurnaceClayFiring = getBooleanFor(config, FURNACE, "FurnaceClayFiringEnable", true, "Set to false to disable furnace clay firing recipes.");

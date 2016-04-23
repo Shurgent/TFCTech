@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+0.2.3-A8:
+  * Changed update checker
+  * Changed Hevea spawn, added more spawn chance options in TFCTech.cfg
+
 0.2.2-A7:
   * Fixed bauxite small rocks world gen bug (I hope so)
   * Added Hevea Trees spawn chance options in TFCTech.cfg 

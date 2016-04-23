@@ -8,7 +8,6 @@ import net.minecraft.world.gen.feature.WorldGenerator;
 import ua.pp.shurgent.tfctech.core.ModOptions;
 
 import com.bioxx.tfc.Core.TFC_Climate;
-import com.bioxx.tfc.Core.TFC_Core;
 import com.bioxx.tfc.WorldGen.TFCBiome;
 import com.bioxx.tfc.api.Constant.Global;
 
@@ -19,6 +18,9 @@ public class WorldGenHevea implements IWorldGenerator {
 	private float evt;
 	private float rainfall;
 	private float temperature = 20f;
+	private int tl0;
+	private int tl1;
+	private int tl2;
 
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
@@ -31,6 +33,13 @@ public class WorldGenHevea implements IWorldGenerator {
 			if (biome == TFCBiome.OCEAN || biome == TFCBiome.DEEP_OCEAN)
 				return;
 
+			tl0 = TFC_Climate.getTreeLayer(world, chunkX, Global.SEALEVEL, chunkZ, 0);
+			tl1 = TFC_Climate.getTreeLayer(world, chunkX, Global.SEALEVEL, chunkZ, 1);
+			tl2 = TFC_Climate.getTreeLayer(world, chunkX, Global.SEALEVEL, chunkZ, 2);
+			// If at least one tree layer present, otherwise no Heveas
+			if (tl0 == -1 && tl1 == -1 && tl2 == -1)
+				return; 
+			
 			rainfall = TFC_Climate.getRainfall(world, chunkX, 0, chunkZ);
 			evt = TFC_Climate.getCacheManager(world).getEVTLayerAt(chunkX + 8, chunkZ + 8).floatdata1;
 			generateTree(random, chunkX, chunkZ, world);
@@ -53,13 +62,8 @@ public class WorldGenHevea implements IWorldGenerator {
 			yCoord = world.getHeightValue(xCoord, zCoord);
 
 			temperature = TFC_Climate.getBioTemperatureHeight(world, xCoord, world.getHeightValue(xCoord, zCoord), zCoord);
+
 			int spawnChance = this.treeSpawnChance();
-
-			if (getNearWater(world, xCoord, yCoord, zCoord)) {
-				rainfall *= 2;
-				evt /= 2;
-			}
-
 			if (random.nextInt(100) < spawnChance) {
 				gen.generate(world, random, xCoord, yCoord, zCoord);
 			}
@@ -76,29 +80,25 @@ public class WorldGenHevea implements IWorldGenerator {
 		float treeTempMin = 25;
 		float treeTempMax = 30;
 
-		int out = 0;
+		int out = ModOptions.cfgHeveaSpawnChanceBase;
 
-		if (temperature >= treeTempMin && temperature <= treeTempMax)
+		boolean idealTemp = temperature >= treeTempMin && temperature <= treeTempMax;
+		boolean idealRainfall = rainfall >= treeRainMin && rainfall <= treeRainMax;
+		boolean idealEVT = evt >= treeEVTMin && evt <= treeEVTMax;
+		
+		if (idealTemp && idealRainfall && idealEVT) // Ideal climate conditions
+			return out + ModOptions.cfgHeveaSpawnChanceIncIdealClimate;
+		
+		if (idealTemp)
 			out += ModOptions.cfgHeveaSpawnChanceIncIdealTemp;
-		if (rainfall >= treeRainMin && rainfall <= treeRainMax)
+		if (idealRainfall)
 			out += ModOptions.cfgHeveaSpawnChanceIncIdealRain;
 		if (rainfall >= 500 && rainfall < treeRainMin)
 			out += ModOptions.cfgHeveaSpawnChanceIncRain500;
-		if (evt < treeEVTMin || evt > treeEVTMax)
-			out = -1;
+		if (idealEVT)
+			out += ModOptions.cfgHeveaSpawnChanceIncIdealEVT;
 
 		return out;
 	}
 
-	public boolean getNearWater(World world, int x, int y, int z) {
-		for (int x1 = -4; x1 < 5; ++x1) {
-			for (int z1 = -4; z1 < 5; ++z1) {
-				for (int y1 = -2; y1 < 1; ++y1) {
-					if (world.blockExists(x + x1, y + y1, z + z1) && TFC_Core.isWater(world.getBlock(x + x1, y + y1, z + z1)))
-						return true;
-				}
-			}
-		}
-		return false;
-	}
 }
