@@ -15,6 +15,16 @@ item.Constantan Double Ingot.name=Двойной слиток константа
 item.Invar Ingot.name=Слиток инвара
 item.Invar Double Ingot.name=Двойной слиток инвара
 
+#// Sheets //
+item.Aluminum Sheet.name=Алюминиевый лист
+item.Aluminum Double Sheet.name=Алюминиевый двойной лист
+item.Electrum Sheet.name=Лист электрума
+item.Electrum Double Sheet.name=Двойной лист электрума
+item.Constantan Sheet.name=Лист константана
+item.Constantan Double Sheet.name=Двойной лист константана
+item.Invar Sheet.name=Лист инвара
+item.Invar Double Sheet.name=Двойной лист инвара
+
 #// Unshaped //
 item.Aluminum Unshaped.name=Алюминиевая заготовка
 item.Electrum Unshaped.name=Заготовка электрума
@@ -222,6 +232,12 @@ item.Lime Paint.magenta.name=Известковая краска (малинов
 item.Bowl Mount.name=Крепление для чаши
 item.Groove.name=Желоб
 item.Wrought Iron Stripe.name=Полоска кованого железа
+item.Tin Stripe.name=Оловянная полоска
+item.Aluminum Stripe.name=Алюминиевая полоска
+item.Copper Stripe.name=Медная полоска
+item.Gold Stripe.name=Золотая полоска
+item.Electrum Stripe.name=Полоска электрума
+item.Steel Stripe.name=Стальная полоска
 
 #// Integration //
 item.Drill Head.name=Наконечник бура
@@ -289,6 +305,16 @@ item.Glue.name=Клей
 item.Dixie.name=Котелок (пустой)
 item.Dixie Bones.name=Котелок (вода+кости)
 item.Dixie Glue.name=Котелок (клей)
+
+item.Insulator Part.Clay Insulator Part.name=Глиняная часть изолятора
+item.Insulator Part.Ceramic Insulator Part.name=Керамическая часть изолятора
+item.Ceramic Plate.Clay Plate.name=Глиняная пластина
+item.Ceramic Plate.Ceramic Plate.name=Керамическая пластина
+item.Capacitor Electrode.name=Электрод конденсатора
+item.MLCC Block.name=Блок MLCC
+item.LV Capacitor Base.name=Основа LV конденсатора
+item.MV Capacitor Base.name=Основа MV конденсатора
+item.HV Capacitor Base.name=Основа HV конденсатора
 
 #=======
 #= Ore =

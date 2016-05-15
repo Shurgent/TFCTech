@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+0.2.4-A9:
+  * Fixed crash on launch without Buildcraft
+  * Some initial Immersive Engineering integration
+
 0.2.3-A8:
   * Changed update checker
   * Changed Hevea spawn, added more spawn chance options in TFCTech.cfg

@@ -15,6 +15,16 @@ item.Constantan Double Ingot.name=Constantan Double Ingot
 item.Invar Ingot.name=Invar Ingot
 item.Invar Double Ingot.name=Invar Double Ingot
 
+#// Sheets //
+item.Aluminum Sheet.name=Aluminum Sheet
+item.Aluminum Double Sheet.name=Aluminum Double Sheet
+item.Electrum Sheet.name=Electrum Sheet
+item.Electrum Double Sheet.name=Electrum Double Sheet
+item.Constantan Sheet.name=Constantan Sheet
+item.Constantan Double Sheet.name=Constantan Double Sheet
+item.Invar Sheet.name=Invar Sheet
+item.Invar Double Sheet.name=Invar Double Sheet
+
 #// Unshaped //
 item.Aluminum Unshaped.name=Unshaped: Aluminum
 item.Electrum Unshaped.name=Unshaped: Electrum
@@ -221,7 +231,13 @@ item.Lime Paint.magenta.name=Lime Paint (Magenta)
 #// Device parts //
 item.Bowl Mount.name=Bowl Mount
 item.Groove.name=Groove
-item.Wrought Iron Stripe.name=Wrought Iron Stripe
+item.Wrought Iron Stripe.name=Wrought Iron Strip
+item.Tin Stripe.name=Tin Strip
+item.Aluminum Stripe.name=Aluminum Strip
+item.Copper Stripe.name=Copper Strip
+item.Gold Stripe.name=Gold Strip
+item.Electrum Stripe.name=Electrum Strip
+item.Steel Stripe.name=Steel Strip
 
 #// Integration //
 item.Drill Head.name=Drill Head
@@ -289,6 +305,16 @@ item.Glue.name=Glue
 item.Dixie.name=Dixie (Empty)
 item.Dixie Bones.name=Dixie (Water+Bones)
 item.Dixie Glue.name=Dixie (Glue)
+
+item.Insulator Part.Clay Insulator Part.name=Clay Insulator Part
+item.Insulator Part.Ceramic Insulator Part.name=Ceramic Insulator Part
+item.Ceramic Plate.Clay Plate.name=Clay Plate
+item.Ceramic Plate.Ceramic Plate.name=Ceramic Plate
+item.Capacitor Electrode.name=Capacitor Electrode
+item.MLCC Block.name=MLCC Block
+item.LV Capacitor Base.name=LV Capacitor Base
+item.MV Capacitor Base.name=MV Capacitor Base
+item.HV Capacitor Base.name=HV Capacitor Base
 
 #=======
 #= Ore =

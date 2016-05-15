@@ -1,13 +1,14 @@
 package ua.pp.shurgent.tfctech.core;
 
+
 public class ModDetails {
 	public static final String ModID = "tfctech";
 	public static final String ModName = "TFCTech";
 
 	public static final int VersionMajor = 0;
 	public static final int VersionMinor = 2;
-	public static final int VersionRevision = 3;
-	public static final String VersionSuffix = "-A8";
+	public static final int VersionRevision = 4;
+	public static final String VersionSuffix = "-A9";
 
 	public static final String ModVersion = VersionMajor + "." + VersionMinor + "." + VersionRevision + VersionSuffix;
 	public static final String ModDependencies =

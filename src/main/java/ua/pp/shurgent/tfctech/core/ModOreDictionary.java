@@ -234,6 +234,8 @@ public class ModOreDictionary {
 		for (Color color : Color.VALUES) {
 			OreDictionary.registerOre(color.getDye(), new ItemStack(ModItems.limePaint, 1, color.ordinal()));
 		}
+		
+		OreDictionary.registerOre("plateCeramic", new ItemStack(ModItems.potteryCeramicPlate, 1, 1));
 	}
 	
 }

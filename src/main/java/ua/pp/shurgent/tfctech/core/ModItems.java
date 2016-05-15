@@ -4,52 +4,54 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import ua.pp.shurgent.tfctech.Globals;
 import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsBlueSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsBronze;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsCopper;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsElectrum;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsLead;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsNullify;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsRedSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsSterlingSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsWroughtIron;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.fluids.PipeFluidsZinc;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerBlueSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerBronze;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerCopper;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerElectrum;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerLead;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerRedSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerSterlingSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.power.PipePowerWroughtIron;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.structure.PipeStructureLead;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsBlackSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsBlueSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsBronze;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsCopper;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsElectrum;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsFilter;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsLead;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsMarker;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsMarkerExtractor;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsNullify;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsRedSteel;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsSterlingSilver;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsWroughtIron;
-import ua.pp.shurgent.tfctech.blocks.bc.pipes.transport.PipeItemsZinc;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBlueSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBronze;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsCopper;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsElectrum;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsLead;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsNullify;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsRedSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsSterlingSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsWroughtIron;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsZinc;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerBlueSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerBronze;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerCopper;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerElectrum;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerLead;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerRedSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSterlingSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerWroughtIron;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.structure.PipeStructureLead;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBlackSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBlueSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBronze;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsCopper;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsElectrum;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsFilter;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsLead;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsMarker;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsMarkerExtractor;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsNullify;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsRedSteel;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsSterlingSilver;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsWroughtIron;
+import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsZinc;
 import ua.pp.shurgent.tfctech.items.ItemCraftComponent;
 import ua.pp.shurgent.tfctech.items.ItemDixie;
 import ua.pp.shurgent.tfctech.items.ItemDust;
-import ua.pp.shurgent.tfctech.items.ItemLimePaint;
 import ua.pp.shurgent.tfctech.items.ItemGear;
 import ua.pp.shurgent.tfctech.items.ItemGearPiece;
 import ua.pp.shurgent.tfctech.items.ItemGroove;
 import ua.pp.shurgent.tfctech.items.ItemHeveaLog;
+import ua.pp.shurgent.tfctech.items.ItemLimePaint;
 import ua.pp.shurgent.tfctech.items.ItemModIngot;
 import ua.pp.shurgent.tfctech.items.ItemModMeltedMetal;
+import ua.pp.shurgent.tfctech.items.ItemModMetalSheet;
+import ua.pp.shurgent.tfctech.items.ItemModMetalSheet2x;
 import ua.pp.shurgent.tfctech.items.ItemModOre;
 import ua.pp.shurgent.tfctech.items.ItemModOreSmall;
 import ua.pp.shurgent.tfctech.items.ItemMount;
@@ -80,7 +82,6 @@ import buildcraft.BuildCraftTransport;
 import buildcraft.core.BCCreativeTab;
 import buildcraft.core.BCRegistry;
 import buildcraft.transport.BlockGenericPipe;
-import buildcraft.transport.ItemPipe;
 import buildcraft.transport.Pipe;
 
 import com.bioxx.tfc.Core.TFCTabs;
@@ -224,8 +225,26 @@ public class ModItems {
 	public static Item tinPlate2x;
 	public static Item zincPlate2x;
 	
+	// Sheets
+	public static Item aluminumSheet;
+	public static Item aluminumSheet2x;
+	public static Item electrumSheet;
+	public static Item electrumSheet2x;
+	public static Item constantanSheet;
+	public static Item constantanSheet2x;
+	public static Item invarSheet;
+	public static Item invarSheet2x;
+	
+	// Stripes
+	public static Item tinStripe;
+	public static Item aluminumStripe;
+	public static Item copperStripe;
+	public static Item goldStripe;
+	public static Item electrumStripe;
+	public static Item ironStripe;
+	public static Item steelStripe;
+	
 	// Device components
-	public static Item stripe;
 	public static Item groove;
 	public static Item mount;
 	
@@ -246,6 +265,7 @@ public class ModItems {
 	
 	// Crafting parts
 	public static Item potteryInsulatorPart;
+	public static Item potteryCeramicPlate;
 	
 	// Tools
 	public static Item latexBowl;
@@ -286,6 +306,8 @@ public class ModItems {
 	public static Item wroughtIronGear;
 	public static Item steelGear;
 	public static Item tinGear;
+	
+	public static Item[] bronzeGears;
 	
 	public static Item brassSleeve;
 	public static Item tinSleeve;
@@ -363,6 +385,11 @@ public class ModItems {
 	public static Item pipeFrameBronze;
 	public static Item pipeFrameCopper;
 	
+	public static Item capacitorElectrode;
+	public static Item mlccBlock;
+	public static Item capacitorBaseLV;
+	public static Item capacitorBaseMV;
+	public static Item capacitorBaseHV;
 	//===========================================
 	
 	// === Other ================================
@@ -373,6 +400,8 @@ public class ModItems {
 	public static Item glue;
 	
 	//===========================================
+	
+	//public static Item[] meltedMetal;
 	
 	public static void initialise() {
 		TFCTech.LOG.info("Registering Items");
@@ -576,6 +605,21 @@ public class ModItems {
 		tinPlate2x = new ItemPlate("Tin", ModOptions.cfgPlate2xMetalAmount).setUnlocalizedName("Dense Tin Plate");
 		zincPlate2x = new ItemPlate("Zinc", ModOptions.cfgPlate2xMetalAmount).setUnlocalizedName("Dense Zinc Plate");
 		
+		// == Sheets
+		String[] names = {"Aluminum", "Electrum", "Constantan", "Invar"};
+		
+		int i = 0;
+		aluminumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
+		electrumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
+		constantanSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
+		invarSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
+		
+		i = 0;
+		aluminumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
+		electrumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
+		constantanSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
+		invarSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
+		
 		// == Gears
 		bismuthBronzeGearPiece = new ItemGearPiece("Bismuth Bronze", 100).setUnlocalizedName("Bismuth Bronze Gear Piece");
 		blackBronzeGearPiece = new ItemGearPiece("Black Bronze", 100).setUnlocalizedName("Black Bronze Gear Piece");
@@ -637,8 +681,16 @@ public class ModItems {
 		
 		latexBowl = new ItemModPotteryLatexBowl().setUnlocalizedName("Latex Bowl");
 		
+		// == Stripes
+		tinStripe = new ItemStripe("Tin", 50).setUnlocalizedName("Tin Stripe");
+		aluminumStripe = new ItemStripe("Aluminum", 50).setUnlocalizedName("Aluminum Stripe");
+		copperStripe = new ItemStripe("Copper", 50).setUnlocalizedName("Copper Stripe");
+		goldStripe = new ItemStripe("Gold", 50).setUnlocalizedName("Gold Stripe");
+		electrumStripe = new ItemStripe("Electrum", 50).setUnlocalizedName("Electrum Stripe");
+		ironStripe = new ItemStripe("Wrought Iron", 50).setUnlocalizedName("Wrought Iron Stripe");
+		steelStripe = new ItemStripe("Steel", 50).setUnlocalizedName("Steel Stripe");
+		
 		// == Device components
-		stripe = new ItemStripe("Wrought Iron", 50).setUnlocalizedName("Wrought Iron Stripe"); // 4 stripes from 1 sheet
 		groove = new ItemGroove("Wrought Iron", 50).setUnlocalizedName("Groove");
 		mount = new ItemMount("Wrought Iron", 100).setUnlocalizedName("Bowl Mount");
 		
@@ -671,6 +723,13 @@ public class ModItems {
 		if (TFCTech.enableIE) {
 			potteryInsulatorPart = new ItemModPotteryBase().setMetaNames(new String[]
 					{ "Clay Insulator Part", "Ceramic Insulator Part" }).setUnlocalizedName("Insulator Part").setCreativeTab(TFCTabs.TFC_POTTERY);
+			potteryCeramicPlate = new ItemModPotteryBase().setMetaNames(new String[]
+					{ "Clay Plate", "Ceramic Plate" }).setUnlocalizedName("Ceramic Plate").setCreativeTab(TFCTabs.TFC_POTTERY);
+			capacitorElectrode = new ItemCraftComponent().setUnlocalizedName("Capacitor Electrode");
+			mlccBlock = new ItemCraftComponent().setUnlocalizedName("MLCC Block");
+			capacitorBaseLV = new ItemCraftComponent().setUnlocalizedName("LV Capacitor Base");
+			capacitorBaseMV = new ItemCraftComponent().setUnlocalizedName("MV Capacitor Base");
+			capacitorBaseHV = new ItemCraftComponent().setUnlocalizedName("HV Capacitor Base");
 		}
 		
 		steelBucketEmpty = new ItemModSteelBucket(Blocks.air).setUnlocalizedName("Steel Bucket Empty");
@@ -871,6 +930,16 @@ public class ModItems {
 		GameRegistry.registerItem(tinPlate2x, tinPlate2x.getUnlocalizedName());
 		GameRegistry.registerItem(zincPlate2x, zincPlate2x.getUnlocalizedName());
 		
+		// Sheets
+		GameRegistry.registerItem(aluminumSheet, aluminumSheet.getUnlocalizedName());
+		GameRegistry.registerItem(electrumSheet, electrumSheet.getUnlocalizedName());
+		GameRegistry.registerItem(constantanSheet, constantanSheet.getUnlocalizedName());
+		GameRegistry.registerItem(invarSheet, invarSheet.getUnlocalizedName());
+		GameRegistry.registerItem(aluminumSheet2x, aluminumSheet2x.getUnlocalizedName());
+		GameRegistry.registerItem(electrumSheet2x, electrumSheet2x.getUnlocalizedName());
+		GameRegistry.registerItem(constantanSheet2x, constantanSheet2x.getUnlocalizedName());
+		GameRegistry.registerItem(invarSheet2x, invarSheet2x.getUnlocalizedName());
+		
 		// Flora
 		GameRegistry.registerItem(logHevea, logHevea.getUnlocalizedName());
 		
@@ -892,8 +961,16 @@ public class ModItems {
 		// Dyes
 		GameRegistry.registerItem(limePaint, limePaint.getUnlocalizedName());
 		
+		// Stripes
+		GameRegistry.registerItem(tinStripe, tinStripe.getUnlocalizedName());
+		GameRegistry.registerItem(aluminumStripe, aluminumStripe.getUnlocalizedName());
+		GameRegistry.registerItem(copperStripe, copperStripe.getUnlocalizedName());
+		GameRegistry.registerItem(goldStripe, goldStripe.getUnlocalizedName());
+		GameRegistry.registerItem(electrumStripe, electrumStripe.getUnlocalizedName());
+		GameRegistry.registerItem(ironStripe, ironStripe.getUnlocalizedName());
+		GameRegistry.registerItem(steelStripe, steelStripe.getUnlocalizedName());
+		
 		// Device components
-		GameRegistry.registerItem(stripe, stripe.getUnlocalizedName());
 		GameRegistry.registerItem(groove, groove.getUnlocalizedName());
 		GameRegistry.registerItem(mount, mount.getUnlocalizedName());
 		
@@ -941,7 +1018,7 @@ public class ModItems {
 		GameRegistry.registerItem(steelSleeve, steelSleeve.getUnlocalizedName());
 		GameRegistry.registerItem(tinSleeve, tinSleeve.getUnlocalizedName());
 		
-		ModRecipes.bronzeGears = new Item[] {bismuthBronzeGear, blackBronzeGear, bronzeGear};
+		bronzeGears = new Item[] {bismuthBronzeGear, blackBronzeGear, bronzeGear};
 		
 		GameRegistry.registerItem(gemQuartz, gemQuartz.getUnlocalizedName());
 		GameRegistry.registerItem(steelBucketEmpty, steelBucketEmpty.getUnlocalizedName());
@@ -973,6 +1050,12 @@ public class ModItems {
 		
 		if (TFCTech.enableIE) {
 			GameRegistry.registerItem(potteryInsulatorPart, potteryInsulatorPart.getUnlocalizedName());
+			GameRegistry.registerItem(potteryCeramicPlate, potteryCeramicPlate.getUnlocalizedName());
+			GameRegistry.registerItem(capacitorElectrode, capacitorElectrode.getUnlocalizedName());
+			GameRegistry.registerItem(mlccBlock, mlccBlock.getUnlocalizedName());
+			GameRegistry.registerItem(capacitorBaseLV, capacitorBaseLV.getUnlocalizedName());
+			GameRegistry.registerItem(capacitorBaseMV, capacitorBaseMV.getUnlocalizedName());
+			GameRegistry.registerItem(capacitorBaseHV, capacitorBaseHV.getUnlocalizedName());
 		}
 		
 		// ====================================================================
@@ -997,7 +1080,7 @@ public class ModItems {
 		Globals.INVAR = new Metal("Invar", ModItems.invarUnshaped, ModItems.invarIngot);
 		MetalRegistry.instance.addMetal(Globals.INVAR, Alloy.EnumTier.TierIII);
 		
-		ModRecipes.meltedMetal = new Item[] { aluminumUnshaped, electrumUnshaped, constantanUnshaped, invarUnshaped };
+		//ModItems.meltedMetal = new Item[] { aluminumUnshaped, electrumUnshaped, constantanUnshaped, invarUnshaped };
 		
 		Alloy electrum = new Alloy(Globals.ELECTRUM, Alloy.EnumTier.TierI);
 		electrum.addIngred(Global.GOLD, 37.00f, 63.00f);
@@ -1021,8 +1104,10 @@ public class ModItems {
             return null;
         }
 
-        ItemPipe res = BlockGenericPipe.registerPipe(clas, BCCreativeTab.get("pipes"));
-		res.setUnlocalizedName(clas.getSimpleName());
-		return res;
+        // ItemPipe res = BlockGenericPipe.registerPipe(clas, BCCreativeTab.get("pipes"));
+		// res.setUnlocalizedName(clas.getSimpleName());
+		// return res;
+        return BlockGenericPipe.registerPipe(clas, BCCreativeTab.get("pipes")).setUnlocalizedName(clas.getSimpleName());
 	}
+
 }
