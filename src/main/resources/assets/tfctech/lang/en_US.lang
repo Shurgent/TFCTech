@@ -362,6 +362,7 @@ gui.metal.Constantan=Constantan
 gui.metal.Invar=Invar
 
 gui.qty=Quantity
+gui.latexAmt=Latex amount
 
 gui.groove.usage0=Use groove to obtain latex from Hevea.
 gui.groove.usage1=§bRight click §7on Hevea trunk to fit it.

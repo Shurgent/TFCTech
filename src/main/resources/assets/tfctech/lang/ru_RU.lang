@@ -362,6 +362,7 @@ gui.metal.Constantan=Константан
 gui.metal.Invar=Инвар
 
 gui.qty=Количество
+gui.latexAmt=Количество латекса
 
 gui.groove.usage0=Используйте желоб для получения латекса из гевеи.
 gui.groove.usage1=§bПравым кликом §7установите его на ствол.

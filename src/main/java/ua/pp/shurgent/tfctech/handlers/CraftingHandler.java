@@ -7,11 +7,8 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
+import ua.pp.shurgent.tfctech.TFCTech;
 import ua.pp.shurgent.tfctech.items.ItemNugget;
-import buildcraft.BuildCraftCore;
-
-import com.bioxx.tfc.api.TFCItems;
-
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
 
@@ -27,17 +24,16 @@ public class CraftingHandler {
 			return;
 		
 		// Tool dammage
-		if (item == BuildCraftCore.paintbrushItem) {
-			handleItem(player, inventory, new Item[] {
-				TFCItems.shears
-			});
-		} else if (item instanceof ItemNugget) {
+		if (item instanceof ItemNugget) {
 			List<ItemStack> chisels = OreDictionary.getOres("itemChisel", false);
 			handleItem(player, inventory, chisels);
 		}
+		
+		if (TFCTech.enableBCCore)
+			CraftingHandlerBC.OnCraftingBC(e);
 	}
 	
-	private static void damageItem(EntityPlayer entityPlayer, IInventory inventory, int index, Item shiftedIndex) {
+	public static void damageItem(EntityPlayer entityPlayer, IInventory inventory, int index, Item shiftedIndex) {
 		if (inventory.getStackInSlot(index).getItem() != shiftedIndex)
 			return;
 		
@@ -56,7 +52,7 @@ public class CraftingHandler {
 		}
 	}
 	
-	private static void handleItem(EntityPlayer entityPlayer, IInventory inventory, Item[] items) {
+	public static void handleItem(EntityPlayer entityPlayer, IInventory inventory, Item[] items) {
 		for (int index = 0; index < inventory.getSizeInventory(); index++) {
 			if (inventory.getStackInSlot(index) == null)
 				continue;

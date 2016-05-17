@@ -4,6 +4,7 @@ import java.io.File;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.World;
+import ua.pp.shurgent.tfctech.handlers.ServerTickHandler;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBlueSteel;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBronze;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsCopper;
@@ -48,9 +49,6 @@ import buildcraft.transport.pipes.PipePowerQuartz;
 import buildcraft.transport.pipes.PipePowerSandstone;
 import buildcraft.transport.pipes.PipePowerStone;
 import buildcraft.transport.pipes.PipePowerWood;
-
-import com.bioxx.tfc.Handlers.ServerTickHandler;
-
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.event.FMLInterModComms;
 import cpw.mods.fml.common.network.NetworkRegistry;

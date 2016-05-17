@@ -14,6 +14,7 @@ import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import ua.pp.shurgent.tfctech.core.ModBlocks;
 import ua.pp.shurgent.tfctech.core.ModItems;
+import ua.pp.shurgent.tfctech.tileentities.TELatexExtractor;
 import ua.pp.shurgent.tfctech.tileentities.TEModOre;
 
 import com.bioxx.tfc.Core.TFC_Core;
@@ -77,6 +78,8 @@ public class WAILAData implements IWailaDataProvider {
 		TileEntity tileEntity = accessor.getTileEntity();
 		if (tileEntity instanceof TEModOre)
 			currenttip = oreBody(itemStack, currenttip, accessor, config);
+		if (tileEntity instanceof TELatexExtractor)
+			currenttip = latexExtractorBody(itemStack, currenttip, accessor, config);
 		return currenttip;
 	}
 
@@ -106,6 +109,20 @@ public class WAILAData implements IWailaDataProvider {
 		return currenttip;
 	}
 
+	private List<String> latexExtractorBody(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
+		TELatexExtractor te = (TELatexExtractor) accessor.getTileEntity();
+		
+		if (te.isBowlInstalled()) {
+			
+			int latexAmt = te.getLatexAmount();
+			
+			if (latexAmt > 0) {
+				currenttip.add(TFC_Core.translate("gui.latexAmt") + " : " + latexAmt + " mB");
+			}
+		}
+		return currenttip;
+	}
+	
 	@Override
 	public List<String> getWailaTail(ItemStack itemStack, List<String> currenttip, IWailaDataAccessor accessor, IWailaConfigHandler config) {
 		return currenttip;
@@ -124,6 +141,8 @@ public class WAILAData implements IWailaDataProvider {
 		reg.registerStackProvider(new WAILAData(), TEModOre.class);
 		reg.registerHeadProvider(new WAILAData(), TEModOre.class);
 		reg.registerBodyProvider(new WAILAData(), TEModOre.class);
+		
+		reg.registerBodyProvider(new WAILAData(), TELatexExtractor.class);
 
 	}
 }

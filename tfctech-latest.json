@@ -1,7 +1,8 @@
 ﻿{
-	"version": "0.2.4-A9",
+	"version": "0.2.5-A10",
 	"changelog": [
-		"Fixed crash on launch without Buildcraft",
-		"Some initial Immersive Engineering integration"
+		"Fixed crash on crafting without Buildcraft installed",
+		"Fixed commonProxy mistakenly importing the TFC class instead of TFCTech",
+		"Added Rubber Tapping WAILA compatibility"
 	]
 }
