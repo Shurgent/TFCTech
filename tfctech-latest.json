@@ -1,8 +1,10 @@
 ﻿{
-	"version": "0.2.5-A10",
+	"version": "0.2.6-A11",
 	"changelog": [
-		"Fixed crash on crafting without Buildcraft installed",
-		"Fixed commonProxy mistakenly importing the TFC class instead of TFCTech",
-		"Added Rubber Tapping WAILA compatibility"
+		"Significantly reduced default Quartz drop rates",
+		"Finally fixed all crashes related to running without Buildcraft (I hope so)",
+		"Fixed strip recipe consuming entire chisel",
+		"Improved WAILA info on Rubber Tapping",
+		"Added wires (WIP)"
 	]
 }

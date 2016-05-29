@@ -4,8 +4,8 @@ import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import buildcraft.api.core.IIconProvider;
 import buildcraft.transport.pipes.PipeFluidsSandstone;
 
@@ -17,7 +17,7 @@ public class PipeFluidsSilver extends PipeFluidsSandstone {
 
 	@Override
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	@Override

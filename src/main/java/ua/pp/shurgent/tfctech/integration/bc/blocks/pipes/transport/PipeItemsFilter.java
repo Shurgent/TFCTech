@@ -9,7 +9,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
-import ua.pp.shurgent.tfctech.TFCTech;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.handlers.PipeItemsInsertionHandler;
 import buildcraft.api.core.EnumColor;
 import buildcraft.api.core.IIconProvider;
@@ -27,7 +27,7 @@ public class PipeItemsFilter extends PipeItemsDaizuli implements ISerializable {
 
 	@Override
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	public EnumColor getColor() {

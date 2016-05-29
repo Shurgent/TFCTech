@@ -2,8 +2,8 @@ package ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.ForgeDirection;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import buildcraft.api.core.IIconProvider;
 import buildcraft.transport.pipes.PipeFluidsClay;
 import buildcraft.transport.pipes.events.PipeEventFluid;
@@ -16,7 +16,7 @@ public class PipeFluidsZinc extends PipeFluidsClay {
 
 	@Override
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	@Override

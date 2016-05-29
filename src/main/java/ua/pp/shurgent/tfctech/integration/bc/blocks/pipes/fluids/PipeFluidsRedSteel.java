@@ -7,8 +7,8 @@ import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.IFluidHandler;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import buildcraft.api.core.IIconProvider;
 import buildcraft.transport.pipes.PipeFluidsEmerald;
 
@@ -22,7 +22,7 @@ public class PipeFluidsRedSteel extends PipeFluidsEmerald {
 
 	@Override
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	public IInventory getFilters() {

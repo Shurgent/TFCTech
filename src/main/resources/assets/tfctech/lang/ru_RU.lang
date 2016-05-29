@@ -239,6 +239,23 @@ item.Gold Stripe.name=Золотая полоска
 item.Electrum Stripe.name=Полоска электрума
 item.Steel Stripe.name=Стальная полоска
 
+#// Wire drawing //
+item.Tin Wire.name=Оловянная проволока
+item.Copper Wire.name=Медная проволока
+item.Gold Wire.name=Золотая проволока
+item.Aluminum Wire.name=Алюминиевая проволока
+item.Electrum Wire.name=Проволока электрума
+item.Wrought Iron Wire.name=Железная проволока
+item.Steel Wire.name=Стальная проволока
+
+item.Unfinished Tin Wire.name=Незаконченная оловянная проволока
+item.Unfinished Copper Wire.name=Незаконченная медная проволока
+item.Unfinished Gold Wire.name=Незаконченная золотая проволока
+item.Unfinished Aluminum Wire.name=Незаконченная алюминиевая проволока
+item.Unfinished Electrum Wire.name=Незаконченная проволока электрума
+item.Unfinished Wrought Iron Wire.name=Незаконченная железная проволока
+item.Unfinished Steel Wire.name=Незаконченная стальная проволока
+
 #// Integration //
 item.Drill Head.name=Наконечник бура
 item.Quartz.name=Кварц
@@ -363,6 +380,7 @@ gui.metal.Invar=Инвар
 
 gui.qty=Количество
 gui.latexAmt=Количество латекса
+gui.loosingLatex=Латекс выливается!
 
 gui.groove.usage0=Используйте желоб для получения латекса из гевеи.
 gui.groove.usage1=§bПравым кликом §7установите его на ствол.
@@ -373,11 +391,16 @@ gui.groove.cantPlace=Не возможно установить здесь.
 
 gui.latexTapping.treeIsDead=Дерево засохшее.
 
+gui.wire.stage1=Стадия 1
+gui.wire.stage2=Стадия 2
+gui.wire.stage3=Стадия 3
+
 gui.plans.groove=Желоб
 gui.plans.mount=Крепление чаши
 gui.plans.wrench=Ключ
 gui.plans.frame=Рама трубы
 gui.plans.dixie=Котелок
+gui.plans.wire=Проволока
 
 #===========
 #= Strings =

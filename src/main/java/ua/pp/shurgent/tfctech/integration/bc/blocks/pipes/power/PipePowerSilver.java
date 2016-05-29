@@ -3,8 +3,8 @@ package ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.common.util.ForgeDirection;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import buildcraft.api.core.IIconProvider;
 import buildcraft.transport.pipes.PipePowerSandstone;
 import cpw.mods.fml.relauncher.Side;
@@ -19,7 +19,7 @@ public class PipePowerSilver extends PipePowerSandstone {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	@Override

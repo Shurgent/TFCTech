@@ -6,8 +6,8 @@ import java.util.LinkedList;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.ForgeDirection;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.handlers.PipeItemsInsertionHandler;
 import buildcraft.api.core.EnumColor;
 import buildcraft.api.core.IIconProvider;
@@ -24,7 +24,7 @@ public class PipeItemsMarker extends PipeItemsLapis {
 
 	@Override
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 	@Override

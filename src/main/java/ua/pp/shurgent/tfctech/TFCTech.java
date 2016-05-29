@@ -19,18 +19,16 @@ import ua.pp.shurgent.tfctech.core.ModFluids;
 import ua.pp.shurgent.tfctech.core.ModItems;
 import ua.pp.shurgent.tfctech.core.ModOptions;
 import ua.pp.shurgent.tfctech.core.ModOreDictionary;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
 import ua.pp.shurgent.tfctech.core.ModRecipes;
 import ua.pp.shurgent.tfctech.core.player.ModPlayerTracker;
 import ua.pp.shurgent.tfctech.handlers.ChunkEventHandler;
 import ua.pp.shurgent.tfctech.handlers.CraftingHandler;
 import ua.pp.shurgent.tfctech.handlers.ModBucketHandler;
 import ua.pp.shurgent.tfctech.handlers.TFCTechEventListener;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
 import ua.pp.shurgent.tfctech.items.ItemHeat;
 import ua.pp.shurgent.tfctech.worldgen.WorldGenBauxiteRocks;
 import ua.pp.shurgent.tfctech.worldgen.WorldGenHevea;
-import buildcraft.BuildCraftEnergy;
-import buildcraft.api.core.IIconProvider;
 
 import com.bioxx.tfc.TerraFirmaCraft;
 
@@ -66,8 +64,6 @@ public class TFCTech {
 	public static boolean enableIE; // ImmersiveEngineering
 	public static boolean enableOC; // OpenComputers
 	public static boolean enableBiblioCraft; // BiblioCraft
-	
-	public IIconProvider pipeIconProvider = new ModPipeIconProvider(); // Buildcraft pipe icon provider
 	
 	public static final CreativeTabs TFCTECH = new CreativeTabs("TFCTechTab") {
 		
@@ -105,6 +101,9 @@ public class TFCTech {
 
 		// Load our settings
 		proxy.loadOptions();
+		
+		if (enableBCCore)
+			BCStuff.initialize();
 		
 		if (enableBCTransport)
 			proxy.registerPipeRenderer();
@@ -165,8 +164,7 @@ public class TFCTech {
 		// Bucket Handler
 		ModBucketHandler.INSTANCE.buckets.put(ModBlocks.latex, ModItems.steelBucketLatex);
 		if (TFCTech.enableBCEnergy) {
-			ModBucketHandler.INSTANCE.buckets.put(BuildCraftEnergy.blockOil, ModItems.steelBucketOil);
-			ModBucketHandler.INSTANCE.buckets.put(BuildCraftEnergy.blockFuel, ModItems.steelBucketFuel);
+			BCStuff.registerBucketHandlers();
 		}
 		MinecraftForge.EVENT_BUS.register(ModBucketHandler.INSTANCE);
 		

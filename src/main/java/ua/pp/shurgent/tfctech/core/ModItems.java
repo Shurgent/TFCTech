@@ -4,42 +4,7 @@ import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import ua.pp.shurgent.tfctech.Globals;
 import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBlueSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsBronze;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsCopper;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsElectrum;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsLead;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsNullify;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsRedSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsSterlingSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsWroughtIron;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.fluids.PipeFluidsZinc;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerBlueSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerBronze;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerCopper;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerElectrum;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerLead;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerRedSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSterlingSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerWroughtIron;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.structure.PipeStructureLead;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBlackSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBlueSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsBronze;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsCopper;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsElectrum;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsFilter;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsLead;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsMarker;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsMarkerExtractor;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsNullify;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsRedSteel;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsSterlingSilver;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsWroughtIron;
-import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.transport.PipeItemsZinc;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
 import ua.pp.shurgent.tfctech.items.ItemCraftComponent;
 import ua.pp.shurgent.tfctech.items.ItemDixie;
 import ua.pp.shurgent.tfctech.items.ItemDust;
@@ -50,6 +15,7 @@ import ua.pp.shurgent.tfctech.items.ItemHeveaLog;
 import ua.pp.shurgent.tfctech.items.ItemLimePaint;
 import ua.pp.shurgent.tfctech.items.ItemModIngot;
 import ua.pp.shurgent.tfctech.items.ItemModMeltedMetal;
+import ua.pp.shurgent.tfctech.items.ItemModMetalItem;
 import ua.pp.shurgent.tfctech.items.ItemModMetalSheet;
 import ua.pp.shurgent.tfctech.items.ItemModMetalSheet2x;
 import ua.pp.shurgent.tfctech.items.ItemModOre;
@@ -60,29 +26,11 @@ import ua.pp.shurgent.tfctech.items.ItemPlate;
 import ua.pp.shurgent.tfctech.items.ItemRackwheel;
 import ua.pp.shurgent.tfctech.items.ItemSleeve;
 import ua.pp.shurgent.tfctech.items.ItemStripe;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameBlackSteel;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameBlueSteel;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameBronze;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameCopper;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameElectrum;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameLead;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameRedSteel;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameSilver;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameSteel;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameStirlingSilver;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameWroughtIron;
-import ua.pp.shurgent.tfctech.items.frames.PipeFrameZinc;
+import ua.pp.shurgent.tfctech.items.ItemUnfinishedWire;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryBase;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryLatexBowl;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryMold;
 import ua.pp.shurgent.tfctech.items.tools.ItemModSteelBucket;
-import buildcraft.BuildCraftCore;
-import buildcraft.BuildCraftEnergy;
-import buildcraft.BuildCraftTransport;
-import buildcraft.core.BCCreativeTab;
-import buildcraft.core.BCRegistry;
-import buildcraft.transport.BlockGenericPipe;
-import buildcraft.transport.Pipe;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import com.bioxx.tfc.Core.Metal.Alloy;
@@ -392,6 +340,33 @@ public class ModItems {
 	public static Item capacitorBaseHV;
 	//===========================================
 	
+	// === Wires ================================
+	public static Item tinWire;
+	public static Item copperWire;
+	public static Item goldWire;
+	public static Item aluminumWire;
+	public static Item electrumWire;
+	public static Item ironWire;
+	public static Item steelWire;
+	
+	public static Item unfinishedTinWire;
+	public static Item unfinishedCopperWire;
+	public static Item unfinishedGoldWire;
+	public static Item unfinishedAluminumWire;
+	public static Item unfinishedElectrumWire;
+	public static Item unfinishedIronWire;
+	public static Item unfinishedSteelWire;
+	
+	public static Item ironDrawplate;
+	public static Item steelDrawplate;
+	public static Item blackSteelDrawplate;
+	
+	public static Item oilcan;
+	public static Item tongs;
+	public static Item leatherBelt;
+	public static Item wireDrawingBench;
+	//===========================================
+	
 	// === Other ================================
 	
 	public static Item dixie;
@@ -401,79 +376,16 @@ public class ModItems {
 	
 	//===========================================
 	
-	//public static Item[] meltedMetal;
-	
 	public static void initialise() {
 		TFCTech.LOG.info("Registering Items");
 
 		setup();
 		registerItems();
 		registerMetals();
-		removeFromCreativeTab();
+		if (TFCTech.enableBCCore)
+			BCStuff.removeFromCreativeTab();
 
 		TFCTech.LOG.info("Done Registering Items");
-	}
-
-	private static void removeFromCreativeTab() {
-		
-		if (TFCTech.enableBCCore) {
-			BuildCraftCore.stoneGearItem.setCreativeTab(null);
-			BuildCraftCore.woodenGearItem.setCreativeTab(null);
-			BuildCraftCore.ironGearItem.setCreativeTab(null);
-			BuildCraftCore.goldGearItem.setCreativeTab(null);
-			BuildCraftCore.diamondGearItem.setCreativeTab(null);
-		}
-		
-		if (TFCTech.enableBCEnergy) {
-			BuildCraftEnergy.bucketFuel.setCreativeTab(null);
-			BuildCraftEnergy.bucketOil.setCreativeTab(null);
-			if (BuildCraftEnergy.bucketRedPlasma != null)
-				BuildCraftEnergy.bucketRedPlasma.setCreativeTab(null);
-		}
-		
-		if (TFCTech.enableBCTransport) {
-			BuildCraftTransport.pipeItemsClay.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsCobblestone.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsDaizuli.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsDiamond.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsEmerald.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsEmzuli.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsGold.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsIron.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsLapis.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsObsidian.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsQuartz.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsSandstone.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsStone.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsVoid.setCreativeTab(null);
-			BuildCraftTransport.pipeItemsWood.setCreativeTab(null);
-
-			BuildCraftTransport.pipeFluidsClay.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsCobblestone.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsDiamond.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsEmerald.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsIron.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsQuartz.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsSandstone.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsStone.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsVoid.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsWood.setCreativeTab(null);
-			BuildCraftTransport.pipeFluidsGold.setCreativeTab(null);
-
-			BuildCraftTransport.pipePowerEmerald.setCreativeTab(null);
-			BuildCraftTransport.pipePowerIron.setCreativeTab(null);
-			BuildCraftTransport.pipePowerSandstone.setCreativeTab(null);
-			BuildCraftTransport.pipePowerWood.setCreativeTab(null);
-			BuildCraftTransport.pipePowerDiamond.setCreativeTab(null);
-			BuildCraftTransport.pipePowerQuartz.setCreativeTab(null);
-			BuildCraftTransport.pipePowerGold.setCreativeTab(null);
-			BuildCraftTransport.pipePowerCobblestone.setCreativeTab(null);
-			BuildCraftTransport.pipePowerStone.setCreativeTab(null);
-
-			BuildCraftTransport.pipeStructureCobblestone.setCreativeTab(null);
-			
-			BuildCraftTransport.pipeItemsStripes.setCreativeTab(null);
-		}
 	}
 
 	private static void setup() {
@@ -536,6 +448,7 @@ public class ModItems {
 		// Ore
 		oreChunk = new ItemModOre().setFolder("ore/").setUnlocalizedName("Ore");
 		smallOreChunk = new ItemModOreSmall().setUnlocalizedName("Small Ore");
+		gemQuartz = new ItemCraftComponent(EnumSize.TINY).setUnlocalizedName("Quartz");
 		
 		// Ingots
 		aluminumIngot = new ItemModIngot("Aluminum", 100).setUnlocalizedName("Aluminum Ingot");
@@ -713,9 +626,32 @@ public class ModItems {
 		// == Lime Paint
 		limePaint = new ItemLimePaint().setUnlocalizedName("Lime Paint");
 		
+		// == Wire drawing
+		names = new String[] {"Tin", "Copper", "Gold", "Aluminum", "Electrum", "Wrought Iron", "Steel"};
+		String folder = "wires";
+		String suffix = " Wire";
+		
+		i = 0;
+		tinWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		copperWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		goldWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		aluminumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		electrumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		ironWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		steelWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		
+		i = 0;
+		String prefix = "Unfinished ";
+		unfinishedTinWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedCopperWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedGoldWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedAluminumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedElectrumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedIronWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedSteelWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		
 		// == INTEGRATION =====================================================
 		
-		gemQuartz = new ItemCraftComponent(EnumSize.TINY).setUnlocalizedName("Quartz");
 		if (TFCTech.enableBCBuilders) {
 			drillHead = new ItemCraftComponent().setUnlocalizedName("Drill Head");
 		}
@@ -735,65 +671,8 @@ public class ModItems {
 		steelBucketEmpty = new ItemModSteelBucket(Blocks.air).setUnlocalizedName("Steel Bucket Empty");
 		steelBucketLatex = new ItemModSteelBucket(ModBlocks.latex).setUnlocalizedName("Steel Bucket Latex").setContainerItem(steelBucketEmpty);
 		
-		if (TFCTech.enableBCEnergy) {
-			steelBucketOil = new ItemModSteelBucket(BuildCraftEnergy.blockOil).setUnlocalizedName("Steel Bucket Oil").setContainerItem(steelBucketEmpty);
-			steelBucketFuel = new ItemModSteelBucket(BuildCraftEnergy.blockFuel).setUnlocalizedName("Steel Bucket Fuel").setContainerItem(steelBucketEmpty);
-		}
-		
-		if (TFCTech.enableBCTransport) {
-			pipeStructureLead = createPipe(PipeStructureLead.class);
-			
-			pipeItemsLead = createPipe(PipeItemsLead.class);
-			pipeItemsBlueSteel = createPipe(PipeItemsBlueSteel.class);
-			pipeItemsMarker = createPipe(PipeItemsMarker.class);
-			pipeItemsFilter = createPipe(PipeItemsFilter.class);
-			pipeItemsCopper = createPipe(PipeItemsCopper.class);
-			pipeItemsRedSteel = createPipe(PipeItemsRedSteel.class);
-			pipeItemsMarkerExtractor = createPipe(PipeItemsMarkerExtractor.class);
-			pipeItemsElectrum = createPipe(PipeItemsElectrum.class);
-			pipeItemsWroughtIron = createPipe(PipeItemsWroughtIron.class);
-			pipeItemsBlackSteel = createPipe(PipeItemsBlackSteel.class);
-			pipeItemsSilver = createPipe(PipeItemsSilver.class);
-			pipeItemsBronze = createPipe(PipeItemsBronze.class);
-			pipeItemsSterlingSilver = createPipe(PipeItemsSterlingSilver.class);
-			pipeItemsZinc = createPipe(PipeItemsZinc.class);
-			pipeItemsNullify = createPipe(PipeItemsNullify.class);
-			
-			pipeFluidsLead = createPipe(PipeFluidsLead.class); 
-			pipeFluidsCopper = createPipe(PipeFluidsCopper.class); 
-			pipeFluidsRedSteel = createPipe(PipeFluidsRedSteel.class); 
-			pipeFluidsSterlingSilver = createPipe(PipeFluidsSterlingSilver.class); 
-			pipeFluidsElectrum = createPipe(PipeFluidsElectrum.class); 
-			pipeFluidsWroughtIron = createPipe(PipeFluidsWroughtIron.class); 
-			pipeFluidsSilver = createPipe(PipeFluidsSilver.class); 
-			pipeFluidsBronze = createPipe(PipeFluidsBronze.class); 
-			pipeFluidsNullify = createPipe(PipeFluidsNullify.class); 
-			pipeFluidsZinc = createPipe(PipeFluidsZinc.class); 
-			pipeFluidsBlueSteel = createPipe(PipeFluidsBlueSteel.class); 
-
-			pipePowerBlueSteel = createPipe(PipePowerBlueSteel.class); 
-			pipePowerElectrum = createPipe(PipePowerElectrum.class); 
-			pipePowerSterlingSilver = createPipe(PipePowerSterlingSilver.class); 
-			pipePowerBronze = createPipe(PipePowerBronze.class); 
-			pipePowerSilver = createPipe(PipePowerSilver.class); 
-			pipePowerLead = createPipe(PipePowerLead.class); 
-			pipePowerCopper = createPipe(PipePowerCopper.class); 
-			pipePowerRedSteel = createPipe(PipePowerRedSteel.class); 
-			pipePowerWroughtIron = createPipe(PipePowerWroughtIron.class);
-			
-			pipeFrameZinc = new PipeFrameZinc("Zinc", 200).setUnlocalizedName("Zinc Pipe Frame");
-			pipeFrameLead = new PipeFrameLead("Lead", 200).setUnlocalizedName("Lead Pipe Frame");
-			pipeFrameBlueSteel = new PipeFrameBlueSteel("Blue Steel", 200).setUnlocalizedName("Blue Steel Pipe Frame");
-			pipeFrameRedSteel = new PipeFrameRedSteel("Red Steel", 200).setUnlocalizedName("Red Steel Pipe Frame");
-			pipeFrameElectrum = new PipeFrameElectrum("Electrum", 200).setUnlocalizedName("Electrum Pipe Frame");
-			pipeFrameWroughtIron = new PipeFrameWroughtIron("Wrought Iron", 200).setUnlocalizedName("Wrought Iron Pipe Frame");
-			pipeFrameSteel = new PipeFrameSteel("Steel", 200).setUnlocalizedName("Steel Pipe Frame");
-			pipeFrameBlackSteel = new PipeFrameBlackSteel("Black Steel", 200).setUnlocalizedName("Black Steel Pipe Frame");
-			pipeFrameSterlingSilver = new PipeFrameStirlingSilver("Sterling Silver", 200).setUnlocalizedName("Sterling Silver Pipe Frame");
-			pipeFrameSilver = new PipeFrameSilver("Silver", 200).setUnlocalizedName("Silver Pipe Frame");
-			pipeFrameBronze = new PipeFrameBronze("Bronze", 200).setUnlocalizedName("Bronze Pipe Frame");
-			pipeFrameCopper = new PipeFrameCopper("Copper", 200).setUnlocalizedName("Copper Pipe Frame");
-		}
+		if (TFCTech.enableBCCore)
+			BCStuff.registerItems();
 		
 	}
 
@@ -974,6 +853,23 @@ public class ModItems {
 		GameRegistry.registerItem(groove, groove.getUnlocalizedName());
 		GameRegistry.registerItem(mount, mount.getUnlocalizedName());
 		
+		// Wire drawing
+		GameRegistry.registerItem(tinWire, tinWire.getUnlocalizedName());
+		GameRegistry.registerItem(copperWire, copperWire.getUnlocalizedName());
+		GameRegistry.registerItem(goldWire, goldWire.getUnlocalizedName());
+		GameRegistry.registerItem(aluminumWire, aluminumWire.getUnlocalizedName());
+		GameRegistry.registerItem(electrumWire, electrumWire.getUnlocalizedName());
+		GameRegistry.registerItem(ironWire, ironWire.getUnlocalizedName());
+		GameRegistry.registerItem(steelWire, steelWire.getUnlocalizedName());
+		
+		GameRegistry.registerItem(unfinishedTinWire, unfinishedTinWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedCopperWire, unfinishedCopperWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedGoldWire, unfinishedGoldWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedAluminumWire, unfinishedAluminumWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedElectrumWire, unfinishedElectrumWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedIronWire, unfinishedIronWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedSteelWire, unfinishedSteelWire.getUnlocalizedName());
+		
 		// == Integration =====================================================
 		
 		GameRegistry.registerItem(clayMoldGearPiece, clayMoldGearPiece.getUnlocalizedName());
@@ -1080,8 +976,6 @@ public class ModItems {
 		Globals.INVAR = new Metal("Invar", ModItems.invarUnshaped, ModItems.invarIngot);
 		MetalRegistry.instance.addMetal(Globals.INVAR, Alloy.EnumTier.TierIII);
 		
-		//ModItems.meltedMetal = new Item[] { aluminumUnshaped, electrumUnshaped, constantanUnshaped, invarUnshaped };
-		
 		Alloy electrum = new Alloy(Globals.ELECTRUM, Alloy.EnumTier.TierI);
 		electrum.addIngred(Global.GOLD, 37.00f, 63.00f);
 		electrum.addIngred(Global.SILVER, 37.00f, 63.00f);
@@ -1098,16 +992,4 @@ public class ModItems {
 		AlloyManager.INSTANCE.addAlloy(invar);
 	}
 	
-	private static Item createPipe(Class<? extends Pipe<?>> clas)
-	{
-        if (!BCRegistry.INSTANCE.isEnabled("pipes", clas.getSimpleName())) {
-            return null;
-        }
-
-        // ItemPipe res = BlockGenericPipe.registerPipe(clas, BCCreativeTab.get("pipes"));
-		// res.setUnlocalizedName(clas.getSimpleName());
-		// return res;
-        return BlockGenericPipe.registerPipe(clas, BCCreativeTab.get("pipes")).setUnlocalizedName(clas.getSimpleName());
-	}
-
 }

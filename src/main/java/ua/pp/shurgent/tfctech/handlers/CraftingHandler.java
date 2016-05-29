@@ -9,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import ua.pp.shurgent.tfctech.TFCTech;
 import ua.pp.shurgent.tfctech.items.ItemNugget;
+import ua.pp.shurgent.tfctech.items.ItemStripe;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
 
@@ -24,7 +25,7 @@ public class CraftingHandler {
 			return;
 		
 		// Tool dammage
-		if (item instanceof ItemNugget) {
+		if (item instanceof ItemNugget || item instanceof ItemStripe) {
 			List<ItemStack> chisels = OreDictionary.getOres("itemChisel", false);
 			handleItem(player, inventory, chisels);
 		}

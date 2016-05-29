@@ -106,10 +106,10 @@ public class ModOptions {
 		cfgDropQuartz = getBooleanFor(config, WORLDGEN, "QuartzDropEnable", true, "Set to false to disable Quartz drops from stone.");
 		cfgDropQuartzMinQty = getIntFor(config, WORLDGEN, "QuartzDropMinQty", 1, 1, 10, "Quartz drop minimum quantity.");
 		cfgDropQuartzMaxQty = getIntFor(config, WORLDGEN, "QuartzDropMaxQty", 3, 1, 10, "Quartz drop maximum quantity.");
-		cfgDropQuartzIgExChance = getIntFor(config, WORLDGEN, "QuartzIgExDropChance", 250, 0, 1000, "Quartz drop chance (1 in X) when harvesting Igneous Extrusive stone.");
-		cfgDropQuartzIgInChance = getIntFor(config, WORLDGEN, "QuartzIgInDropChance", 150, 0, 1000, "Quartz drop chance (1 in X) when harvesting Igneous Intrusive stone.");
-		cfgDropQuartzMMChance = getIntFor(config, WORLDGEN, "QuartzMMDropChance", 100, 0, 1000, "Quartz drop chance (1 in X) when harvesting Metamorphic stone.");
-		cfgDropQuartzSedChance = getIntFor(config, WORLDGEN, "QuartzSedDropChance", 50, 0, 1000, "Quartz drop chance (1 in X) when harvesting Sedimentary stone.");
+		cfgDropQuartzIgExChance = getIntFor(config, WORLDGEN, "QuartzIgExDropChance", 4000, 0, 100000, "Quartz drop chance (1 in X) when harvesting Igneous Extrusive stone.");
+		cfgDropQuartzIgInChance = getIntFor(config, WORLDGEN, "QuartzIgInDropChance", 2000, 0, 100000, "Quartz drop chance (1 in X) when harvesting Igneous Intrusive stone.");
+		cfgDropQuartzMMChance = getIntFor(config, WORLDGEN, "QuartzMMDropChance", 1000, 0, 100000, "Quartz drop chance (1 in X) when harvesting Metamorphic stone.");
+		cfgDropQuartzSedChance = getIntFor(config, WORLDGEN, "QuartzSedDropChance", 500, 0, 100000, "Quartz drop chance (1 in X) when harvesting Sedimentary stone.");
 		
 		cfgHeveaDamage = getBooleanFor(config, WORLDGEN, "HeveaDamageEnable", true, "Set to false to disable Hevea tree damage from tapping.");
 		cfgHeveaMaxDamage = getIntFor(config, WORLDGEN, "HeveaMaxDamage", 15, 1, 15, "Number of Hevea trunk scratches before the tree gets damaged.");

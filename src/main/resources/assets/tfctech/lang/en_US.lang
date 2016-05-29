@@ -239,6 +239,23 @@ item.Gold Stripe.name=Gold Strip
 item.Electrum Stripe.name=Electrum Strip
 item.Steel Stripe.name=Steel Strip
 
+#// Wire drawing //
+item.Tin Wire.name=Tin Wire
+item.Copper Wire.name=Copper Wire
+item.Gold Wire.name=Gold Wire
+item.Aluminum Wire.name=Aluminum Wire
+item.Electrum Wire.name=Electrum Wire
+item.Wrought Iron Wire.name=Iron Wire
+item.Steel Wire.name=Steel Wire
+
+item.Unfinished Tin Wire.name=Unfinished Tin Wire
+item.Unfinished Copper Wire.name=Unfinished Copper Wire
+item.Unfinished Gold Wire.name=Unfinished Gold Wire
+item.Unfinished Aluminum Wire.name=Unfinished Aluminum Wire
+item.Unfinished Electrum Wire.name=Unfinished Electrum Wire
+item.Unfinished Wrought Iron Wire.name=Unfinished Iron Wire
+item.Unfinished Steel Wire.name=Unfinished Steel Wire
+
 #// Integration //
 item.Drill Head.name=Drill Head
 item.Quartz.name=Quartz
@@ -363,6 +380,7 @@ gui.metal.Invar=Invar
 
 gui.qty=Quantity
 gui.latexAmt=Latex amount
+gui.loosingLatex=Latex is pours out!
 
 gui.groove.usage0=Use groove to obtain latex from Hevea.
 gui.groove.usage1=§bRight click §7on Hevea trunk to fit it.
@@ -373,11 +391,16 @@ gui.groove.cantPlace=Can't place here.
 
 gui.latexTapping.treeIsDead=The tree is dead.
 
+gui.wire.stage1=Stage 1
+gui.wire.stage2=Stage 2
+gui.wire.stage3=Stage 3
+
 gui.plans.groove=Groove
 gui.plans.mount=Bowl Mount
 gui.plans.wrench=Wrench
 gui.plans.frame=Pipe Frame
 gui.plans.dixie=Dixie
+gui.plans.wire=Wire
 
 #===========
 #= Strings =

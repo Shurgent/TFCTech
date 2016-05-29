@@ -117,7 +117,10 @@ public class WAILAData implements IWailaDataProvider {
 			int latexAmt = te.getLatexAmount();
 			
 			if (latexAmt > 0) {
-				currenttip.add(TFC_Core.translate("gui.latexAmt") + " : " + latexAmt + " mB");
+				currenttip.add(TFC_Core.translate("gui.latexAmt") + " : " + latexAmt + " mB / 200 mB");
+			}
+			if (latexAmt >= 200 && te.isFlowing()) {
+				currenttip.add("\247c" + TFC_Core.translate("gui.loosingLatex"));
 			}
 		}
 		return currenttip;

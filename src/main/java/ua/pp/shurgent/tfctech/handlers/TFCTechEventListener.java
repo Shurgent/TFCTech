@@ -90,7 +90,7 @@ public class TFCTechEventListener {
 		
 		if (ModOptions.cfgDropQuartz) {
 			
-			Random rnd = new Random();
+			Random rnd = event.world.rand;
 			int minQty = ModOptions.cfgDropQuartzMinQty;
 			int maxQty = ModOptions.cfgDropQuartzMaxQty;
 			

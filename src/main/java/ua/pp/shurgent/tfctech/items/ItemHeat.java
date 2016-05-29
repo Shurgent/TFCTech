@@ -58,6 +58,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,2,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet2x,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumStripe,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumWire,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedAluminumWire,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 	
 		//Electrum
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumIngot,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,1)));
@@ -71,6 +73,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumSheet,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,2,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumSheet2x,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumStripe,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumWire,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedElectrumWire,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,1)));
 		
 		//Constantan
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.constantanIngot,1), constantanRaw, new ItemStack(ModItems.constantanUnshaped,1)));
@@ -159,6 +163,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.copperRackwheel,1), copperRaw, new ItemStack(TFCItems.copperUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.pipeFrameCopper,1), copperRaw, new ItemStack(TFCItems.copperUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.copperStripe,1), copperRaw, new ItemStack(TFCItems.copperUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.copperWire,1), copperRaw, new ItemStack(TFCItems.copperUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedCopperWire,1), copperRaw, new ItemStack(TFCItems.copperUnshaped,1)));
 		
 		//Gold
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.goldDust,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,1)));
@@ -168,6 +174,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.goldGearPiece,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.goldRackwheel,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.goldStripe,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.goldWire,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedGoldWire,1), goldRaw, new ItemStack(TFCItems.goldUnshaped,1)));
 		
 		//Wrought Iron
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.wroughtIronDust,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
@@ -181,6 +189,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.ironStripe,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.pipeFrameWroughtIron,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.dixie,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.ironWire,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedIronWire,1), ironRaw, new ItemStack(TFCItems.wroughtIronUnshaped,1)));
 		
 		//Lead
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.leadDust,1), leadRaw, new ItemStack(TFCItems.leadUnshaped,1)));
@@ -237,6 +247,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.steelSleeve,1), steelRaw, new ItemStack(TFCItems.steelUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.pipeFrameSteel,1), steelRaw, new ItemStack(TFCItems.steelUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.steelStripe,1), steelRaw, new ItemStack(TFCItems.steelUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.steelWire,1), steelRaw, new ItemStack(TFCItems.steelUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedSteelWire,1), steelRaw, new ItemStack(TFCItems.steelUnshaped,1)));
 		
 		//Sterling Silver
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.sterlingSilverDust,1), sterlingSilverRaw, new ItemStack(TFCItems.sterlingSilverUnshaped,1)));
@@ -254,6 +266,8 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.tinRackwheel,1), tinRaw, new ItemStack(TFCItems.tinUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.tinSleeve,1), tinRaw, new ItemStack(TFCItems.tinUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.tinStripe,1), tinRaw, new ItemStack(TFCItems.tinUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.tinWire,1), tinRaw, new ItemStack(TFCItems.tinUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedTinWire,1), tinRaw, new ItemStack(TFCItems.tinUnshaped,1)));
 		
 		//Zinc
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.zincDust,1), zincRaw, new ItemStack(TFCItems.zincUnshaped,1)));

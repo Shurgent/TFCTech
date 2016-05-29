@@ -176,6 +176,7 @@ public class ModRecipes
 		anvilManager.addPlan("groove", new PlanRecipe(new RuleEnum[] { RuleEnum.HITLAST, RuleEnum.BENDSECONDFROMLAST, RuleEnum.BENDTHIRDFROMLAST }));
 		anvilManager.addPlan("mount", new PlanRecipe(new RuleEnum[] { RuleEnum.BENDLAST, RuleEnum.DRAWSECONDFROMLAST, RuleEnum.DRAWNOTLAST }));
 		anvilManager.addPlan("dixie", new PlanRecipe(new RuleEnum[] { RuleEnum.BENDLAST, RuleEnum.BENDSECONDFROMLAST, RuleEnum.BENDTHIRDFROMLAST }));
+		anvilManager.addPlan("wire", new PlanRecipe(new RuleEnum[] { RuleEnum.DRAWLAST, RuleEnum.DRAWNOTLAST, RuleEnum.ANY }));
 		
 		if (TFCTech.enableBCCore) {
 			anvilManager.addPlan("wrench", new PlanRecipe(new RuleEnum[] { RuleEnum.HITLAST, RuleEnum.DRAWSECONDFROMLAST, RuleEnum.BENDTHIRDFROMLAST }));
@@ -221,6 +222,15 @@ public class ModRecipes
 		anvilManager.addWeldRecipe(new AnvilRecipe(new ItemStack(ModItems.electrumSheet), new ItemStack(ModItems.electrumSheet), AnvilReq.COPPER, new ItemStack(ModItems.electrumSheet2x, 1)));
 		anvilManager.addWeldRecipe(new AnvilRecipe(new ItemStack(ModItems.constantanSheet), new ItemStack(ModItems.constantanSheet), AnvilReq.WROUGHTIRON, new ItemStack(ModItems.constantanSheet2x, 1)));
 		anvilManager.addWeldRecipe(new AnvilRecipe(new ItemStack(ModItems.invarSheet), new ItemStack(ModItems.invarSheet), AnvilReq.STEEL, new ItemStack(ModItems.invarSheet2x, 1)));
+		
+		// Unfinished wires forging
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.tinStripe), null, "wire", AnvilReq.STONE, new ItemStack(ModItems.unfinishedTinWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.copperStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedCopperWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.goldStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedGoldWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.aluminumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedAluminumWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.electrumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedElectrumWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.ironStripe), null, "wire", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.unfinishedIronWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.steelStripe), null, "wire", AnvilReq.STEEL, new ItemStack(ModItems.unfinishedSteelWire, 1)));
 		
 		// == Integration =====================================================
 		

@@ -1,8 +1,8 @@
 package ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power;
 
 import net.minecraft.item.Item;
-import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ModPipeIconProvider;
+import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
+import ua.pp.shurgent.tfctech.integration.bc.ModPipeIconProvider;
 import buildcraft.api.core.IIconProvider;
 import buildcraft.transport.pipes.PipePowerEmerald;
 import cpw.mods.fml.relauncher.Side;
@@ -19,7 +19,7 @@ public class PipePowerRedSteel extends PipePowerEmerald {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public IIconProvider getIconProvider() {
-		return TFCTech.instance.pipeIconProvider;
+		return BCStuff.pipeIconProvider;
 	}
 
 }
