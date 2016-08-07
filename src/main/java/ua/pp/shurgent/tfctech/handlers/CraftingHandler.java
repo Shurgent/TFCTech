@@ -72,4 +72,5 @@ public class CraftingHandler {
 				damageItem(entityPlayer, inventory, index, is.getItem());
 		}
 	}
+	
 }

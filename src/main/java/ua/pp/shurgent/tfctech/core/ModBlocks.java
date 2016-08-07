@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import ua.pp.shurgent.tfctech.TFCTech;
 import ua.pp.shurgent.tfctech.blocks.devices.BlockLatexExtractor;
+import ua.pp.shurgent.tfctech.blocks.devices.BlockWireDrawBench;
 import ua.pp.shurgent.tfctech.blocks.flora.BlockModHeveaHoriz;
 import ua.pp.shurgent.tfctech.blocks.flora.BlockModHeveaLeaves;
 import ua.pp.shurgent.tfctech.blocks.flora.BlockModHeveaNatural;
@@ -25,6 +26,7 @@ public class ModBlocks {
 	// Blocks Render Id's
 	public static int oreRenderId;
 	public static int latexExtractorRenderId;
+	public static int wireDrawBenchRenderId;
 
 	// Blocks
 	public static Block ore;
@@ -44,6 +46,7 @@ public class ModBlocks {
 
 	// Devices
 	public static Block latexExtractor;
+	public static Block wireDrawBench;
 
 	public static void initialise() {
 		TFCTech.LOG.info("Registering Blocks");
@@ -64,6 +67,7 @@ public class ModBlocks {
 		Blocks.fire.setFireInfo(logHeveaNaturalDead, 50, 5);
 		Blocks.fire.setFireInfo(logHeveaVert, 5, 5);
 		Blocks.fire.setFireInfo(logHeveaHoriz, 5, 5);
+		Blocks.fire.setFireInfo(wireDrawBench, 5, 5);
 	}
 
 	private static void loadBlocks() {
@@ -84,6 +88,8 @@ public class ModBlocks {
 		latex = new BlockLatex(ModFluids.LATEX).setHardness(100.0F).setBlockName("Latex");
 		
 		latexExtractor = new BlockLatexExtractor().setBlockName("LatexExtractor").setHardness(2);
+		wireDrawBench = new BlockWireDrawBench().setBlockName("WireDrawBench").setHardness(2).setResistance(20F).setStepSound(Block.soundTypeWood);
+		
 	}
 
 	private static void registerBlocks() {
@@ -91,6 +97,7 @@ public class ModBlocks {
 		GameRegistry.registerBlock(latex, "Latex");
 		
 		GameRegistry.registerBlock(latexExtractor, "LatexExtractor");
+		GameRegistry.registerBlock(wireDrawBench, "WireDrawBench");
 
 		GameRegistry.registerBlock(logHeveaNatural, ItemModCustomWood.class, "Hevea");
 		GameRegistry.registerBlock(logHeveaNatural1, ItemModCustomWood.class, "Hevea1");

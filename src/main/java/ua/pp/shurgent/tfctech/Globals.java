@@ -12,6 +12,7 @@ public class Globals {
 	public static final String[] ORE_METAL = { "Bauxite" };
 
 	public static final int LATEX_BOWL_CAPACITY = 200;
+	public static final int OIL_CAN_CAPACITY = 200;
 
 	public static Metal ALUMINUM;
 	public static Metal ELECTRUM;

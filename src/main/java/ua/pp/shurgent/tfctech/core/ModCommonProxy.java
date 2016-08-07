@@ -71,9 +71,6 @@ public class ModCommonProxy {
 		return FMLCommonHandler.instance().getMinecraftServerInstance().getFile("");
 	}
 
-	public void hideNEIItems() {
-	}
-
 	public boolean isRemote() {
 		return false;
 	}
@@ -174,4 +171,5 @@ public class ModCommonProxy {
 
 	public void uploadKeyBindingsToGame() {
 	}
+	
 }

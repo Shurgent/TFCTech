@@ -22,7 +22,7 @@ public class InitClientWorldPacket extends AbstractPacket
 	@Override
 	public void handleClientSide(EntityPlayer player) 
 	{
-		ModRecipes.initialiseAnvil(); 
+		ModRecipes.initialiseAnvil(player.worldObj); 
 	}
 
 	@Override

@@ -7,17 +7,17 @@ import cpw.mods.fml.common.gameevent.TickEvent.WorldTickEvent;
 
 public class ServerTickHandler 
 {
-    @SubscribeEvent 
+	private long wSeed = Long.MIN_VALUE;
+	
+	@SubscribeEvent 
     public void onServerWorldTick(WorldTickEvent e) 
     { 
         if (e.phase == Phase.START) 
         { 
-        	if (e.world.provider.dimensionId == 0)
-        		ModRecipes.initialiseAnvil(); 
+        	if (e.world.provider.dimensionId == 0 && e.world.getWorldInfo().getSeed() != wSeed) {
+        		ModRecipes.initialiseAnvil(e.world);
+        		wSeed = e.world.getWorldInfo().getSeed();
+        	}
         } 
-		else if(e.phase == Phase.END)
-		{
-
-		}
     } 
 }

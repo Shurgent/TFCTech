@@ -11,7 +11,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
-import net.minecraftforge.common.util.ForgeDirection;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.IFluidContainerItem;
 import ua.pp.shurgent.tfctech.Globals;
@@ -19,7 +18,7 @@ import ua.pp.shurgent.tfctech.TFCTech;
 import ua.pp.shurgent.tfctech.core.ModDetails;
 import ua.pp.shurgent.tfctech.core.ModFluids;
 import ua.pp.shurgent.tfctech.core.ModItems;
-import buildcraft.factory.TileTank;
+import ua.pp.shurgent.tfctech.integration.bc.handlers.LiquidContainerHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
@@ -37,27 +36,12 @@ public class ItemModPotteryLatexBowl extends ItemModPotteryBase implements IFlui
 		if (is != null && is.getItem() instanceof ItemModPotteryLatexBowl && is.getItemDamage() > 0) {
 			TileEntity te = world.getTileEntity(x, y, z);
 			if (te != null) {
-				if (TFCTech.enableBCFactory && te instanceof TileTank) {
-					TileTank tank = (TileTank) te;
-					if (is.getItemDamage() == 1) { // Empty bowl
-						if (tank.canDrain(ForgeDirection.UNKNOWN, ModFluids.LATEX)) {
-							FluidStack fs = tank.drain(ForgeDirection.UNKNOWN, Globals.LATEX_BOWL_CAPACITY, true);
-							if (fs != null && fs.amount > 0) {
-								is.setItemDamage(getDamageFromUnits(fs.amount));
-								return true;
-							}
-						}
-					} else if (is.getItemDamage() > 2) { // Partially filled bowl
-						if (tank.canFill(ForgeDirection.UNKNOWN, ModFluids.LATEX)) {
-							FluidStack fs = new FluidStack(ModFluids.LATEX, getUnitsFromDamage(is.getItemDamage()));
-							int filled = tank.fill(ForgeDirection.UNKNOWN, fs, true);
-							if (filled > 0) {
-								is.setItemDamage(getDamageFromUnits(getUnitsFromDamage(is.getItemDamage()) - filled));
-								return true;
-							}
-						}
-					}
+				
+				if (TFCTech.enableBCFactory) {
+					if (LiquidContainerHandler.handleLatexBowlUse(is, te))
+						return true;
 				}
+				
 			}
 		}
 		return super.onItemUse(is, ep, world, x, y, z, side, hitX, hitY, hitZ);

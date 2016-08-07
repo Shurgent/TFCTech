@@ -64,6 +64,19 @@ dependencies {
 	compile "mcp.mobius.waila:Waila:1.5.11-RC2-NONEI_1.7.10"
 }
 
+sourceSets {
+   main {
+     java {
+       srcDirs = [ 'src/main' , 'src/API' ]
+	   exclude '**/resources/'
+     }
+	 resources {
+       srcDirs = [ 'src/resources' ]
+	   exclude '**/API'
+	   exclude '**/main'
+     }
+   }
+}
 //Creates a compiled de-obfuscated jar
 task deobfJar(type: Jar) {
     from sourceSets.main.output

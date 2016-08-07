@@ -10,6 +10,8 @@ import ua.pp.shurgent.tfctech.core.ModDetails;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import com.bioxx.tfc.Core.TFC_Core;
+import com.bioxx.tfc.Core.Metal.Alloy;
+import com.bioxx.tfc.Core.Metal.AlloyManager;
 import com.bioxx.tfc.Core.Metal.MetalRegistry;
 import com.bioxx.tfc.Items.ItemTerra;
 import com.bioxx.tfc.api.HeatRegistry;
@@ -107,6 +109,13 @@ public class ItemModMetalItem extends ItemTerra implements ISmeltable {
 
 	@Override
 	public EnumTier getSmeltTier(ItemStack is) {
+		if (metal == null)
+			return EnumTier.TierI;
+		AlloyManager manager = AlloyManager.INSTANCE;
+		for (Alloy alloy : manager.alloys) {
+			if (alloy.outputType.name.equals(metal))
+				return ISmeltable.EnumTier.valueOf(alloy.getFurnaceTier().name());
+		}
 		return EnumTier.TierI;
 	}
 

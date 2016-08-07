@@ -27,16 +27,20 @@ import ua.pp.shurgent.tfctech.items.ItemRackwheel;
 import ua.pp.shurgent.tfctech.items.ItemSleeve;
 import ua.pp.shurgent.tfctech.items.ItemStripe;
 import ua.pp.shurgent.tfctech.items.ItemUnfinishedWire;
+import ua.pp.shurgent.tfctech.items.ItemBlocks.ItemWireDrawBench;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryBase;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryLatexBowl;
 import ua.pp.shurgent.tfctech.items.pottery.ItemModPotteryMold;
+import ua.pp.shurgent.tfctech.items.tools.ItemDrawplate;
 import ua.pp.shurgent.tfctech.items.tools.ItemModSteelBucket;
+import ua.pp.shurgent.tfctech.items.tools.ItemOilCan;
 
 import com.bioxx.tfc.Core.TFCTabs;
 import com.bioxx.tfc.Core.Metal.Alloy;
 import com.bioxx.tfc.Core.Metal.AlloyManager;
 import com.bioxx.tfc.Core.Metal.MetalRegistry;
 import com.bioxx.tfc.api.Metal;
+import com.bioxx.tfc.api.TFCItems;
 import com.bioxx.tfc.api.Constant.Global;
 import com.bioxx.tfc.api.Enums.EnumSize;
 
@@ -364,7 +368,8 @@ public class ModItems {
 	public static Item oilcan;
 	public static Item tongs;
 	public static Item leatherBelt;
-	public static Item wireDrawingBench;
+	public static Item winch;
+	public static Item wireDrawBench;
 	//===========================================
 	
 	// === Other ================================
@@ -382,6 +387,7 @@ public class ModItems {
 		setup();
 		registerItems();
 		registerMetals();
+		
 		if (TFCTech.enableBCCore)
 			BCStuff.removeFromCreativeTab();
 
@@ -606,6 +612,12 @@ public class ModItems {
 		// == Device components
 		groove = new ItemGroove("Wrought Iron", 50).setUnlocalizedName("Groove");
 		mount = new ItemMount("Wrought Iron", 100).setUnlocalizedName("Bowl Mount");
+		tongs = new ItemModMetalItem("Wrought Iron", 100, "devices").setUnlocalizedName("Tongs");
+		leatherBelt = new ItemCraftComponent(EnumSize.SMALL).setFolder("devices/").setUnlocalizedName("Leather Belt");
+		winch = new ItemCraftComponent(EnumSize.LARGE).setFolder("devices/").setUnlocalizedName("Winch");
+		
+		// == Devices
+		wireDrawBench = new ItemWireDrawBench().setUnlocalizedName("Wire Draw Bench");
 		
 		// == Flora
 		logHevea = new ItemHeveaLog().setUnlocalizedName("Log");
@@ -649,6 +661,12 @@ public class ModItems {
 		unfinishedElectrumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
 		unfinishedIronWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
 		unfinishedSteelWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		
+		ironDrawplate = new ItemDrawplate(Global.WROUGHTIRON).setUnlocalizedName("Wrought Iron Drawplate").setMaxDamage(TFCItems.wroughtIronUses);
+		steelDrawplate = new ItemDrawplate(Global.STEEL).setUnlocalizedName("Steel Drawplate").setMaxDamage(TFCItems.steelUses);
+		blackSteelDrawplate = new ItemDrawplate(Global.BLACKSTEEL).setUnlocalizedName("Black Steel Drawplate").setMaxDamage(TFCItems.blackSteelUses);
+		
+		oilcan = new ItemOilCan().setUnlocalizedName("Oil Can");
 		
 		// == INTEGRATION =====================================================
 		
@@ -852,6 +870,12 @@ public class ModItems {
 		// Device components
 		GameRegistry.registerItem(groove, groove.getUnlocalizedName());
 		GameRegistry.registerItem(mount, mount.getUnlocalizedName());
+		GameRegistry.registerItem(winch, winch.getUnlocalizedName());
+		GameRegistry.registerItem(leatherBelt, leatherBelt.getUnlocalizedName());
+		GameRegistry.registerItem(tongs, tongs.getUnlocalizedName());
+		
+		// Devices
+		GameRegistry.registerItem(wireDrawBench, wireDrawBench.getUnlocalizedName());
 		
 		// Wire drawing
 		GameRegistry.registerItem(tinWire, tinWire.getUnlocalizedName());
@@ -870,6 +894,12 @@ public class ModItems {
 		GameRegistry.registerItem(unfinishedIronWire, unfinishedIronWire.getUnlocalizedName());
 		GameRegistry.registerItem(unfinishedSteelWire, unfinishedSteelWire.getUnlocalizedName());
 		
+		GameRegistry.registerItem(ironDrawplate, ironDrawplate.getUnlocalizedName());
+		GameRegistry.registerItem(steelDrawplate, steelDrawplate.getUnlocalizedName());
+		GameRegistry.registerItem(blackSteelDrawplate, blackSteelDrawplate.getUnlocalizedName());
+
+		GameRegistry.registerItem(oilcan, oilcan.getUnlocalizedName());
+
 		// == Integration =====================================================
 		
 		GameRegistry.registerItem(clayMoldGearPiece, clayMoldGearPiece.getUnlocalizedName());
@@ -990,6 +1020,7 @@ public class ModItems {
 		invar.addIngred(Global.WROUGHTIRON, 60.00f, 70.00f);
 		invar.addIngred(Global.NICKEL, 30.00f, 40.00f);
 		AlloyManager.INSTANCE.addAlloy(invar);
+		
 	}
 	
 }

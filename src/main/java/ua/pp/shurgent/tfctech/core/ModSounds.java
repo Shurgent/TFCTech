@@ -8,4 +8,8 @@ public class ModSounds {
 	public static final String BOWLFIT = PATH + "rubbertapping.bowl.fit";
 	public static final String BOWLGRAB = PATH + "rubbertapping.bowl.grab";
 	public static final String SCRATCH = PATH + "rubbertapping.trunk.scratch";
+
+	public static final String TONGSFALL = PATH + "wiredrawbench.tongs_fall";
+	public static final String DRAWING = PATH + "wiredrawbench.drawing";
+
 }

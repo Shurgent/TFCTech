@@ -1,10 +1,11 @@
 ﻿{
-	"version": "0.2.6-A11",
+	"version": "0.2.7-A12",
 	"changelog": [
-		"Significantly reduced default Quartz drop rates",
-		"Finally fixed all crashes related to running without Buildcraft (I hope so)",
-		"Fixed strip recipe consuming entire chisel",
-		"Improved WAILA info on Rubber Tapping",
-		"Added wires (WIP)"
+		"Fixed missing anvil recipes in SMP",
+		"Added Wire Draw Bench",
+		"Added Oil Can",
+		"Implemented Wire Draw Bench NEI integration",
+		"Modified IE Wire Coil recipes to use new TFCTech wires",
+		"Added Barrel recipes of Treated Sticks and Planks"
 	]
 }

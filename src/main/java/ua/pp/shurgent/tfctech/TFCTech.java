@@ -21,10 +21,12 @@ import ua.pp.shurgent.tfctech.core.ModOptions;
 import ua.pp.shurgent.tfctech.core.ModOreDictionary;
 import ua.pp.shurgent.tfctech.core.ModRecipes;
 import ua.pp.shurgent.tfctech.core.player.ModPlayerTracker;
+import ua.pp.shurgent.tfctech.handlers.AnvilCraftingHandler;
 import ua.pp.shurgent.tfctech.handlers.ChunkEventHandler;
 import ua.pp.shurgent.tfctech.handlers.CraftingHandler;
 import ua.pp.shurgent.tfctech.handlers.ModBucketHandler;
 import ua.pp.shurgent.tfctech.handlers.TFCTechEventListener;
+import ua.pp.shurgent.tfctech.handlers.network.InitClientWorldPacket;
 import ua.pp.shurgent.tfctech.integration.bc.BCStuff;
 import ua.pp.shurgent.tfctech.items.ItemHeat;
 import ua.pp.shurgent.tfctech.worldgen.WorldGenBauxiteRocks;
@@ -64,6 +66,7 @@ public class TFCTech {
 	public static boolean enableIE; // ImmersiveEngineering
 	public static boolean enableOC; // OpenComputers
 	public static boolean enableBiblioCraft; // BiblioCraft
+	public static boolean enableNEI; // NotEnoughItems
 	
 	public static final CreativeTabs TFCTECH = new CreativeTabs("TFCTechTab") {
 		
@@ -98,6 +101,7 @@ public class TFCTech {
 		enableIE = checkMod("ImmersiveEngineering");
 		enableOC = checkMod("OpenComputers");
 		enableBiblioCraft = checkMod("BiblioCraft");
+		enableNEI = checkMod(ModDetails.MODID_NEI);
 
 		// Load our settings
 		proxy.loadOptions();
@@ -132,7 +136,7 @@ public class TFCTech {
 
 		ModItems.initialise();
 		ItemHeat.setupItemHeat();
-
+		
 		// Register Gui Handler
 		proxy.registerGuiHandler();
 
@@ -143,7 +147,7 @@ public class TFCTech {
 	@EventHandler
 	public void initialize(FMLInitializationEvent e) {
 		// Register packets in the TFC PacketPipeline
-		TerraFirmaCraft.PACKET_PIPELINE.registerPacket(com.bioxx.tfc.Handlers.Network.InitClientWorldPacket.class);
+		TerraFirmaCraft.PACKET_PIPELINE.registerPacket(InitClientWorldPacket.class);
 
 		// Register the player tracker
 		FMLCommonHandler.instance().bus().register(new ModPlayerTracker());
@@ -161,6 +165,9 @@ public class TFCTech {
 		MinecraftForge.EVENT_BUS.register(new TFCTechEventListener());
 		FMLCommonHandler.instance().bus().register(new  TFCTechEventListener());
 
+		// Register Anvil Crafting Handler
+		MinecraftForge.EVENT_BUS.register(new AnvilCraftingHandler());
+
 		// Bucket Handler
 		ModBucketHandler.INSTANCE.buckets.put(ModBlocks.latex, ModItems.steelBucketLatex);
 		if (TFCTech.enableBCEnergy) {
@@ -177,7 +184,6 @@ public class TFCTech {
 		// Register WAILA classes
 		proxy.registerWailaClasses();
 		
-		proxy.hideNEIItems();
 		ModFluids.registerFluidContainers();
 	}
 

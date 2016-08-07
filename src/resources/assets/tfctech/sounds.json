@@ -1,0 +1,54 @@
+{
+	"rubbertapping.groove.fit": {
+    "category": "block",
+    "sounds": [
+			"fit_groove"
+		]
+	},
+	
+	"rubbertapping.mount.fit": {
+    "category": "block",
+    "sounds": [
+			"fit_mount"
+		]
+	},
+	
+	"rubbertapping.bowl.fit": {
+    "category": "block",
+    "sounds": [
+			"fit_bowl"
+		]
+	},
+	
+	"rubbertapping.bowl.grab": {
+    "category": "block",
+    "sounds": [
+			"grab_bowl"
+		]
+	},
+	
+	"rubbertapping.trunk.scratch": {
+    "category": "block",
+    "sounds": [
+			"trunk_scratch"
+		]
+	},
+	
+	"wiredrawbench.tongs_fall": {
+    "category": "block",
+    "sounds": [
+			"tongs_fall"
+		]
+	},
+	
+	"wiredrawbench.drawing": {
+    "category": "block",
+    "sounds": [
+			"drawing1",
+			"drawing2",
+			"drawing3",
+			"drawing4",
+			"drawing5"
+		]
+	}
+}
