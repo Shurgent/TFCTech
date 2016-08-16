@@ -1,11 +1,6 @@
 ﻿{
-	"version": "0.2.7-A12",
+	"version": "0.2.7-A12-HOTFIX1",
 	"changelog": [
-		"Fixed missing anvil recipes in SMP",
-		"Added Wire Draw Bench",
-		"Added Oil Can",
-		"Implemented Wire Draw Bench NEI integration",
-		"Modified IE Wire Coil recipes to use new TFCTech wires",
-		"Added Barrel recipes of Treated Sticks and Planks"
+		"Fixed crash on splitting iron bloom"
 	]
 }

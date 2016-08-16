@@ -1,6 +1,9 @@
 Changelog
 ---------
 
+0.2.7-A12-HOTFIX1:
+  * Fixed crash on splitting iron bloom
+
 0.2.7-A12:
   * Fixed missing anvil recipes in SMP
   * Added Wire Draw Bench

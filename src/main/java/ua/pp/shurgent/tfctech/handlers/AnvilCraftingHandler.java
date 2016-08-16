@@ -13,6 +13,9 @@ public class AnvilCraftingHandler {
 	@SubscribeEvent
 	public void onAnvilCrafting(AnvilCraftEvent e) {
 		
+		if (e.result == null)
+			return;
+		
 		if (e.result.getItem() instanceof ItemTFCTechForgedItem) {
 			TEAnvil anvil = (TEAnvil) e.anvilTE;
 			AnvilManager.setDurabilityBuff(e.result, anvil.workRecipe.getSkillMult(anvil.lastWorker));
