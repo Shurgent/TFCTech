@@ -1,6 +1,9 @@
 Changelog
 ---------
 
+0.2.7-A12-HOTFIX2:
+  * Fixed bug with drawing on empty bench
+
 0.2.7-A12-HOTFIX1:
   * Fixed crash on splitting iron bloom
 

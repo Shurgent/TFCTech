@@ -8,7 +8,7 @@ public class ModDetails {
 	public static final int VersionMajor = 0;
 	public static final int VersionMinor = 2;
 	public static final int VersionRevision = 7;
-	public static final String VersionSuffix = "-A12-HOTFIX1";
+	public static final String VersionSuffix = "-A12-HOTFIX2";
 
 	public static final String ModVersion = VersionMajor + "." + VersionMinor + "." + VersionRevision + VersionSuffix;
 	public static final String ModDependencies =

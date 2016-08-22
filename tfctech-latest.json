@@ -1,6 +1,6 @@
 ﻿{
-	"version": "0.2.7-A12-HOTFIX1",
+	"version": "0.2.7-A12-HOTFIX2",
 	"changelog": [
-		"Fixed crash on splitting iron bloom"
+		"Fixed bug with drawing on empty bench"
 	]
 }

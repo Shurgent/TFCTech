@@ -84,7 +84,7 @@ public class BlockWireDrawBench extends BlockTerraContainer {
 							tewd.putDrawplate(player.getCurrentEquippedItem());
 							tewd.putWire(player.getCurrentEquippedItem());
 						}
-					} else if (player.isSneaking() && !footBlock && !tewd.isWorking()) {
+					} else if (player.isSneaking() && !footBlock && !tewd.isWorking() && tewd.recipe != null) {
 						if (tewd.progress < 100) {
 							tewd.setIsDrawing(true);
 							tewd.setWorking();

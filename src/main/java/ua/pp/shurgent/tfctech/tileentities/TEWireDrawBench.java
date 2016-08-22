@@ -141,6 +141,8 @@ public class TEWireDrawBench extends NetworkTileEntity implements IInventory {
 	}
 	
 	public void finishDrawing() {
+		if (recipe == null || getDrawplate() == null)
+			return; // Just in case
 		setInput(null);
 		setOutput(recipe.getOutItemStack().copy());
 		this.finished = true;
