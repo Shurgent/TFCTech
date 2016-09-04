@@ -20,6 +20,8 @@ import ua.pp.shurgent.tfctech.api.crafting.WireDrawBenchRecipe;
 import ua.pp.shurgent.tfctech.core.ModDetails;
 import ua.pp.shurgent.tfctech.core.ModItems;
 import ua.pp.shurgent.tfctech.core.ModUtils;
+import ua.pp.shurgent.tfctech.items.tools.ItemDrawplate;
+import ua.pp.shurgent.tfctech.items.tools.ItemOilCan;
 import codechicken.nei.PositionedStack;
 import codechicken.nei.recipe.TemplateRecipeHandler;
 
@@ -35,7 +37,7 @@ public class WireDrawBenchRecipeHandler extends TemplateRecipeHandler {
 	
 	@Override
 	public String getGuiTexture() {
-		return new ResourceLocation(ModDetails.ModID, "/textures/gui/WireDrawBenchRecipe.png").toString();
+		return new ResourceLocation(ModDetails.ModID, "textures/gui/WireDrawBenchRecipe.png").toString();
 	}
 	
 	@Override
@@ -57,6 +59,28 @@ public class WireDrawBenchRecipeHandler extends TemplateRecipeHandler {
 		for (WireDrawBenchRecipe recipe : recipeList)
 			if (ModUtils.areItemStacksEqual(result, recipe.getCraftingResult()))
 				arecipes.add(new CachedWireDrawBenchRecipe(recipe));
+	}
+	
+	@Override
+	public void loadUsageRecipes(ItemStack ingredient) {
+		
+		if (ingredient.getItem() instanceof ItemOilCan) {
+			for (WireDrawBenchRecipe recipe : recipeList) {
+				if (recipe.oilRequired)
+					arecipes.add(new CachedWireDrawBenchRecipe(recipe));
+			}
+		} else if (ingredient.getItem() instanceof ItemDrawplate) {
+			for (WireDrawBenchRecipe recipe : recipeList) {
+				if (DrawplateReq.getReqFromInt(recipe.getDrawplateReq()).matches(DrawplateReq.getReqFromItem((ItemDrawplate) ingredient.getItem())))
+					arecipes.add(new CachedWireDrawBenchRecipe(recipe));
+			}
+		} else {
+			for (WireDrawBenchRecipe recipe : recipeList) {
+				if (recipe.getInput().getItem().equals(ingredient.getItem()) && recipe.getInput().getItemDamage() == ingredient.getItemDamage())
+					arecipes.add(new CachedWireDrawBenchRecipe(recipe));
+			}
+		}
+		
 	}
 	
 	@Override

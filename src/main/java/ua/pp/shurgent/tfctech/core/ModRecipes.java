@@ -563,12 +563,62 @@ public class ModRecipes {
 		/**
 		 * Devices
 		 */
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.winch), "L L", " W ", "L L", 'L', "woodLumber", 'W', "plankWood"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.winch),
+				"L L",
+				" W ",
+				"L L",
+				'L', "woodLumber",
+				'W', "plankWood"
+		));
 		
 		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.leatherBelt), "LLL", 'L', "materialLeather"));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.wireDrawBench), "XBR", "WWW", "L L", 'X', ModItems.winch, 'B', ModItems.leatherBelt,
-				'R', ModItems.tongs, 'L', "woodLumber", 'W', "plankWood"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.wireDrawBench),
+				"XBR",
+				"WWW",
+				"L L",
+				'X', ModItems.winch,
+				'B',ModItems.leatherBelt,
+				'R', ModItems.tongs,
+				'L', "woodLumber",
+				'W', "plankWood"
+		));
+		// Circuit Board
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.circuits, 1, 0),
+				"PPP",
+				"GDG",
+				"PPP",
+				'P', "materialPaper",
+				'G', "materialGlue",
+				'D', "dyeGreen"
+		));
+		// Frequency Generator Circuit
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.circuits, 1, 1),
+				"RQT",
+				"WBW",
+				'R', Items.repeater,
+				'Q', "gemQuartz",
+				'T', Blocks.redstone_torch,
+				'W', ModItems.copperWire,
+				'B', new ItemStack(ModItems.circuits, 1, 0)
+		));
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.inductor),
+				" W ",
+				"W W",
+				" W ",
+				'W', ModItems.copperWire
+		);
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModBlocks.inductionSmelter),
+				"OCO",
+				"OFO",
+				"PIS",
+				'O', ModItems.inductor,
+				'C', TFCBlocks.crucible,
+				'F', new ItemStack(ModItems.circuits, 1, 1),
+				'I', TFCItems.copperIngot,
+				'P', "platePlatinum",
+				'S', "plateSteel"
+		));
 		
 		registerPottery();
 		registerKilnRecipes();

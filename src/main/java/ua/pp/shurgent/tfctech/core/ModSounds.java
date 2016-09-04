@@ -12,4 +12,5 @@ public class ModSounds {
 	public static final String TONGSFALL = PATH + "wiredrawbench.tongs_fall";
 	public static final String DRAWING = PATH + "wiredrawbench.drawing";
 
+	public static final String INDUCTOR = PATH + "induction_smelter.work";
 }

@@ -20,6 +20,8 @@ public class ModOptions {
 	public static final String CRAFTING = "crafting";
 	public static final String WORLDGEN = "world";
 	public static final String FURNACE = "furnace";
+	public static final String ENERGY = "energy";
+	public static final String DEVICES = "devices";
 
 	// === GENERAL
 	public static boolean cfgCheckUpdates;
@@ -61,6 +63,12 @@ public class ModOptions {
 	public static int cfgHeveaSpawnChanceIncIdealRain;
 	public static int cfgHeveaSpawnChanceIncIdealTemp;
 	public static int cfgHeveaSpawnChanceIncIdealClimate;
+	
+	// === ENERGY
+	public static int cfgInductionSmelterRFConsumption;
+	
+	// === DEVICES
+	public static boolean cfgAllowAutomationInductionSmelter;
 	
 	// TFC ore config
 	private static Configuration oresConfig;
@@ -125,6 +133,12 @@ public class ModOptions {
 		cfgEnableFurnaceRubberFiring = getBooleanFor(config, FURNACE, "FurnaceRubberFiringEnable", true, "Set to false to disable furnace rubber firing recipe.");
 		cfgFuelValueHeveaLog = getIntFor(config, FURNACE, "FuelValueHeveaLog", 800, 1, 20000, "Burn time for Hevea Log.");
 		cfgFuelValueRubber = getIntFor(config, FURNACE, "FuelValueRubber", 200, 1, 20000, "Burn time for Rubber.");
+		
+		// === Energy
+		cfgInductionSmelterRFConsumption = getIntFor(config, ENERGY, "InductionSmelterRFConsumption", 128, 32, 4096, "How much energy consumes Induction Smelter, RF/t");
+
+		// === Devices
+		cfgAllowAutomationInductionSmelter = getBooleanFor(config, DEVICES, "AllowAutomationOfInductionSmelter", true, "Set to false to disable Induction Smelter automation.");
 
 		/** End Here */
 		if (config != null)

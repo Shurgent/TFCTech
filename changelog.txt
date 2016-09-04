@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+0.2.8-A13:
+  * Added missing usage recipes in NEI
+  * Added missing heating index of unfinished wires stage 2-3
+  * Added Induction Smelter
+
 0.2.7-A12-HOTFIX2:
   * Fixed bug with drawing on empty bench
 

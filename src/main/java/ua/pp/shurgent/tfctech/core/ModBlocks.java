@@ -4,6 +4,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Blocks;
 import ua.pp.shurgent.tfctech.TFCTech;
+import ua.pp.shurgent.tfctech.blocks.devices.BlockInductionSmelter;
 import ua.pp.shurgent.tfctech.blocks.devices.BlockLatexExtractor;
 import ua.pp.shurgent.tfctech.blocks.devices.BlockWireDrawBench;
 import ua.pp.shurgent.tfctech.blocks.flora.BlockModHeveaHoriz;
@@ -27,6 +28,7 @@ public class ModBlocks {
 	public static int oreRenderId;
 	public static int latexExtractorRenderId;
 	public static int wireDrawBenchRenderId;
+	public static int inductionSmelterRenderId;
 
 	// Blocks
 	public static Block ore;
@@ -47,6 +49,7 @@ public class ModBlocks {
 	// Devices
 	public static Block latexExtractor;
 	public static Block wireDrawBench;
+	public static Block inductionSmelter;
 
 	public static void initialise() {
 		TFCTech.LOG.info("Registering Blocks");
@@ -89,6 +92,7 @@ public class ModBlocks {
 		
 		latexExtractor = new BlockLatexExtractor().setBlockName("LatexExtractor").setHardness(2);
 		wireDrawBench = new BlockWireDrawBench().setBlockName("WireDrawBench").setHardness(2).setResistance(20F).setStepSound(Block.soundTypeWood);
+		inductionSmelter = new BlockInductionSmelter().setBlockName("InductionSmelter").setHardness(4);
 		
 	}
 
@@ -98,6 +102,7 @@ public class ModBlocks {
 		
 		GameRegistry.registerBlock(latexExtractor, "LatexExtractor");
 		GameRegistry.registerBlock(wireDrawBench, "WireDrawBench");
+		GameRegistry.registerBlock(inductionSmelter, "InductionSmelter");
 
 		GameRegistry.registerBlock(logHeveaNatural, ItemModCustomWood.class, "Hevea");
 		GameRegistry.registerBlock(logHeveaNatural1, ItemModCustomWood.class, "Hevea1");

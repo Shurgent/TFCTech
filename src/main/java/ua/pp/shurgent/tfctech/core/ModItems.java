@@ -47,7 +47,7 @@ import com.bioxx.tfc.api.Enums.EnumSize;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
-
+	
 	// Dust
 	public static Item aluminumDust;
 	public static Item bauxiteDust;
@@ -75,7 +75,7 @@ public class ModItems {
 	public static Item sterlingSilverDust;
 	public static Item tinDust;
 	public static Item zincDust;
-
+	
 	// Nuggets
 	public static Item aluminumNugget;
 	public static Item electrumNugget;
@@ -102,7 +102,7 @@ public class ModItems {
 	public static Item sterlingSilverNugget;
 	public static Item tinNugget;
 	public static Item zincNugget;
-
+	
 	// Ingots
 	public static Item aluminumIngot;
 	public static Item aluminumIngot2x;
@@ -111,19 +111,19 @@ public class ModItems {
 	public static Item electrumIngot;
 	public static Item electrumIngot2x;
 	public static Item electrumUnshaped;
-
+	
 	public static Item constantanIngot;
 	public static Item constantanIngot2x;
 	public static Item constantanUnshaped;
-
+	
 	public static Item invarIngot;
 	public static Item invarIngot2x;
 	public static Item invarUnshaped;
-
+	
 	// Ore
 	public static Item oreChunk;
 	public static Item smallOreChunk;
-
+	
 	// Plates
 	public static Item aluminumPlate;
 	public static Item electrumPlate;
@@ -150,7 +150,7 @@ public class ModItems {
 	public static Item sterlingSilverPlate;
 	public static Item tinPlate;
 	public static Item zincPlate;
-
+	
 	public static Item aluminumPlate2x;
 	public static Item electrumPlate2x;
 	public static Item constantanPlate2x;
@@ -199,6 +199,8 @@ public class ModItems {
 	// Device components
 	public static Item groove;
 	public static Item mount;
+	public static Item circuits;
+	public static Item inductor;
 	
 	// Rubber
 	public static Item chalkPowder;
@@ -222,7 +224,7 @@ public class ModItems {
 	// Tools
 	public static Item latexBowl;
 	
-	//===========================================
+	// ===========================================
 	
 	// === Gears ================================
 	
@@ -264,14 +266,14 @@ public class ModItems {
 	public static Item brassSleeve;
 	public static Item tinSleeve;
 	public static Item steelSleeve;
-
-	//===========================================
+	
+	// ===========================================
 	
 	// === Flora ================================
 	
 	public static Item logHevea;
 	
-	//===========================================
+	// ===========================================
 	
 	// === Integration ==========================
 	
@@ -285,7 +287,7 @@ public class ModItems {
 	
 	// Pipes
 	public static Item pipeStructureLead;
-
+	
 	public static Item pipeItemsLead;
 	public static Item pipeItemsBlueSteel;
 	public static Item pipeItemsMarker;
@@ -301,7 +303,7 @@ public class ModItems {
 	public static Item pipeItemsSterlingSilver;
 	public static Item pipeItemsZinc;
 	public static Item pipeItemsNullify;
-
+	
 	public static Item pipeFluidsLead;
 	public static Item pipeFluidsCopper;
 	public static Item pipeFluidsRedSteel;
@@ -342,7 +344,7 @@ public class ModItems {
 	public static Item capacitorBaseLV;
 	public static Item capacitorBaseMV;
 	public static Item capacitorBaseHV;
-	//===========================================
+	// ===========================================
 	
 	// === Wires ================================
 	public static Item tinWire;
@@ -370,7 +372,7 @@ public class ModItems {
 	public static Item leatherBelt;
 	public static Item winch;
 	public static Item wireDrawBench;
-	//===========================================
+	// ===========================================
 	
 	// === Other ================================
 	
@@ -379,21 +381,21 @@ public class ModItems {
 	public static Item dixieGlue;
 	public static Item glue;
 	
-	//===========================================
+	// ===========================================
 	
 	public static void initialise() {
 		TFCTech.LOG.info("Registering Items");
-
+		
 		setup();
 		registerItems();
 		registerMetals();
 		
 		if (TFCTech.enableBCCore)
 			BCStuff.removeFromCreativeTab();
-
+		
 		TFCTech.LOG.info("Done Registering Items");
 	}
-
+	
 	private static void setup() {
 		
 		// Dust
@@ -423,7 +425,7 @@ public class ModItems {
 		sterlingSilverDust = new ItemDust("Sterling Silver", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Sterling Silver Dust");
 		tinDust = new ItemDust("Tin", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Tin Dust");
 		zincDust = new ItemDust("Zinc", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Zinc Dust");
-
+		
 		// Nuggets
 		aluminumNugget = new ItemNugget("Aluminum", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Aluminum Nugget");
 		electrumNugget = new ItemNugget("Electrum", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Electrum Nugget");
@@ -450,7 +452,7 @@ public class ModItems {
 		sterlingSilverNugget = new ItemNugget("Sterling Silver", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Sterling Silver Nugget");
 		tinNugget = new ItemNugget("Tin", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Tin Nugget");
 		zincNugget = new ItemNugget("Zinc", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Zinc Nugget");
-
+		
 		// Ore
 		oreChunk = new ItemModOre().setFolder("ore/").setUnlocalizedName("Ore");
 		smallOreChunk = new ItemModOreSmall().setUnlocalizedName("Small Ore");
@@ -469,7 +471,7 @@ public class ModItems {
 		invarIngot = new ItemModIngot("Invar", 100).setUnlocalizedName("Invar Ingot");
 		invarIngot2x = new ItemModIngot("Invar", 200).setUnlocalizedName("Invar Double Ingot");
 		invarUnshaped = new ItemModMeltedMetal().setUnlocalizedName("Invar Unshaped");
-
+		
 		// Plates
 		aluminumPlate = new ItemPlate("Aluminum", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Aluminum Plate");
 		electrumPlate = new ItemPlate("Electrum", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Electrum Plate");
@@ -496,7 +498,7 @@ public class ModItems {
 		sterlingSilverPlate = new ItemPlate("Sterling Silver", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Sterling Silver Plate");
 		tinPlate = new ItemPlate("Tin", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Tin Plate");
 		zincPlate = new ItemPlate("Zinc", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Zinc Plate");
-
+		
 		// Dense plates
 		aluminumPlate2x = new ItemPlate("Aluminum", ModOptions.cfgPlate2xMetalAmount).setUnlocalizedName("Dense Aluminum Plate");
 		electrumPlate2x = new ItemPlate("Electrum", ModOptions.cfgPlate2xMetalAmount).setUnlocalizedName("Dense Electrum Plate");
@@ -525,19 +527,32 @@ public class ModItems {
 		zincPlate2x = new ItemPlate("Zinc", ModOptions.cfgPlate2xMetalAmount).setUnlocalizedName("Dense Zinc Plate");
 		
 		// == Sheets
-		String[] names = {"Aluminum", "Electrum", "Constantan", "Invar"};
+		String[] names = {
+				"Aluminum",
+				"Electrum",
+				"Constantan",
+				"Invar"
+		};
 		
 		int i = 0;
-		aluminumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
-		electrumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
-		constantanSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
-		invarSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet"); i++;
+		aluminumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet");
+		i++;
+		electrumSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet");
+		i++;
+		constantanSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet");
+		i++;
+		invarSheet = new ItemModMetalSheet(names[i]).setUnlocalizedName(names[i] + " Sheet");
+		i++;
 		
 		i = 0;
-		aluminumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
-		electrumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
-		constantanSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
-		invarSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet"); i++;
+		aluminumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet");
+		i++;
+		electrumSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet");
+		i++;
+		constantanSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet");
+		i++;
+		invarSheet2x = new ItemModMetalSheet2x(names[i]).setUnlocalizedName(names[i] + " Double Sheet");
+		i++;
 		
 		// == Gears
 		bismuthBronzeGearPiece = new ItemGearPiece("Bismuth Bronze", 100).setUnlocalizedName("Bismuth Bronze Gear Piece");
@@ -579,24 +594,28 @@ public class ModItems {
 		tinSleeve = new ItemSleeve("Tin", 100).setUnlocalizedName("Tin Sleeve");
 		
 		// == Pottery
-		clayMoldGearPiece = new ItemModPotteryMold(new String[]{"Clay Mold Gear Piece","Ceramic Mold Gear Piece",
-				"Ceramic Mold Gear Piece Copper", //2
-				"Ceramic Mold Gear Piece Bronze", //3
-				"Ceramic Mold Gear Piece Bismuth Bronze", //4
-				"Ceramic Mold Gear Piece Black Bronze", //5
-				"Ceramic Mold Gear Piece Gold", //6
-				"Ceramic Mold Gear Piece Tin", //7
-				"Ceramic Mold Gear Piece Brass", //8
-				"Ceramic Mold Gear Piece Wrought Iron", //9
-				"Ceramic Mold Gear Piece Steel", //10
-				"Ceramic Mold Gear Piece Blue Steel" //11
-			}).setUnlocalizedName("Gear Piece Mold");
+		clayMoldGearPiece = new ItemModPotteryMold(new String[] {
+				"Clay Mold Gear Piece",
+				"Ceramic Mold Gear Piece",
+				"Ceramic Mold Gear Piece Copper", // 2
+				"Ceramic Mold Gear Piece Bronze", // 3
+				"Ceramic Mold Gear Piece Bismuth Bronze", // 4
+				"Ceramic Mold Gear Piece Black Bronze", // 5
+				"Ceramic Mold Gear Piece Gold", // 6
+				"Ceramic Mold Gear Piece Tin", // 7
+				"Ceramic Mold Gear Piece Brass", // 8
+				"Ceramic Mold Gear Piece Wrought Iron", // 9
+				"Ceramic Mold Gear Piece Steel", // 10
+				"Ceramic Mold Gear Piece Blue Steel" // 11
+		}).setUnlocalizedName("Gear Piece Mold");
 		
-		clayMoldSleeve = new ItemModPotteryMold(new String[]{"Clay Mold Sleeve","Ceramic Mold Sleeve",
-				"Ceramic Mold Sleeve Brass", //2
-				"Ceramic Mold Sleeve Tin", //3
-				"Ceramic Mold Sleeve Steel" //4
-			}).setUnlocalizedName("Sleeve Mold");
+		clayMoldSleeve = new ItemModPotteryMold(new String[] {
+				"Clay Mold Sleeve",
+				"Ceramic Mold Sleeve",
+				"Ceramic Mold Sleeve Brass", // 2
+				"Ceramic Mold Sleeve Tin", // 3
+				"Ceramic Mold Sleeve Steel" // 4
+		}).setUnlocalizedName("Sleeve Mold");
 		
 		latexBowl = new ItemModPotteryLatexBowl().setUnlocalizedName("Latex Bowl");
 		
@@ -610,11 +629,17 @@ public class ModItems {
 		steelStripe = new ItemStripe("Steel", 50).setUnlocalizedName("Steel Stripe");
 		
 		// == Device components
+		final String devFolder = "devices/";
 		groove = new ItemGroove("Wrought Iron", 50).setUnlocalizedName("Groove");
 		mount = new ItemMount("Wrought Iron", 100).setUnlocalizedName("Bowl Mount");
 		tongs = new ItemModMetalItem("Wrought Iron", 100, "devices").setUnlocalizedName("Tongs");
-		leatherBelt = new ItemCraftComponent(EnumSize.SMALL).setFolder("devices/").setUnlocalizedName("Leather Belt");
-		winch = new ItemCraftComponent(EnumSize.LARGE).setFolder("devices/").setUnlocalizedName("Winch");
+		leatherBelt = new ItemCraftComponent(EnumSize.SMALL).setFolder(devFolder).setUnlocalizedName("Leather Belt");
+		winch = new ItemCraftComponent(EnumSize.LARGE).setFolder(devFolder).setUnlocalizedName("Winch");
+		circuits = new ItemCraftComponent(EnumSize.SMALL, new String[] {
+				"Circuit Board",
+				"Frequency Generator Circuit"
+		}).setFolder(devFolder).setUnlocalizedName("Circuit");
+		inductor = new ItemModMetalItem("Copper", 200, "devices").setUnlocalizedName("Inductor");
 		
 		// == Devices
 		wireDrawBench = new ItemWireDrawBench().setUnlocalizedName("Wire Draw Bench");
@@ -639,28 +664,50 @@ public class ModItems {
 		limePaint = new ItemLimePaint().setUnlocalizedName("Lime Paint");
 		
 		// == Wire drawing
-		names = new String[] {"Tin", "Copper", "Gold", "Aluminum", "Electrum", "Wrought Iron", "Steel"};
+		names = new String[] {
+				"Tin",
+				"Copper",
+				"Gold",
+				"Aluminum",
+				"Electrum",
+				"Wrought Iron",
+				"Steel"
+		};
 		String folder = "wires";
 		String suffix = " Wire";
 		
 		i = 0;
-		tinWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		copperWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		goldWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		aluminumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		electrumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		ironWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
-		steelWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix); i++;
+		tinWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		copperWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		goldWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		aluminumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		electrumWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		ironWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
+		steelWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
 		
 		i = 0;
 		String prefix = "Unfinished ";
-		unfinishedTinWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedCopperWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedGoldWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedAluminumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedElectrumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedIronWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
-		unfinishedSteelWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix); i++;
+		unfinishedTinWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedCopperWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedGoldWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedAluminumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedElectrumWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedIronWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedSteelWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
 		
 		ironDrawplate = new ItemDrawplate(Global.WROUGHTIRON).setUnlocalizedName("Wrought Iron Drawplate").setMaxDamage(TFCItems.wroughtIronUses);
 		steelDrawplate = new ItemDrawplate(Global.STEEL).setUnlocalizedName("Steel Drawplate").setMaxDamage(TFCItems.steelUses);
@@ -675,10 +722,14 @@ public class ModItems {
 		}
 		
 		if (TFCTech.enableIE) {
-			potteryInsulatorPart = new ItemModPotteryBase().setMetaNames(new String[]
-					{ "Clay Insulator Part", "Ceramic Insulator Part" }).setUnlocalizedName("Insulator Part").setCreativeTab(TFCTabs.TFC_POTTERY);
-			potteryCeramicPlate = new ItemModPotteryBase().setMetaNames(new String[]
-					{ "Clay Plate", "Ceramic Plate" }).setUnlocalizedName("Ceramic Plate").setCreativeTab(TFCTabs.TFC_POTTERY);
+			potteryInsulatorPart = new ItemModPotteryBase().setMetaNames(new String[] {
+					"Clay Insulator Part",
+					"Ceramic Insulator Part"
+			}).setUnlocalizedName("Insulator Part").setCreativeTab(TFCTabs.TFC_POTTERY);
+			potteryCeramicPlate = new ItemModPotteryBase().setMetaNames(new String[] {
+					"Clay Plate",
+					"Ceramic Plate"
+			}).setUnlocalizedName("Ceramic Plate").setCreativeTab(TFCTabs.TFC_POTTERY);
 			capacitorElectrode = new ItemCraftComponent().setUnlocalizedName("Capacitor Electrode");
 			mlccBlock = new ItemCraftComponent().setUnlocalizedName("MLCC Block");
 			capacitorBaseLV = new ItemCraftComponent().setUnlocalizedName("LV Capacitor Base");
@@ -693,9 +744,9 @@ public class ModItems {
 			BCStuff.registerItems();
 		
 	}
-
+	
 	private static void registerItems() {
-
+		
 		// Dust
 		GameRegistry.registerItem(aluminumDust, aluminumDust.getUnlocalizedName());
 		GameRegistry.registerItem(bauxiteDust, bauxiteDust.getUnlocalizedName());
@@ -723,7 +774,7 @@ public class ModItems {
 		GameRegistry.registerItem(sterlingSilverDust, sterlingSilverDust.getUnlocalizedName());
 		GameRegistry.registerItem(tinDust, tinDust.getUnlocalizedName());
 		GameRegistry.registerItem(zincDust, zincDust.getUnlocalizedName());
-
+		
 		// Nuggets
 		GameRegistry.registerItem(aluminumNugget, aluminumNugget.getUnlocalizedName());
 		GameRegistry.registerItem(constantanNugget, constantanNugget.getUnlocalizedName());
@@ -750,7 +801,7 @@ public class ModItems {
 		GameRegistry.registerItem(sterlingSilverNugget, sterlingSilverNugget.getUnlocalizedName());
 		GameRegistry.registerItem(tinNugget, tinNugget.getUnlocalizedName());
 		GameRegistry.registerItem(zincNugget, zincNugget.getUnlocalizedName());
-
+		
 		// Ingots
 		GameRegistry.registerItem(aluminumIngot, aluminumIngot.getUnlocalizedName());
 		GameRegistry.registerItem(aluminumIngot2x, aluminumIngot2x.getUnlocalizedName());
@@ -768,7 +819,7 @@ public class ModItems {
 		Globals.INGOTS.add(electrumIngot);
 		Globals.INGOTS.add(constantanIngot);
 		Globals.INGOTS.add(invarIngot);
-
+		
 		// Ores
 		GameRegistry.registerItem(oreChunk, oreChunk.getUnlocalizedName());
 		GameRegistry.registerItem(smallOreChunk, smallOreChunk.getUnlocalizedName());
@@ -799,7 +850,7 @@ public class ModItems {
 		GameRegistry.registerItem(sterlingSilverPlate, sterlingSilverPlate.getUnlocalizedName());
 		GameRegistry.registerItem(tinPlate, tinPlate.getUnlocalizedName());
 		GameRegistry.registerItem(zincPlate, zincPlate.getUnlocalizedName());
-
+		
 		// Dense plates
 		GameRegistry.registerItem(aluminumPlate2x, aluminumPlate2x.getUnlocalizedName());
 		GameRegistry.registerItem(constantanPlate2x, constantanPlate2x.getUnlocalizedName());
@@ -873,6 +924,8 @@ public class ModItems {
 		GameRegistry.registerItem(winch, winch.getUnlocalizedName());
 		GameRegistry.registerItem(leatherBelt, leatherBelt.getUnlocalizedName());
 		GameRegistry.registerItem(tongs, tongs.getUnlocalizedName());
+		GameRegistry.registerItem(circuits, circuits.getUnlocalizedName());
+		GameRegistry.registerItem(inductor, inductor.getUnlocalizedName());
 		
 		// Devices
 		GameRegistry.registerItem(wireDrawBench, wireDrawBench.getUnlocalizedName());
@@ -897,9 +950,9 @@ public class ModItems {
 		GameRegistry.registerItem(ironDrawplate, ironDrawplate.getUnlocalizedName());
 		GameRegistry.registerItem(steelDrawplate, steelDrawplate.getUnlocalizedName());
 		GameRegistry.registerItem(blackSteelDrawplate, blackSteelDrawplate.getUnlocalizedName());
-
+		
 		GameRegistry.registerItem(oilcan, oilcan.getUnlocalizedName());
-
+		
 		// == Integration =====================================================
 		
 		GameRegistry.registerItem(clayMoldGearPiece, clayMoldGearPiece.getUnlocalizedName());
@@ -944,7 +997,11 @@ public class ModItems {
 		GameRegistry.registerItem(steelSleeve, steelSleeve.getUnlocalizedName());
 		GameRegistry.registerItem(tinSleeve, tinSleeve.getUnlocalizedName());
 		
-		bronzeGears = new Item[] {bismuthBronzeGear, blackBronzeGear, bronzeGear};
+		bronzeGears = new Item[] {
+				bismuthBronzeGear,
+				blackBronzeGear,
+				bronzeGear
+		};
 		
 		GameRegistry.registerItem(gemQuartz, gemQuartz.getUnlocalizedName());
 		GameRegistry.registerItem(steelBucketEmpty, steelBucketEmpty.getUnlocalizedName());
@@ -987,22 +1044,22 @@ public class ModItems {
 		// ====================================================================
 		
 	}
-
+	
 	private static void registerMetals() {
-
-		//Aluminum
+		
+		// Aluminum
 		Globals.ALUMINUM = new Metal("Aluminum", ModItems.aluminumUnshaped, ModItems.aluminumIngot);
 		MetalRegistry.instance.addMetal(Globals.ALUMINUM, Alloy.EnumTier.TierI);
 		
-		//Electrum
+		// Electrum
 		Globals.ELECTRUM = new Metal("Electrum", ModItems.electrumUnshaped, ModItems.electrumIngot);
 		MetalRegistry.instance.addMetal(Globals.ELECTRUM, Alloy.EnumTier.TierI);
 		
-		//Constantan
+		// Constantan
 		Globals.CONSTANTAN = new Metal("Constantan", ModItems.constantanUnshaped, ModItems.constantanIngot);
 		MetalRegistry.instance.addMetal(Globals.CONSTANTAN, Alloy.EnumTier.TierI);
 		
-		//Invar
+		// Invar
 		Globals.INVAR = new Metal("Invar", ModItems.invarUnshaped, ModItems.invarIngot);
 		MetalRegistry.instance.addMetal(Globals.INVAR, Alloy.EnumTier.TierIII);
 		
@@ -1010,12 +1067,12 @@ public class ModItems {
 		electrum.addIngred(Global.GOLD, 37.00f, 63.00f);
 		electrum.addIngred(Global.SILVER, 37.00f, 63.00f);
 		AlloyManager.INSTANCE.addAlloy(electrum);
-
+		
 		Alloy constantan = new Alloy(Globals.CONSTANTAN, Alloy.EnumTier.TierI);
 		constantan.addIngred(Global.COPPER, 55.00f, 65.00f);
 		constantan.addIngred(Global.NICKEL, 35.00f, 45.00f);
 		AlloyManager.INSTANCE.addAlloy(constantan);
-
+		
 		Alloy invar = new Alloy(Globals.INVAR, Alloy.EnumTier.TierIII);
 		invar.addIngred(Global.WROUGHTIRON, 60.00f, 70.00f);
 		invar.addIngred(Global.NICKEL, 30.00f, 40.00f);

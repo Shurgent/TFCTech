@@ -238,6 +238,9 @@ item.Copper Stripe.name=Медная полоска
 item.Gold Stripe.name=Золотая полоска
 item.Electrum Stripe.name=Полоска электрума
 item.Steel Stripe.name=Стальная полоска
+item.Circuit.Circuit Board.name=Монтажная плата
+item.Circuit.Frequency Generator Circuit.name=Схема частотного генератора
+item.Inductor.name=Индуктор
 
 #// Wire drawing //
 item.Tin Wire.name=Оловянная проволока
@@ -379,6 +382,7 @@ tile.sapling.Hevea.name=Саженец гевеи
 
 #== Devices ==
 tile.LatexExtractor.name=Подсочка
+tile.InductionSmelter.name=Индукционная плавильня
 
 #=======
 #= GUI =
@@ -400,6 +404,9 @@ gui.groove.hammer=Без молота не установить.
 gui.groove.cantPlace=Не возможно установить здесь.
 
 gui.latexTapping.treeIsDead=Дерево засохшее.
+
+gui.inductionSmelter.thermostat=Термостат
+gui.inductionSmelter.thermostatSettings=Настройки термостата
 
 gui.wire.stage1=Стадия 1
 gui.wire.stage2=Стадия 2

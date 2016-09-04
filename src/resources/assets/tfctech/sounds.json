@@ -50,5 +50,12 @@
 			"drawing4",
 			"drawing5"
 		]
+	},
+	
+	"induction_smelter.work": {
+    "category": "block",
+    "sounds": [
+			"induction_smelter_work"
+		]
 	}
 }

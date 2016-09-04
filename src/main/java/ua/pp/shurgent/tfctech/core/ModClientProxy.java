@@ -5,11 +5,14 @@ import java.io.File;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.World;
 import net.minecraftforge.client.MinecraftForgeClient;
+import ua.pp.shurgent.tfctech.render.RenderInductionSmelter;
 import ua.pp.shurgent.tfctech.render.RenderLatexExtractor;
 import ua.pp.shurgent.tfctech.render.RenderModOre;
 import ua.pp.shurgent.tfctech.render.RenderWireDrawBench;
+import ua.pp.shurgent.tfctech.render.TESR.TESRInductionSmelter;
 import ua.pp.shurgent.tfctech.render.TESR.TESRLatexExtractor;
 import ua.pp.shurgent.tfctech.render.TESR.TESRWireDrawBench;
+import ua.pp.shurgent.tfctech.tileentities.TEInductionSmelter;
 import ua.pp.shurgent.tfctech.tileentities.TELatexExtractor;
 import ua.pp.shurgent.tfctech.tileentities.TEWireDrawBench;
 import buildcraft.transport.TransportProxyClient;
@@ -123,6 +126,7 @@ public class ModClientProxy extends ModCommonProxy {
 		RenderingRegistry.registerBlockHandler(ModBlocks.oreRenderId = RenderingRegistry.getNextAvailableRenderId(), new RenderModOre());
 		RenderingRegistry.registerBlockHandler(ModBlocks.latexExtractorRenderId = RenderingRegistry.getNextAvailableRenderId(), new RenderLatexExtractor());
 		RenderingRegistry.registerBlockHandler(ModBlocks.wireDrawBenchRenderId = RenderingRegistry.getNextAvailableRenderId(), new RenderWireDrawBench());
+		RenderingRegistry.registerBlockHandler(ModBlocks.inductionSmelterRenderId = RenderingRegistry.getNextAvailableRenderId(), new RenderInductionSmelter());
 	}
 	
 	@Override
@@ -132,6 +136,7 @@ public class ModClientProxy extends ModCommonProxy {
 		// TESR registers
 		ClientRegistry.registerTileEntity(TELatexExtractor.class, "LatexExtractor", new TESRLatexExtractor());
 		ClientRegistry.registerTileEntity(TEWireDrawBench.class, "WireDrawBench", new TESRWireDrawBench());
+		ClientRegistry.registerTileEntity(TEInductionSmelter.class, "InductionSmelter", new TESRInductionSmelter());
 	}
 	
 	@Override

@@ -1,5 +1,6 @@
 package ua.pp.shurgent.tfctech.core;
 
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import ua.pp.shurgent.tfctech.TFCTech;
@@ -230,6 +231,7 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("itemRubber", new ItemStack(ModItems.rubber, 1, WILD));
 		OreDictionary.registerOre("materialRubber", new ItemStack(ModItems.rubber, 1, WILD));
 		OreDictionary.registerOre("materialGlue", new ItemStack(ModItems.glue, 1, WILD));
+		OreDictionary.registerOre("materialPaper", new ItemStack(Items.paper, 1, WILD)); // Add Vanilla paper to OreDictionary as material
 		
 		for (Color color : Color.VALUES) {
 			OreDictionary.registerOre(color.getDye(), new ItemStack(ModItems.limePaint, 1, color.ordinal()));

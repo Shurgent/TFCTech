@@ -1,6 +1,8 @@
 ﻿{
-	"version": "0.2.7-A12-HOTFIX2",
+	"version": "0.2.8-A13",
 	"changelog": [
-		"Fixed bug with drawing on empty bench"
+		"Added missing usage recipes in NEI",
+		"Added missing heating index of unfinished wires stage 2-3",
+		"Added Induction Smelter"
 	]
 }

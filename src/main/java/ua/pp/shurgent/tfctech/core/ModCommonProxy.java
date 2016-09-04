@@ -25,8 +25,10 @@ import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerRedStee
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSilver;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerSterlingSilver;
 import ua.pp.shurgent.tfctech.integration.bc.blocks.pipes.power.PipePowerWroughtIron;
+import ua.pp.shurgent.tfctech.tileentities.TEInductionSmelter;
 import ua.pp.shurgent.tfctech.tileentities.TELatexExtractor;
 import ua.pp.shurgent.tfctech.tileentities.TEModOre;
+import ua.pp.shurgent.tfctech.tileentities.TEWireDrawBench;
 import buildcraft.transport.PipeTransportFluids;
 import buildcraft.transport.PipeTransportPower;
 import buildcraft.transport.pipes.PipeFluidsClay;
@@ -159,6 +161,8 @@ public class ModCommonProxy {
 		if (flag) {
 			// TESR registers
 			GameRegistry.registerTileEntity(TELatexExtractor.class, "LatexExtractor");
+			GameRegistry.registerTileEntity(TEWireDrawBench.class, "WireDrawBench");
+			GameRegistry.registerTileEntity(TEInductionSmelter.class, "InductionSmelter");
 		}
 	}
 

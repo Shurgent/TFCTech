@@ -1,5 +1,8 @@
 package ua.pp.shurgent.tfctech.api.crafting;
 
+import ua.pp.shurgent.tfctech.core.ModItems;
+import ua.pp.shurgent.tfctech.items.tools.ItemDrawplate;
+
 public enum DrawplateReq {
 	
 	WROUGHTIRON("Wrought Iron", 3),
@@ -27,6 +30,10 @@ public enum DrawplateReq {
 		return req.Tier >= Tier;
 	}
 	
+	public boolean matches(ItemDrawplate drawplate) {
+		return matches(getReqFromItem(drawplate));
+	}
+	
 	public static boolean matches(int i, int j) {
 		return j >= i;
 	}
@@ -42,5 +49,18 @@ public enum DrawplateReq {
 		default:
 			return WROUGHTIRON;
 		}
+	}
+	
+	public static DrawplateReq getReqFromItem(ItemDrawplate item) {
+		
+		if (item.equals(ModItems.ironDrawplate))
+			return WROUGHTIRON;
+		else if (item.equals(ModItems.steelDrawplate))
+			return STEEL;
+		else if (item.equals(ModItems.blackSteelDrawplate))
+			return BLACKSTEEL;
+		else
+			return WROUGHTIRON;
+		
 	}
 }

@@ -238,6 +238,9 @@ item.Copper Stripe.name=Copper Strip
 item.Gold Stripe.name=Gold Strip
 item.Electrum Stripe.name=Electrum Strip
 item.Steel Stripe.name=Steel Strip
+item.Circuit.Circuit Board.name=Circuit Board
+item.Circuit.Frequency Generator Circuit.name=Frequency Generator Circuit
+item.Inductor.name=Inductor
 
 #// Wire drawing //
 item.Tin Wire.name=Tin Wire
@@ -379,6 +382,7 @@ tile.sapling.Hevea.name=Hevea Sapling
 
 #== Devices ==
 tile.LatexExtractor.name=Rubber Tapping
+tile.InductionSmelter.name=Induction Smelter
 
 #=======
 #= GUI =
@@ -400,6 +404,9 @@ gui.groove.hammer=Can't fit without Hammer.
 gui.groove.cantPlace=Can't place here.
 
 gui.latexTapping.treeIsDead=The tree is dead.
+
+gui.inductionSmelter.thermostat=Thermostat
+gui.inductionSmelter.thermostatSettings=Thermostat settings
 
 gui.wire.stage1=Stage 1
 gui.wire.stage2=Stage 2
