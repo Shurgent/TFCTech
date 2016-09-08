@@ -1,8 +1,7 @@
 ﻿{
-	"version": "0.2.8-A13",
+	"version": "0.2.8-A13-HOTFIX1",
 	"changelog": [
-		"Added missing usage recipes in NEI",
-		"Added missing heating index of unfinished wires stage 2-3",
-		"Added Induction Smelter"
+		"Fixed dupe on breaking Induction Smelter by pickaxe",
+		"Fixed update of metal amount bar in GUI"
 	]
 }

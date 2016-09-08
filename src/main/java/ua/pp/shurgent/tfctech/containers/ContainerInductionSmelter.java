@@ -21,6 +21,7 @@ public class ContainerInductionSmelter extends ContainerTFC {
 	private float curEnergy;
 	private float curMaxTemp;
 	private float curHeating;
+	private float curMetalAmount;
 	
 	public ContainerInductionSmelter(InventoryPlayer inventoryplayer, TEInductionSmelter tileentitysmelter, World world, int x, int y, int z) {
 		te = tileentitysmelter;
@@ -28,6 +29,7 @@ public class ContainerInductionSmelter extends ContainerTFC {
 		curEnergy = -1000;
 		curMaxTemp = -1000;
 		curHeating = -1;
+		curMetalAmount = -1000;
 		
 		// Input slot
 		addSlotToContainer(new Slot(tileentitysmelter, 0, 152, 7) {
@@ -117,6 +119,9 @@ public class ContainerInductionSmelter extends ContainerTFC {
 				var2.sendProgressBarUpdate(this, 2, this.te.maxTemp);
 			if (this.curHeating != (this.te.heating ? 1 : 0))
 				var2.sendProgressBarUpdate(this, 3, (this.te.heating ? 1 : 0));
+			if (this.te.currentAlloy != null && this.curMetalAmount != this.te.currentAlloy.outputAmount)
+				var2.sendProgressBarUpdate(this, 4, (int) this.te.currentAlloy.outputAmount);
+			
 		}
 		
 		this.curTemp = this.te.temperature;
@@ -138,6 +143,8 @@ public class ContainerInductionSmelter extends ContainerTFC {
 				this.te.minTemp = value - 200;
 			} else if (id == 3)
 				this.te.heating = (value == 1 ? true : false);
+			else if (id == 4 && this.te.currentAlloy != null)
+				this.te.currentAlloy.outputAmount = value;
 		}
 	}
 	

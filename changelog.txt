@@ -1,6 +1,10 @@
 Changelog
 ---------
 
+0.2.8-A13-HOTFIX1:
+  * Fixed dupe on breaking Induction Smelter by pickaxe
+  * Fixed update of metal amount bar in GUI
+
 0.2.8-A13:
   * Added missing usage recipes in NEI
   * Added missing heating index of unfinished wires stage 2-3

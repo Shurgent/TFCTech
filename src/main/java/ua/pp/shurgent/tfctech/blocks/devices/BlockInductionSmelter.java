@@ -141,6 +141,10 @@ public class BlockInductionSmelter extends BlockTerraContainer {
 		super.breakBlock(world, i, j, k, block, par6);
 	}
 	
+	@Override
+	protected void dropBlockAsItem(World world, int x, int y, int z, ItemStack is) {
+	}
+	
 	public NBTTagCompound writeSmelterToNBT(TEInductionSmelter te) {
 		NBTTagCompound nbt = new NBTTagCompound();
 		
