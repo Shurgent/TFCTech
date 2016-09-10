@@ -737,6 +737,7 @@ public class ModRecipes {
 	
 	private static void registerKilnRecipes() {
 		
+		kilnManager.addRecipe(new KilnRecipe(new ItemStack(ModItems.latexBowl, 1, 0), 0, new ItemStack(ModItems.latexBowl, 1, 1)));
 		kilnManager.addRecipe(new KilnRecipe(new ItemStack(ModItems.clayMoldGearPiece, 1, 0), 0, new ItemStack(ModItems.clayMoldGearPiece, 1, 1)));
 		kilnManager.addRecipe(new KilnRecipe(new ItemStack(ModItems.clayMoldSleeve, 1, 0), 0, new ItemStack(ModItems.clayMoldSleeve, 1, 1)));
 		kilnManager.addRecipe(new KilnRecipe(new ItemStack(ModItems.potteryCeramicPlate, 1, 0), 0, new ItemStack(ModItems.potteryCeramicPlate, 1, 1)));
