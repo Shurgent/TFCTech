@@ -1,7 +1,6 @@
 ﻿{
-	"version": "0.2.8-A13-HOTFIX1",
+	"version": "0.2.8-A13-HOTFIX2",
 	"changelog": [
-		"Fixed dupe on breaking Induction Smelter by pickaxe",
-		"Fixed update of metal amount bar in GUI"
+		"Added missing kiln recipe of Latex Bowl"
 	]
 }
