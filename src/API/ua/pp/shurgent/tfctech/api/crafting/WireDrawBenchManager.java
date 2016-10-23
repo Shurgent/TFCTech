@@ -40,7 +40,8 @@ public class WireDrawBenchManager {
 				"Aluminum",
 				"Electrum",
 				"Wrought Iron",
-				"Steel"
+				"Steel",
+				"Red Alloy"
 		};
 		String prefix = ModDetails.ModID + ":metal/";
 		for (String metal : names)

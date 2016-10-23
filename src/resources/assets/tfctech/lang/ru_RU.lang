@@ -14,6 +14,7 @@ item.Constantan Ingot.name=Слиток константана
 item.Constantan Double Ingot.name=Двойной слиток константана
 item.Invar Ingot.name=Слиток инвара
 item.Invar Double Ingot.name=Двойной слиток инвара
+item.Red Alloy Ingot.name=Слиток красного сплава
 
 #// Sheets //
 item.Aluminum Sheet.name=Алюминиевый лист
@@ -30,6 +31,7 @@ item.Aluminum Unshaped.name=Алюминиевая заготовка
 item.Electrum Unshaped.name=Заготовка электрума
 item.Constantan Unshaped.name=Заготовка константана
 item.Invar Unshaped.name=Заготовка инвара
+item.Red Alloy Unshaped.name=Заготовка красного сплава
 
 #// Dust //
 item.Aluminum Dust.name=Алюминиевая пыль
@@ -37,6 +39,8 @@ item.Bauxite Dust.name=Бокситовая пыль
 item.Electrum Dust.name=Пыль электрума
 item.Constantan Dust.name=Пыль электрума
 item.Invar Dust.name=Пыль инвара
+item.Red Alloy Dust.name=Пыль красного сплава
+item.Red Alloy Mix.name=Смесь красного сплава
 item.Bismuth Bronze Dust.name=Пыль висмутовой бронзы
 item.Bismuth Dust.name=Висмутовая пыль
 item.Black Bronze Dust.name=Пыль чёрной бронзы
@@ -64,6 +68,7 @@ item.Aluminum Nugget.name=Алюминиевый самородок
 item.Electrum Nugget.name=Самородок электрума
 item.Constantan Nugget.name=Самородок константана
 item.Invar Nugget.name=Самородок инвара
+item.Red Alloy Nugget.name=Самородок красного сплава
 item.Bismuth Bronze Nugget.name=Самородок висмутовой бронзы
 item.Bismuth Nugget.name=Висмутовый самородок
 item.Black Bronze Nugget.name=Самородок чёрной бронзы
@@ -250,6 +255,7 @@ item.Aluminum Wire.name=Алюминиевая проволока
 item.Electrum Wire.name=Проволока электрума
 item.Wrought Iron Wire.name=Железная проволока
 item.Steel Wire.name=Стальная проволока
+item.Red Alloy Wire.name=Проволока красного сплава
 
 item.Unfinished Tin Wire.name=Незаконченная оловянная проволока
 item.Unfinished Copper Wire.name=Незаконченная медная проволока
@@ -258,6 +264,7 @@ item.Unfinished Aluminum Wire.name=Незаконченная алюминиев
 item.Unfinished Electrum Wire.name=Незаконченная проволока электрума
 item.Unfinished Wrought Iron Wire.name=Незаконченная железная проволока
 item.Unfinished Steel Wire.name=Незаконченная стальная проволока
+item.Unfinished Red Alloy Wire.name=Незаконченная проволока красного сплава
 
 item.Winch.name=Ворот
 item.Leather Belt.name=Кожаный ремень
@@ -391,6 +398,7 @@ gui.metal.Aluminum=Алюминий
 gui.metal.Electrum=Электрум
 gui.metal.Constantan=Константан
 gui.metal.Invar=Инвар
+gui.metal.RedAlloy=Красный сплав
 
 gui.qty=Количество
 gui.latexAmt=Количество латекса

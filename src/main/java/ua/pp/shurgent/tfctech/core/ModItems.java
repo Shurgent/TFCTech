@@ -75,6 +75,8 @@ public class ModItems {
 	public static Item sterlingSilverDust;
 	public static Item tinDust;
 	public static Item zincDust;
+	public static Item redAlloyMix;
+	public static Item redAlloyDust;
 	
 	// Nuggets
 	public static Item aluminumNugget;
@@ -102,6 +104,7 @@ public class ModItems {
 	public static Item sterlingSilverNugget;
 	public static Item tinNugget;
 	public static Item zincNugget;
+	public static Item redAlloyNugget; 
 	
 	// Ingots
 	public static Item aluminumIngot;
@@ -119,6 +122,9 @@ public class ModItems {
 	public static Item invarIngot;
 	public static Item invarIngot2x;
 	public static Item invarUnshaped;
+	
+	public static Item redAlloyIngot;
+	public static Item redAlloyUnshaped;
 	
 	// Ore
 	public static Item oreChunk;
@@ -354,6 +360,7 @@ public class ModItems {
 	public static Item electrumWire;
 	public static Item ironWire;
 	public static Item steelWire;
+	public static Item redAlloyWire;
 	
 	public static Item unfinishedTinWire;
 	public static Item unfinishedCopperWire;
@@ -362,6 +369,7 @@ public class ModItems {
 	public static Item unfinishedElectrumWire;
 	public static Item unfinishedIronWire;
 	public static Item unfinishedSteelWire;
+	public static Item unfinishedRedAlloyWire;
 	
 	public static Item ironDrawplate;
 	public static Item steelDrawplate;
@@ -404,6 +412,8 @@ public class ModItems {
 		electrumDust = new ItemDust("Electrum", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Electrum Dust");
 		constantanDust = new ItemDust("Constantan", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Constantan Dust");
 		invarDust = new ItemDust("Invar", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Invar Dust");
+		redAlloyDust = new ItemDust("Red Alloy", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Red Alloy Dust");
+		redAlloyMix = new ItemDust("Red Alloy", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Red Alloy Mix");
 		bismuthDust = new ItemDust("Bismuth", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Bismuth Dust");
 		bismuthBronzeDust = new ItemDust("Bismuth Bronze", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Bismuth Bronze Dust");
 		blackBronzeDust = new ItemDust("Black Bronze", ModOptions.cfgDustMetalAmount).setUnlocalizedName("Black Bronze Dust");
@@ -431,6 +441,7 @@ public class ModItems {
 		electrumNugget = new ItemNugget("Electrum", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Electrum Nugget");
 		constantanNugget = new ItemNugget("Constantan", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Constantan Nugget");
 		invarNugget = new ItemNugget("Invar", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Invar Nugget");
+		redAlloyNugget = new ItemNugget("Red Alloy", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Red Alloy Nugget");
 		bismuthNugget = new ItemNugget("Bismuth", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Bismuth Nugget");
 		bismuthBronzeNugget = new ItemNugget("Bismuth Bronze", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Bismuth Bronze Nugget");
 		blackBronzeNugget = new ItemNugget("Black Bronze", ModOptions.cfgNuggetMetalAmount).setUnlocalizedName("Black Bronze Nugget");
@@ -471,6 +482,8 @@ public class ModItems {
 		invarIngot = new ItemModIngot("Invar", 100).setUnlocalizedName("Invar Ingot");
 		invarIngot2x = new ItemModIngot("Invar", 200).setUnlocalizedName("Invar Double Ingot");
 		invarUnshaped = new ItemModMeltedMetal().setUnlocalizedName("Invar Unshaped");
+		redAlloyIngot = new ItemModIngot("Red Alloy", 100).setUnlocalizedName("Red Alloy Ingot");
+		redAlloyUnshaped = new ItemModMeltedMetal().setUnlocalizedName("Red Alloy Unshaped");
 		
 		// Plates
 		aluminumPlate = new ItemPlate("Aluminum", ModOptions.cfgPlateMetalAmount).setUnlocalizedName("Aluminum Plate");
@@ -671,7 +684,8 @@ public class ModItems {
 				"Aluminum",
 				"Electrum",
 				"Wrought Iron",
-				"Steel"
+				"Steel",
+				"Red Alloy"
 		};
 		String folder = "wires";
 		String suffix = " Wire";
@@ -691,6 +705,8 @@ public class ModItems {
 		i++;
 		steelWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
 		i++;
+		redAlloyWire = new ItemModMetalItem(names[i], 50, folder).setUnlocalizedName(names[i] + suffix);
+		i++;
 		
 		i = 0;
 		String prefix = "Unfinished ";
@@ -707,6 +723,8 @@ public class ModItems {
 		unfinishedIronWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
 		i++;
 		unfinishedSteelWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
+		i++;
+		unfinishedRedAlloyWire = new ItemUnfinishedWire(names[i], 50).setUnlocalizedName(prefix + names[i] + suffix);
 		i++;
 		
 		ironDrawplate = new ItemDrawplate(Global.WROUGHTIRON).setUnlocalizedName("Wrought Iron Drawplate").setMaxDamage(TFCItems.wroughtIronUses);
@@ -774,6 +792,8 @@ public class ModItems {
 		GameRegistry.registerItem(sterlingSilverDust, sterlingSilverDust.getUnlocalizedName());
 		GameRegistry.registerItem(tinDust, tinDust.getUnlocalizedName());
 		GameRegistry.registerItem(zincDust, zincDust.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyDust, redAlloyDust.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyMix, redAlloyMix.getUnlocalizedName());
 		
 		// Nuggets
 		GameRegistry.registerItem(aluminumNugget, aluminumNugget.getUnlocalizedName());
@@ -801,6 +821,7 @@ public class ModItems {
 		GameRegistry.registerItem(sterlingSilverNugget, sterlingSilverNugget.getUnlocalizedName());
 		GameRegistry.registerItem(tinNugget, tinNugget.getUnlocalizedName());
 		GameRegistry.registerItem(zincNugget, zincNugget.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyNugget, redAlloyNugget.getUnlocalizedName());
 		
 		// Ingots
 		GameRegistry.registerItem(aluminumIngot, aluminumIngot.getUnlocalizedName());
@@ -815,10 +836,13 @@ public class ModItems {
 		GameRegistry.registerItem(invarIngot, invarIngot.getUnlocalizedName());
 		GameRegistry.registerItem(invarIngot2x, invarIngot2x.getUnlocalizedName());
 		GameRegistry.registerItem(invarUnshaped, invarUnshaped.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyIngot, redAlloyIngot.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyUnshaped, redAlloyUnshaped.getUnlocalizedName());
 		Globals.INGOTS.add(aluminumIngot);
 		Globals.INGOTS.add(electrumIngot);
 		Globals.INGOTS.add(constantanIngot);
 		Globals.INGOTS.add(invarIngot);
+		Globals.INGOTS.add(redAlloyIngot);
 		
 		// Ores
 		GameRegistry.registerItem(oreChunk, oreChunk.getUnlocalizedName());
@@ -938,6 +962,7 @@ public class ModItems {
 		GameRegistry.registerItem(electrumWire, electrumWire.getUnlocalizedName());
 		GameRegistry.registerItem(ironWire, ironWire.getUnlocalizedName());
 		GameRegistry.registerItem(steelWire, steelWire.getUnlocalizedName());
+		GameRegistry.registerItem(redAlloyWire, redAlloyWire.getUnlocalizedName());
 		
 		GameRegistry.registerItem(unfinishedTinWire, unfinishedTinWire.getUnlocalizedName());
 		GameRegistry.registerItem(unfinishedCopperWire, unfinishedCopperWire.getUnlocalizedName());
@@ -946,6 +971,7 @@ public class ModItems {
 		GameRegistry.registerItem(unfinishedElectrumWire, unfinishedElectrumWire.getUnlocalizedName());
 		GameRegistry.registerItem(unfinishedIronWire, unfinishedIronWire.getUnlocalizedName());
 		GameRegistry.registerItem(unfinishedSteelWire, unfinishedSteelWire.getUnlocalizedName());
+		GameRegistry.registerItem(unfinishedRedAlloyWire, unfinishedRedAlloyWire.getUnlocalizedName());
 		
 		GameRegistry.registerItem(ironDrawplate, ironDrawplate.getUnlocalizedName());
 		GameRegistry.registerItem(steelDrawplate, steelDrawplate.getUnlocalizedName());
@@ -1062,6 +1088,10 @@ public class ModItems {
 		// Invar
 		Globals.INVAR = new Metal("Invar", ModItems.invarUnshaped, ModItems.invarIngot);
 		MetalRegistry.instance.addMetal(Globals.INVAR, Alloy.EnumTier.TierIII);
+		
+		// Red Alloy
+		Globals.REDALLOY = new Metal("Red Alloy", ModItems.redAlloyUnshaped, ModItems.redAlloyIngot);
+		MetalRegistry.instance.addMetal(Globals.REDALLOY, Alloy.EnumTier.TierV);
 		
 		Alloy electrum = new Alloy(Globals.ELECTRUM, Alloy.EnumTier.TierI);
 		electrum.addIngred(Global.GOLD, 37.00f, 63.00f);

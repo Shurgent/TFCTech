@@ -121,7 +121,9 @@ public class ItemOilCan extends ItemTerra implements ISmeltable, IFluidContainer
 	
 	@Override
 	public FluidStack getFluid(ItemStack container) {
-		return FluidStack.loadFluidStackFromNBT(container.getTagCompound());
+		if (container != null && container.getItem() == ModItems.oilcan)
+			return FluidStack.loadFluidStackFromNBT(container.getTagCompound());
+		return null;
 	}
 	
 	@Override
@@ -168,6 +170,8 @@ public class ItemOilCan extends ItemTerra implements ISmeltable, IFluidContainer
 	public FluidStack drain(ItemStack container, int maxDrain, boolean doDrain) {
 		
 		FluidStack fs = getFluid(container);
+		if (fs == null)
+			return null;
 		FluidStack fsOut = fs.copy();
 		
 		fsOut.amount = Math.min(maxDrain, fs.amount);

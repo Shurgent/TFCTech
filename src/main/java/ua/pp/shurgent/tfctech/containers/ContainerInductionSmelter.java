@@ -6,10 +6,10 @@ import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
+import ua.pp.shurgent.tfctech.containerslots.SlotMolds;
 import ua.pp.shurgent.tfctech.tileentities.TEInductionSmelter;
 
 import com.bioxx.tfc.Containers.ContainerTFC;
-import com.bioxx.tfc.Containers.Slots.SlotLiquidVessel;
 import com.bioxx.tfc.Core.Player.PlayerInventory;
 import com.bioxx.tfc.Items.ItemMeltedMetal;
 import com.bioxx.tfc.api.TFCItems;
@@ -48,12 +48,7 @@ public class ContainerInductionSmelter extends ContainerTFC {
 		});
 		
 		// Mold slot
-		addSlotToContainer(new SlotLiquidVessel(tileentitysmelter, 2, 152, 112) {
-			@Override
-			public int getSlotStackLimit() {
-				return 64;
-			}
-		});
+		addSlotToContainer(new SlotMolds(tileentitysmelter, 2, 152, 112));
 		
 		PlayerInventory.buildInventoryLayout(this, inventoryplayer, 8, 171, false, true);
 		

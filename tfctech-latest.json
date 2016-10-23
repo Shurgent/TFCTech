@@ -1,6 +1,11 @@
 ﻿{
-	"version": "0.2.8-A13-HOTFIX2",
+	"version": "0.2.9-A14",
 	"changelog": [
-		"Added missing kiln recipe of Latex Bowl"
+		"Added Red Alloy made from Redstone and Platinum Dust",
+		"Wrought Iron Stripe recipe requirement of Steel Chisel now optional",
+		"Fixed crash on viewing recipes in NEI without Buildcraft installed",
+		"Fixed crash on viewing recipes in NEI with GregTech installed (I hope so)",
+		"Some small bugfixes and improvements",
+		"Changed some textures"
 	]
 }

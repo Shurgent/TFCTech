@@ -6,7 +6,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.World;
-import ua.pp.shurgent.tfctech.core.ColorManager.Color;
 import ua.pp.shurgent.tfctech.core.ModDetails;
 
 import com.bioxx.tfc.Items.ItemDyeCustom;
@@ -41,16 +40,16 @@ public class ItemLimePaint extends ItemDyeCustom {
 	public String getUnlocalizedName(ItemStack is)
 	{
 		int i = MathHelper.clamp_int(is.getItemDamage(), 0, 15);
-		return super.getUnlocalizedName() + "." + Color.fromId(i).getName();
+		return super.getUnlocalizedName() + "." + DYE_COLOR_NAMES[i];
 	}
 	
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister registerer) {
-		this.icons = new IIcon[Color.VALUES.length];
+		this.icons = new IIcon[DYE_COLOR_NAMES.length];
 		String col;
-		for (int i = 0; i < Color.VALUES.length; ++i) {
-			col = "_" + Color.fromId(i).getName();
+		for (int i = 0; i < DYE_COLOR_NAMES.length; ++i) {
+			col = "_" + DYE_COLOR_NAMES[i];
 			if (this.iconString != null)
 				this.icons[i] = registerer.registerIcon(ModDetails.ModID + ":" + this.textureFolder + this.getIconString() + col);
 			else

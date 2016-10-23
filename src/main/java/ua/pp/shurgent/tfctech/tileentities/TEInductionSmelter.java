@@ -15,6 +15,7 @@ import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.util.ForgeDirection;
+import ua.pp.shurgent.tfctech.api.EnergyTier;
 import ua.pp.shurgent.tfctech.api.Helper;
 import ua.pp.shurgent.tfctech.api.Sides;
 import ua.pp.shurgent.tfctech.core.ModDetails;
@@ -82,6 +83,7 @@ public class TEInductionSmelter extends TileEnergyConsumer implements IInventory
 		this.minTemp = 3300;
 		this.heating = false;
 		this.textureAnimationDir = 1;
+		this.battery = new EnergyStorage(ModOptions.cfgInductionSmelterRFStorage, EnergyTier.getRate(EnergyTier.HV));
 	}
 	
 	@Override

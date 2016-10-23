@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Random;
 
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityItem;
@@ -35,7 +36,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 public class BlockInductionSmelter extends BlockTerraContainer {
 	
 	public BlockInductionSmelter() {
-		super();
+		super(Material.iron);
 		this.setCreativeTab(TFCTech.TFCTECH);
 		this.setBlockBounds(0.0f, 0.0f, 0.0f, 1.0f, 0.875f, 1.0f);
 		this.setTickRandomly(true);
@@ -189,7 +190,8 @@ public class BlockInductionSmelter extends BlockTerraContainer {
 		world.setBlockMetadataWithNotify(i, j, k, l, 0x2);
 		
 		TEInductionSmelter te = (TEInductionSmelter) world.getTileEntity(i, j, k);
-		te.rotation = (byte) l;
+		if (te != null)
+			te.rotation = (byte) l;
 		
 		if (te != null && is.hasTagCompound()) {
 			te.readFromItemNBT(is.getTagCompound());

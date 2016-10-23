@@ -41,7 +41,7 @@ public class ModOptions {
 
 	// === CRAFTING
 	public static int cfgNuggetsFromIngot;
-
+	public static boolean cfgIronStripeReqSteelChisel;
 	public static double cfgGlueBoilingSpeed;
 	public static int cfgGlueQtyFromBucket;
 	public static boolean cfgFluidPipesNeedGlue;
@@ -65,7 +65,14 @@ public class ModOptions {
 	public static int cfgHeveaSpawnChanceIncIdealClimate;
 	
 	// === ENERGY
+	public static int cfgLVRate;
+	public static int cfgMVRate;
+	public static int cfgHVRate;
 	public static int cfgInductionSmelterRFConsumption;
+	public static int cfgInductionSmelterRFStorage;
+	public static int cfgLVPowerSupplyRFStorage;
+	public static int cfgMVPowerSupplyRFStorage;
+	public static int cfgHVPowerSupplyRFStorage;
 	
 	// === DEVICES
 	public static boolean cfgAllowAutomationInductionSmelter;
@@ -105,7 +112,7 @@ public class ModOptions {
 		
 		// === Crafting
 		cfgNuggetsFromIngot = getIntFor(config, CRAFTING, "NuggetsFromIngot", 5, 2, 100, "Number of nuggets obtained from one ingot.");
-		
+		cfgIronStripeReqSteelChisel = getBooleanFor(config, CRAFTING, "IronStripeReqSteelChisel", true, "If true, then the crafting of Wrought Iron Stripes will require minimum Steel Chisel.");
 		cfgGlueBoilingSpeed = getDoubleFor(config, CRAFTING, "GlueBoilingSpeed", 0.05, "How fast the glue be prepared. Bigger value - faster preparation.");
 		cfgGlueQtyFromBucket = getIntFor(config, CRAFTING, "GlueQtyFromBucket", 8, 1, 64, "Number of glue balls obtained from one bucket of glue.");
 		cfgFluidPipesNeedGlue = getBooleanFor(config, CRAFTING, "FluidPipesNeedGlue", true, "If true, then the crafting of fluid pipes will need glue.");
@@ -135,7 +142,14 @@ public class ModOptions {
 		cfgFuelValueRubber = getIntFor(config, FURNACE, "FuelValueRubber", 200, 1, 20000, "Burn time for Rubber.");
 		
 		// === Energy
+		cfgLVRate = getIntFor(config, ENERGY, "LVRate", 256, 16, 4096, "LV energy tier transfer rate, RF/t");
+		cfgMVRate = getIntFor(config, ENERGY, "MVRate", 1024, 64, 16384, "MV energy tier transfer rate, RF/t");
+		cfgHVRate = getIntFor(config, ENERGY, "HVRate", 4096, 256, 65536, "HV energy tier transfer rate, RF/t");
 		cfgInductionSmelterRFConsumption = getIntFor(config, ENERGY, "InductionSmelterRFConsumption", 128, 32, 4096, "How much energy consumes Induction Smelter, RF/t");
+		cfgInductionSmelterRFStorage = getIntFor(config, ENERGY, "InductionSmelterRFStorage", 32000, 1024, 128000, "Induction Smelter internal energy storage, RF");
+		cfgLVPowerSupplyRFStorage = getIntFor(config, ENERGY, "LVPowerSupplyRFStorage", 32000, 1024, 128000, "LV Power Supply Module internal energy storage, RF");
+		cfgMVPowerSupplyRFStorage = getIntFor(config, ENERGY, "MVPowerSupplyRFStorage", 128000, 4096, 512000, "MV Power Supply Module internal energy storage, RF");
+		cfgHVPowerSupplyRFStorage = getIntFor(config, ENERGY, "HVPowerSupplyRFStorage", 512000, 16384, 2048000, "HV Power Supply Module internal energy storage, RF");
 
 		// === Devices
 		cfgAllowAutomationInductionSmelter = getBooleanFor(config, DEVICES, "AllowAutomationOfInductionSmelter", true, "Set to false to disable Induction Smelter automation.");

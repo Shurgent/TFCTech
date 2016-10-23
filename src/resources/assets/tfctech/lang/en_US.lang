@@ -14,6 +14,7 @@ item.Constantan Ingot.name=Constantan Ingot
 item.Constantan Double Ingot.name=Constantan Double Ingot
 item.Invar Ingot.name=Invar Ingot
 item.Invar Double Ingot.name=Invar Double Ingot
+item.Red Alloy Ingot.name=Red Alloy Ingot
 
 #// Sheets //
 item.Aluminum Sheet.name=Aluminum Sheet
@@ -30,6 +31,7 @@ item.Aluminum Unshaped.name=Unshaped: Aluminum
 item.Electrum Unshaped.name=Unshaped: Electrum
 item.Constantan Unshaped.name=Unshaped: Constantan
 item.Invar Unshaped.name=Unshaped: Invar
+item.Red Alloy Unshaped.name=Unshaped: Red Alloy
 
 #// Dust //
 item.Aluminum Dust.name=Aluminum Dust
@@ -37,6 +39,8 @@ item.Bauxite Dust.name=Bauxite Dust
 item.Electrum Dust.name=Electrum Dust
 item.Constantan Dust.name=Constantan Dust
 item.Invar Dust.name=Invar Dust
+item.Red Alloy Dust.name=Red Alloy Dust
+item.Red Alloy Mix.name=Red Alloy Mix
 item.Bismuth Bronze Dust.name=Bismuth Bronze Dust
 item.Bismuth Dust.name=Bismuth Dust
 item.Black Bronze Dust.name=Black Bronze Dust
@@ -64,6 +68,7 @@ item.Aluminum Nugget.name=Aluminum Nugget
 item.Electrum Nugget.name=Electrum Nugget
 item.Constantan Nugget.name=Constantan Nugget
 item.Invar Nugget.name=Invar Nugget
+item.Red Alloy Nugget.name=Red Alloy Nugget
 item.Bismuth Bronze Nugget.name=Bismuth Bronze Nugget
 item.Bismuth Nugget.name=Bismuth Nugget
 item.Black Bronze Nugget.name=Black Bronze Nugget
@@ -250,6 +255,7 @@ item.Aluminum Wire.name=Aluminum Wire
 item.Electrum Wire.name=Electrum Wire
 item.Wrought Iron Wire.name=Iron Wire
 item.Steel Wire.name=Steel Wire
+item.Red Alloy Wire.name=Red Alloy Wire
 
 item.Unfinished Tin Wire.name=Unfinished Tin Wire
 item.Unfinished Copper Wire.name=Unfinished Copper Wire
@@ -258,6 +264,7 @@ item.Unfinished Aluminum Wire.name=Unfinished Aluminum Wire
 item.Unfinished Electrum Wire.name=Unfinished Electrum Wire
 item.Unfinished Wrought Iron Wire.name=Unfinished Iron Wire
 item.Unfinished Steel Wire.name=Unfinished Steel Wire
+item.Unfinished Red Alloy Wire.name=Unfinished Red Alloy Wire
 
 item.Winch.name=Winch
 item.Leather Belt.name=Leather Belt
@@ -391,6 +398,7 @@ gui.metal.Aluminum=Aluminum
 gui.metal.Electrum=Electrum
 gui.metal.Constantan=Constantan
 gui.metal.Invar=Invar
+gui.metal.RedAlloy=Red Alloy
 
 gui.qty=Quantity
 gui.latexAmt=Latex amount

@@ -13,6 +13,7 @@ import net.minecraft.util.IChatComponent;
 import net.minecraftforge.oredict.OreDictionary;
 import ua.pp.shurgent.tfctech.TFCTech;
 
+import com.bioxx.tfc.Items.ItemDyeCustom;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -83,4 +84,13 @@ public class ModUtils {
 	public static boolean areItemStacksEqual(ItemStack input, ItemStack target) {
 		return input == target || OreDictionary.itemMatches(target, input, false);
 	}
+	
+	public static int getColorIndex(String colorName) {
+		for (int i = 0; i < ItemDyeCustom.DYE_COLOR_NAMES.length; i++) {
+			if (ItemDyeCustom.DYE_COLOR_NAMES[i].matches(colorName))
+				return i;
+		}
+		return -1;
+	}
+	
 }

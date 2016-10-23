@@ -1,11 +1,13 @@
 package ua.pp.shurgent.tfctech.core;
 
+import org.apache.commons.lang3.text.WordUtils;
+
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 import ua.pp.shurgent.tfctech.TFCTech;
-import ua.pp.shurgent.tfctech.core.ColorManager.Color;
 
+import com.bioxx.tfc.Items.ItemDyeCustom;
 import com.bioxx.tfc.api.TFCItems;
 
 public class ModOreDictionary {
@@ -58,6 +60,7 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("dustZinc", new ItemStack(ModItems.zincDust, 1, WILD));
 		OreDictionary.registerOre("dustBlueSteel", new ItemStack(ModItems.blueSteelDust, 1, WILD));
 		OreDictionary.registerOre("dustRedSteel", new ItemStack(ModItems.redSteelDust, 1, WILD));
+		OreDictionary.registerOre("dustRedAlloy", new ItemStack(ModItems.redAlloyDust, 1, WILD));
 		
 		// Nuggets
 		OreDictionary.registerOre("nuggetAluminum", new ItemStack(ModItems.aluminumNugget, 1, WILD));
@@ -87,6 +90,7 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("nuggetZinc", new ItemStack(ModItems.zincNugget, 1, WILD));
 		OreDictionary.registerOre("nuggetBlueSteel", new ItemStack(ModItems.blueSteelNugget, 1, WILD));
 		OreDictionary.registerOre("nuggetRedSteel", new ItemStack(ModItems.redSteelNugget, 1, WILD));
+		OreDictionary.registerOre("nuggetRedAlloy", new ItemStack(ModItems.redAlloyNugget, 1, WILD));
 		
 		// Ingots
 		OreDictionary.registerOre("ingotAluminum", new ItemStack(ModItems.aluminumIngot, 1, WILD));
@@ -94,6 +98,7 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("ingotConstantan", new ItemStack(ModItems.constantanIngot, 1, WILD));
 		OreDictionary.registerOre("ingotCupronickel", new ItemStack(ModItems.constantanIngot, 1, WILD));
 		OreDictionary.registerOre("ingotInvar", new ItemStack(ModItems.invarIngot, 1, WILD));
+		OreDictionary.registerOre("ingotRedAlloy", new ItemStack(ModItems.redAlloyIngot, 1, WILD));
 		
 		// Plates
 		OreDictionary.registerOre("plateAluminum", new ItemStack(ModItems.aluminumPlate, 1, WILD));
@@ -233,8 +238,8 @@ public class ModOreDictionary {
 		OreDictionary.registerOre("materialGlue", new ItemStack(ModItems.glue, 1, WILD));
 		OreDictionary.registerOre("materialPaper", new ItemStack(Items.paper, 1, WILD)); // Add Vanilla paper to OreDictionary as material
 		
-		for (Color color : Color.VALUES) {
-			OreDictionary.registerOre(color.getDye(), new ItemStack(ModItems.limePaint, 1, color.ordinal()));
+		for (int i = 0; i < ItemDyeCustom.DYE_COLOR_NAMES.length; i++) {
+			OreDictionary.registerOre("dye" + WordUtils.capitalize(ItemDyeCustom.DYE_COLOR_NAMES[i]), new ItemStack(ModItems.limePaint, 1, i));
 		}
 		
 		OreDictionary.registerOre("plateCeramic", new ItemStack(ModItems.potteryCeramicPlate, 1, 1));

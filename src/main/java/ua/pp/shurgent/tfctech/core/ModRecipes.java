@@ -19,7 +19,6 @@ import ua.pp.shurgent.tfctech.TFCTech;
 import ua.pp.shurgent.tfctech.api.crafting.DrawplateReq;
 import ua.pp.shurgent.tfctech.api.crafting.WireDrawBenchManager;
 import ua.pp.shurgent.tfctech.api.crafting.WireDrawBenchRecipe;
-import ua.pp.shurgent.tfctech.core.ColorManager.Color;
 import ua.pp.shurgent.tfctech.integration.bc.TFCTechBCRecipes;
 import ua.pp.shurgent.tfctech.integration.ie.TFCTechIERecipes;
 
@@ -92,6 +91,7 @@ public class ModRecipes {
 		registerWireRecipesWithStages(manager, ModItems.unfinishedGoldWire, ModItems.goldWire, DrawplateReq.WROUGHTIRON, false, "Gold");
 		registerWireRecipesWithStages(manager, ModItems.unfinishedIronWire, ModItems.ironWire, DrawplateReq.STEEL, true, "Wrought Iron");
 		registerWireRecipesWithStages(manager, ModItems.unfinishedSteelWire, ModItems.steelWire, DrawplateReq.BLACKSTEEL, true, "Steel");
+		registerWireRecipesWithStages(manager, ModItems.unfinishedRedAlloyWire, ModItems.redAlloyWire, DrawplateReq.WROUGHTIRON, false, "Red Alloy");
 		
 	}
 	
@@ -285,11 +285,9 @@ public class ModRecipes {
 		anvilManager.addWeldRecipe(new AnvilRecipe(new ItemStack(ModItems.tinRackwheel), new ItemStack(ModItems.tinSleeve), AnvilReq.STONE, new ItemStack(
 				ModItems.tinGear, 1)));
 		
-		anvilManager
-				.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "mount", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.mount, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "mount", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.mount, 1)));
 		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.ironStripe), null, "groove", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.groove, 1)));
-		anvilManager
-				.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronSheet), null, "dixie", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.dixie, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronSheet), null, "dixie", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.dixie, 1)));
 		
 		// Sheets
 		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.aluminumIngot2x), null, "sheet", AnvilReq.COPPER,
@@ -312,34 +310,23 @@ public class ModRecipes {
 		
 		// Unfinished wires forging
 		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.tinStripe), null, "wire", AnvilReq.STONE, new ItemStack(ModItems.unfinishedTinWire, 1)));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.copperStripe), null, "wire", AnvilReq.COPPER, new ItemStack(
-				ModItems.unfinishedCopperWire, 1)));
-		anvilManager
-				.addRecipe(new AnvilRecipe(new ItemStack(ModItems.goldStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedGoldWire, 1)));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.aluminumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(
-				ModItems.unfinishedAluminumWire, 1)));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.electrumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(
-				ModItems.unfinishedElectrumWire, 1)));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.ironStripe), null, "wire", AnvilReq.WROUGHTIRON, new ItemStack(
-				ModItems.unfinishedIronWire, 1)));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.steelStripe), null, "wire", AnvilReq.STEEL,
-				new ItemStack(ModItems.unfinishedSteelWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.copperStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedCopperWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.goldStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedGoldWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.aluminumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedAluminumWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.electrumStripe), null, "wire", AnvilReq.COPPER, new ItemStack(ModItems.unfinishedElectrumWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.ironStripe), null, "wire", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.unfinishedIronWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.steelStripe), null, "wire", AnvilReq.STEEL, new ItemStack(ModItems.unfinishedSteelWire, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(ModItems.redAlloyIngot), null, "wire", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.unfinishedRedAlloyWire, 2)));
 		
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "tongs", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.tongs, 1))
-				.addRecipeSkill(Global.SKILL_TOOLSMITH));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "drawplate", AnvilReq.WROUGHTIRON, new ItemStack(
-				ModItems.ironDrawplate, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
-		anvilManager
-				.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.steelIngot), null, "drawplate", AnvilReq.STEEL, new ItemStack(ModItems.steelDrawplate, 1))
-						.addRecipeSkill(Global.SKILL_TOOLSMITH));
-		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.blackSteelIngot), null, "drawplate", AnvilReq.BLACKSTEEL, new ItemStack(
-				ModItems.blackSteelDrawplate, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "tongs", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.tongs, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.wroughtIronIngot), null, "drawplate", AnvilReq.WROUGHTIRON, new ItemStack(ModItems.ironDrawplate, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.steelIngot), null, "drawplate", AnvilReq.STEEL, new ItemStack(ModItems.steelDrawplate, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.blackSteelIngot), null, "drawplate", AnvilReq.BLACKSTEEL, new ItemStack(ModItems.blackSteelDrawplate, 1)).addRecipeSkill(Global.SKILL_TOOLSMITH));
 		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.brassSheet), null, "oilcan", AnvilReq.BRONZE, new ItemStack(ModItems.oilcan, 1)));
 		
 		// == Integration =====================================================
 		
-		anvilManager
-				.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.steelSheet), null, "bucket", AnvilReq.STEEL, new ItemStack(ModItems.steelBucketEmpty, 1)));
+		anvilManager.addRecipe(new AnvilRecipe(new ItemStack(TFCItems.steelSheet), null, "bucket", AnvilReq.STEEL, new ItemStack(ModItems.steelBucketEmpty, 1)));
 		
 		// Buildcraft
 		if (TFCTech.enableBCCore)
@@ -350,14 +337,27 @@ public class ModRecipes {
 		/**
 		 * Vanila
 		 */
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.comparator), " R ", "RQR", "SSS", 'R', Blocks.redstone_torch, 'Q', ModItems.gemQuartz,
-				'S', "stone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Items.comparator),
+				" R ", "RQR", "SSS",
+				'R', Blocks.redstone_torch,
+				'Q', "gemQuartz",
+				'S', "stone"
+		));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.daylight_detector), "GGG", "QQQ", "WWW", 'G', "paneGlass", 'Q', ModItems.gemQuartz,
-				'W', "plankWood"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.daylight_detector),
+				"GGG", "QQQ", "WWW",
+				'G', "paneGlass",
+				'Q', "gemQuartz",
+				'W', "plankWood"
+		));
 		
-		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.piston), "WWW", "CIC", "CRC", 'W', "plankWood", 'C', "stoneSmooth", 'I',
-				TFCItems.wroughtIronIngot, 'R', "dustRedstone"));
+		GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Blocks.piston),
+				"WWW", "CIC", "CRC",
+				'W', "plankWood",
+				'C', "stoneSmooth",
+				'I', TFCItems.wroughtIronIngot,
+				'R', "dustRedstone"
+		));
 		
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(Blocks.sticky_piston), Blocks.piston, "materialGlue"));
 		
@@ -414,11 +414,13 @@ public class ModRecipes {
 				TFCItems.blackSteelIngot, 1), "itemChiselHard"));
 		// Tier 5
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.platinumNugget, ModOptions.cfgNuggetsFromIngot), new ItemStack(
-				TFCItems.platinumIngot, 1), "itemChiselHard"));
+				TFCItems.platinumIngot, 1), "itemChiselNormal"));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.redSteelNugget, ModOptions.cfgNuggetsFromIngot), new ItemStack(
 				TFCItems.redSteelIngot, 1), "itemChiselHard"));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.blueSteelNugget, ModOptions.cfgNuggetsFromIngot), new ItemStack(
 				TFCItems.blueSteelIngot, 1), "itemChiselHard"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.redAlloyNugget, ModOptions.cfgNuggetsFromIngot), new ItemStack(
+				ModItems.redAlloyIngot, 1), "itemChiselNormal"));
 		
 		// Ingot -> Unshaped
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.aluminumUnshaped, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.aluminumIngot, 1)),
@@ -429,12 +431,15 @@ public class ModRecipes {
 				new ItemStack(TFCItems.ceramicMold, 1, 1));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.invarUnshaped, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.invarIngot, 1)),
 				new ItemStack(TFCItems.ceramicMold, 1, 1));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redAlloyUnshaped, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.redAlloyIngot, 1)),
+				new ItemStack(TFCItems.ceramicMold, 1, 1));
 		
 		// Unshaped -> Ingot
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.aluminumIngot, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.aluminumUnshaped, 1)));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.electrumIngot, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.electrumUnshaped, 1)));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.constantanIngot, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.constantanUnshaped, 1)));
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.invarIngot, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.invarUnshaped, 1)));
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.redAlloyIngot, 1, 0), Recipes.getStackNoTemp(new ItemStack(ModItems.redAlloyUnshaped, 1)));
 		
 		/**
 		 * Rackwheels
@@ -458,14 +463,18 @@ public class ModRecipes {
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.copperStripe, 4), new ItemStack(TFCItems.copperSheet, 1), "itemChisel"));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.goldStripe, 4), new ItemStack(TFCItems.goldSheet, 1), "itemChisel"));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.electrumStripe, 4), new ItemStack(ModItems.electrumSheet, 1), "itemChiselNormal"));
-		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ironStripe, 4), new ItemStack(TFCItems.wroughtIronSheet, 1), "itemChiselMedium"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.ironStripe, 4), new ItemStack(TFCItems.wroughtIronSheet, 1), ModOptions.cfgIronStripeReqSteelChisel ? "itemChiselMedium" : "itemChiselNormal"));
 		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.steelStripe, 4), new ItemStack(TFCItems.steelSheet, 1), "itemChiselHard"));
 		
 		/**
-		 * Rubber components
+		 * Dust mixes
 		 */
-		GameRegistry
-				.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.vulcanizingAgents, 4), "dustGraphite", "dustKaolinite", "dustChalk", "dustSulfur"));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.vulcanizingAgents, 4),
+				"dustGraphite", "dustKaolinite", "dustChalk", "dustSulfur"
+		));
+		GameRegistry.addRecipe(new ShapelessOreRecipe(new ItemStack(ModItems.redAlloyMix, 2),
+				"dustRedstone", "dustPlatinum"
+		));
 		
 		/**
 		 * Cooking
@@ -627,16 +636,16 @@ public class ModRecipes {
 	}
 	
 	private static void registerPaintRecipe(String resultDye, ItemStack input) {
-		ItemStack out = new ItemStack(ModItems.limePaint, 8, Color.fromName(resultDye).ordinal());
+		ItemStack out = new ItemStack(ModItems.limePaint, 8, ModUtils.getColorIndex(resultDye));
 		BarrelManager.getInstance().addRecipe(
 				new BarrelRecipe(input, new FluidStack(TFCFluids.LIMEWATER, 100), out, new FluidStack(TFCFluids.LIMEWATER, 100)).setMinTechLevel(0));
 	}
 	
 	private static void registerPaintRecipe(String resultDye, String[] inputs) {
-		ItemStack out = new ItemStack(ModItems.limePaint, inputs.length, Color.fromName(resultDye).ordinal());
+		ItemStack out = new ItemStack(ModItems.limePaint, inputs.length, ModUtils.getColorIndex(resultDye));
 		Object[] in = new ItemStack[inputs.length];
 		for (int i = 0; i < inputs.length; i++) {
-			in[i] = new ItemStack(ModItems.limePaint, 1, Color.fromName(inputs[i]).ordinal());
+			in[i] = new ItemStack(ModItems.limePaint, 1, ModUtils.getColorIndex(inputs[i]));
 		}
 		GameRegistry.addShapelessRecipe(out, in);
 	}
