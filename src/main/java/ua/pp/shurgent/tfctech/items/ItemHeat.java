@@ -56,6 +56,7 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 2), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+		manager.addIndex(new HeatIndex(new ItemStack(ModItems.smallOreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.bauxiteDust,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,2,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet2x,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,4,0)));
