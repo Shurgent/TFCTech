@@ -53,11 +53,6 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumNugget,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumPlate,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumPlate2x,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,2,0)));
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 2), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.smallOreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.bauxiteDust,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,2,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumSheet2x,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,4,0)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.aluminumStripe,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
@@ -65,7 +60,17 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedAluminumWire,1,0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedAluminumWire,1,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.unfinishedAluminumWire,1,2), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
-	
+		
+		if (ModOptions.cfgEnableHeatingBauxite) {
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.oreChunk, 1, 2), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.smallOreChunk, 1, 0), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.bauxiteDust,1), aluminumRaw, new ItemStack(ModItems.aluminumUnshaped,1)));
+		} else {
+			((ItemModMetalItem) ModItems.bauxiteDust).setSmeltable(false);
+		}
+		
 		//Electrum
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumIngot,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,1)));
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.electrumIngot2x,1), electrumRaw, new ItemStack(ModItems.electrumUnshaped,2,0)));
@@ -295,7 +300,9 @@ public class ItemHeat {
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.zincPlate2x,1), zincRaw, new ItemStack(TFCItems.zincUnshaped,2,0)));
 		
 		//Rubber
-		manager.addIndex(new HeatIndex(new ItemStack(ModItems.rubberMix,1), 1, 600, new ItemStack(ModItems.rubber,1)));
+		if (ModOptions.cfgEnableHeatingRubber) {
+			manager.addIndex(new HeatIndex(new ItemStack(ModItems.rubberMix,1), 1, 600, new ItemStack(ModItems.rubber,1)));
+		}
 		
 		//Glue
 		manager.addIndex(new HeatIndex(new ItemStack(ModItems.dixieBones,1), ModOptions.cfgGlueBoilingSpeed, 400, new ItemStack(ModItems.dixieGlue,1)));

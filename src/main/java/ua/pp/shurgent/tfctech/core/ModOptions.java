@@ -18,6 +18,7 @@ public class ModOptions {
 	public static final String GENERAL = "general";
 	public static final String MATERIALS = "materials";
 	public static final String CRAFTING = "crafting";
+	public static final String HEATING = "heating";
 	public static final String WORLDGEN = "world";
 	public static final String FURNACE = "furnace";
 	public static final String ENERGY = "energy";
@@ -45,6 +46,10 @@ public class ModOptions {
 	public static double cfgGlueBoilingSpeed;
 	public static int cfgGlueQtyFromBucket;
 	public static boolean cfgFluidPipesNeedGlue;
+	
+	// === HEATING
+	public static boolean cfgEnableHeatingBauxite;
+	public static boolean cfgEnableHeatingRubber;
 	
 	// === WORLD GEN
 	public static boolean cfgDropQuartz;
@@ -116,6 +121,10 @@ public class ModOptions {
 		cfgGlueBoilingSpeed = getDoubleFor(config, CRAFTING, "GlueBoilingSpeed", 0.05, "How fast the glue be prepared. Bigger value - faster preparation.");
 		cfgGlueQtyFromBucket = getIntFor(config, CRAFTING, "GlueQtyFromBucket", 8, 1, 64, "Number of glue balls obtained from one bucket of glue.");
 		cfgFluidPipesNeedGlue = getBooleanFor(config, CRAFTING, "FluidPipesNeedGlue", true, "If true, then the crafting of fluid pipes will need glue.");
+		
+		// === Heating
+		cfgEnableHeatingBauxite = getBooleanFor(config, HEATING, "EnableHeatingBauxite", true, "If true, Bauxite Ore and Bauxite Dust can be smelted into Aluminum.");
+		cfgEnableHeatingRubber = getBooleanFor(config, HEATING, "EnableHeatingRubber", true, "If true, Rubber Mix can be heated and turned into the Rubber.");
 		
 		// === World Generation
 		cfgDropQuartz = getBooleanFor(config, WORLDGEN, "QuartzDropEnable", true, "Set to false to disable Quartz drops from stone.");

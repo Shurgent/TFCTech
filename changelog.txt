@@ -1,6 +1,11 @@
 Changelog
 ---------
 
+0.2.10-A15:
+  * Fixed Small bauxite can be melted in the crucible without any heat (wormzjl)
+  * Fixed crash on startup without some BC modules (I hope so)
+  * Added options that allow you to disable some heat recipes
+  
 0.2.9-A14:
   * Added Red Alloy made from Redstone and Platinum Dust
   * Wrought Iron Stripe recipe requirement of Steel Chisel now optional

@@ -5,6 +5,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.IIcon;
 import ua.pp.shurgent.tfctech.Globals;
 import ua.pp.shurgent.tfctech.core.ModDetails;
+import ua.pp.shurgent.tfctech.core.ModOptions;
 
 import com.bioxx.tfc.Items.ItemOre;
 import com.bioxx.tfc.api.Metal;
@@ -34,7 +35,7 @@ public class ItemModOre extends ItemOre {
 		case 0: // Bauxite
 		case 1: // Rich Bauxite
 		case 2: // Poor Bauxite
-			return Globals.ALUMINUM;
+			return ModOptions.cfgEnableHeatingBauxite ? Globals.ALUMINUM : null;
 		}
 		return null;
 	}
@@ -59,7 +60,7 @@ public class ItemModOre extends ItemOre {
 		case 0:
 		case 1:
 		case 2:
-			return true;
+			return ModOptions.cfgEnableHeatingBauxite;
 		default:
 			return false;
 		}

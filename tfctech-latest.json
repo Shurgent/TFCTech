@@ -1,11 +1,8 @@
 ﻿{
-	"version": "0.2.9-A14",
+	"version": "0.2.10-A15",
 	"changelog": [
-		"Added Red Alloy made from Redstone and Platinum Dust",
-		"Wrought Iron Stripe recipe requirement of Steel Chisel now optional",
-		"Fixed crash on viewing recipes in NEI without Buildcraft installed",
-		"Fixed crash on viewing recipes in NEI with GregTech installed (I hope so)",
-		"Some small bugfixes and improvements",
-		"Changed some textures"
+		"Fixed Small bauxite can be melted in the crucible without any heat (wormzjl)",
+		"Fixed crash on startup without some BC modules (I hope so)",
+		"Added options that allow you to disable some heat recipes"
 	]
 }

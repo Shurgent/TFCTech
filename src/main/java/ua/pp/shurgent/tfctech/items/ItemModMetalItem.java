@@ -102,6 +102,10 @@ public class ItemModMetalItem extends ItemTerra implements ISmeltable {
 		return metalAmount;
 	}
 
+	public void setSmeltable(boolean smeltable) {
+		this.smeltable = smeltable;
+	}
+	
 	@Override
 	public boolean isSmeltable(ItemStack is) {
 		return smeltable;
