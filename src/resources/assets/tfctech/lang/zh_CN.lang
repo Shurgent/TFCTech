@@ -1,6 +1,5 @@
-﻿#zh_CN
-#本文件为 TFCTech 模组的语言文件，由 Nethkrill 翻译。
-#
+#zh_CN
+#本文件为 TFCTech 模组的语言文件
 #=========
 #= Items =
 #=========
@@ -230,7 +229,7 @@ item.Lime Paint.magenta.name=石灰染料 【品红】
 
 #// Device parts //
 item.Bowl Mount.name=碗架
-item.Groove.name=液导管
+item.Groove.name=液导管道
 item.Wrought Iron Stripe.name=锻铁条
 item.Tin Stripe.name=锡条
 item.Aluminum Stripe.name=铝条
@@ -278,58 +277,58 @@ item.Steel Bucket Fuel.name=钢铜 【燃料】
 item.Steel Bucket Oil.name=钢桶 【油】
 item.Steel Bucket Latex.name=钢桶 【胶乳】
 
-item.PipeStructureLead.name=铅结构管
+item.PipeStructureLead.name=铅结构管道
 
-item.PipeItemsLead.name=运输管 【铅】
-item.PipeItemsBlueSteel.name=运输管 【蓝钢】
-item.PipeItemsMarker.name=记号运输管
-item.PipeItemsFilter.name=过滤运输管
-item.PipeItemsCopper.name=运输管 【铜】
-item.PipeItemsRedSteel.name=运输管 【红钢】
-item.PipeItemsMarkerExtractor.name=记号提取运输管
-item.PipeItemsElectrum.name=运输管 【金银】
-item.PipeItemsWroughtIron.name=运输管 【锻铁】
-item.PipeItemsBlackSteel.name=运输管 【黑钢】
-item.PipeItemsSilver.name=运输管 【银】
-item.PipeItemsBronze.name=运输管 【青铜】
-item.PipeItemsSterlingSilver.name=运输管 【纯银】
-item.PipeItemsZinc.name=运输管 【锌】
-item.PipeItemsNullify.name=销毁运输管
+item.PipeItemsLead.name=物品管道 【铅】
+item.PipeItemsBlueSteel.name=物品管道 【蓝钢】
+item.PipeItemsMarker.name=物品标记管道
+item.PipeItemsFilter.name=物品过滤管道
+item.PipeItemsCopper.name=物品管道 【铜】
+item.PipeItemsRedSteel.name=物品管道 【红钢】
+item.PipeItemsMarkerExtractor.name=物品标记提取管道
+item.PipeItemsElectrum.name=物品管道 【金银】
+item.PipeItemsWroughtIron.name=物品管道 【锻铁】
+item.PipeItemsBlackSteel.name=物品管道 【黑钢】
+item.PipeItemsSilver.name=物品管道 【银】
+item.PipeItemsBronze.name=物品管道 【青铜】
+item.PipeItemsSterlingSilver.name=物品管道 【纯银】
+item.PipeItemsZinc.name=物品管道 【锌】
+item.PipeItemsNullify.name=物品销毁管道
 
-item.PipeFluidsLead.name=液体管 【铅】
-item.PipeFluidsCopper.name=液体管 【铜】
-item.PipeFluidsRedSteel.name=液体管 【红钢】
-item.PipeFluidsSterlingSilver.name=液体管 【纯银】
-item.PipeFluidsElectrum.name=液体管 【金银】
-item.PipeFluidsWroughtIron.name=液体管 【锻铁】
-item.PipeFluidsSilver.name=液体管 【银】
-item.PipeFluidsBronze.name=液体管 【青铜】
-item.PipeFluidsNullify.name=销毁液体管
-item.PipeFluidsZinc.name=液体管 【锌】
-item.PipeFluidsBlueSteel.name=液体管 【蓝钢】
+item.PipeFluidsLead.name=液体管道 【铅】
+item.PipeFluidsCopper.name=液体管道 【铜】
+item.PipeFluidsRedSteel.name=液体管道 【红钢】
+item.PipeFluidsSterlingSilver.name=液体管道 【纯银】
+item.PipeFluidsElectrum.name=液体管道 【金银】
+item.PipeFluidsWroughtIron.name=液体管道 【锻铁】
+item.PipeFluidsSilver.name=液体管道 【银】
+item.PipeFluidsBronze.name=液体管道 【青铜】
+item.PipeFluidsNullify.name=液体销毁管道
+item.PipeFluidsZinc.name=液体管道 【锌】
+item.PipeFluidsBlueSteel.name=液体管道 【蓝钢】
 
-item.PipePowerBlueSteel.name=念动管 【蓝钢】
-item.PipePowerElectrum.name=念动管 【金银】
-item.PipePowerSterlingSilver.name=念动管 【纯银】
-item.PipePowerBronze.name=念动管 【青铜】
-item.PipePowerSilver.name=念动管 【银】
-item.PipePowerLead.name=念动管 【铅】
-item.PipePowerCopper.name=念动管 【铜】
-item.PipePowerRedSteel.name=念动管 【红钢】
-item.PipePowerWroughtIron.name=念动管 【锻铁】
+item.PipePowerBlueSteel.name=能量管道 【蓝钢】
+item.PipePowerElectrum.name=能量管道 【金银】
+item.PipePowerSterlingSilver.name=能量管道 【纯银】
+item.PipePowerBronze.name=能量管道 【青铜】
+item.PipePowerSilver.name=能量管道 【银】
+item.PipePowerLead.name=能量管道 【铅】
+item.PipePowerCopper.name=能量管道 【铜】
+item.PipePowerRedSteel.name=能量管道 【红钢】
+item.PipePowerWroughtIron.name=能量管道 【锻铁】
 
-item.Zinc Pipe Frame.name=管架 【锌】
-item.Lead Pipe Frame.name=管架 【铅】
-item.Blue Steel Pipe Frame.name=管架 【蓝钢】
-item.Red Steel Pipe Frame.name=管架 【红钢】
-item.Electrum Pipe Frame.name=管架 【金银】
-item.Wrought Iron Pipe Frame.name=管架 【锻铁】
-item.Steel Pipe Frame.name=管架 【钢】
-item.Black Steel Pipe Frame.name=管架 【黑钢】
-item.Sterling Silver Pipe Frame.name=管架 【纯银】
-item.Silver Pipe Frame.name=管架 【银】
-item.Bronze Pipe Frame.name=管架 【青铜】
-item.Copper Pipe Frame.name=管架 【铜】
+item.Zinc Pipe Frame.name=管道框架 【锌】
+item.Lead Pipe Frame.name=管道框架 【铅】
+item.Blue Steel Pipe Frame.name=管道框架 【蓝钢】
+item.Red Steel Pipe Frame.name=管道框架 【红钢】
+item.Electrum Pipe Frame.name=管道框架 【金银】
+item.Wrought Iron Pipe Frame.name=管道框架 【锻铁】
+item.Steel Pipe Frame.name=管道框架 【钢】
+item.Black Steel Pipe Frame.name=管道框架 【黑钢】
+item.Sterling Silver Pipe Frame.name=管道框架 【纯银】
+item.Silver Pipe Frame.name=管道框架 【银】
+item.Bronze Pipe Frame.name=管道框架 【青铜】
+item.Copper Pipe Frame.name=管道框架 【铜】
 
 item.Glue.name=胶水
 item.Dixie.name=铁锅【空】
@@ -396,7 +395,7 @@ gui.qty=Quantity
 gui.latexAmt=胶乳量
 gui.loosingLatex=胶乳溢出中！
 
-gui.groove.usage0=请使用液导管提取三叶胶木树胶。
+gui.groove.usage0=请使用液导管道提取三叶胶木树胶。
 gui.groove.usage1=§b请右键 §7三叶胶树干。
 gui.groove.usage2=锤子必须在工具栏内！
 gui.groove.heveaOnly=仅供胶树使用！
@@ -415,10 +414,10 @@ gui.wire.stage3=阶段三
 gui.wireDrawBench.progress=完成
 gui.wireDrawBench.lubricated=已润滑
 
-gui.plans.groove=液导管
+gui.plans.groove=液导管道
 gui.plans.mount=碗架
 gui.plans.wrench=扳手
-gui.plans.frame=管架
+gui.plans.frame=管道框架
 gui.plans.dixie=铁锅
 gui.plans.wire=线
 gui.plans.drawplate=拉模板
@@ -444,41 +443,41 @@ itemGroup.TFCTechTab=SHURGENT 群峦科技拓展
 #=========
 
 #== Tooltips ==
-tip.PipeFluidsZinc=插入管\n(可替代BC粘土液体管)
-tip.PipeFluidsLead=无法连接至青铜及纯银\n(可替代BC圆石液体管)
-tip.PipeFluidsBlueSteel=可分类液体\n(可替代BC钻石液体管)
-tip.PipeFluidsRedSteel=抽取管\n(可替代BC翡翠液体管)
-tip.PipeFluidsWroughtIron=阀管\n(可替代BC铁液体管)
-tip.PipeFluidsSterlingSilver=无法连接至铅及青铜\n(可替代BC石英液体管)
-tip.PipeFluidsSilver=只能连接同类管\n(可替代BC沙石液体管)
-tip.PipeFluidsBronze=无法连接至铅及纯银\n(可替代BC石头液体管)
-tip.PipeFluidsNullify=销毁液体\n(可替代BC虚空液体管)
-tip.PipeFluidsCopper=抽取管\n(可替代BC木头液体管)
-tip.PipeFluidsElectrum=可替代BC金液体管
-tip.PipeItemsZinc=插入管\n(可替代BC粘土管)
-tip.PipeItemsLead=高阻力基础管\n无法连接至青铜及纯银\n(可替代BC圆石管)
-tip.PipeItemsFilter=引导色标物品\n(可替代BC靛金刚管)
-tip.PipeItemsBlueSteel=分类物品\n(可替代BC钻石管)
-tip.PipeItemsRedSteel=循环抽取管\n(可替代BC翡翠管)
-tip.PipeItemsMarkerExtractor=门控制抽取管\n(可替代BC靛翡翠管)
-tip.PipeItemsElectrum=加速运送\n(可替代BC金管)
-tip.PipeItemsWroughtIron=引导物品\n(可替代BC铁管)
-tip.PipeItemsMarker=颜色标记物品\n(可替代BC青金石管)
-tip.PipeItemsBlackSteel=吸入物品\n(可替代BC黑曜石管)
-tip.PipeItemsSterlingSilver=低阻力基础管\n无法连接至铅及青铜\n(可替代BC石英管)
-tip.PipeItemsSilver=无法连接同类管\n(可替代BC沙石管)
-tip.PipeItemsBronze=中等阻力基础管\n无法连接至铅及纯银\n(可替代BC石头管)
-tip.PipeItemsNullify=销毁物品\n(可替代BC虚空管)
-tip.PipeItemsCopper=抽取物品\n(可替代BC木头管)
-tip.PipePowerRedSteel=能量输入管\n(可替代BC翡翠能量管)
-tip.PipePowerWroughtIron=选择性控制管\n(可替代BC铁能量管)
-tip.PipePowerSilver=无法连接同类管\n(可替代BC沙石能量管)
-tip.PipePowerCopper=能量输入管\n(可替代BC木能量管)
-tip.PipeStructureLead=支撑管\n(可替代BC圆石结构管)
-tip.PipePowerBlueSteel=可替代BC钻石能量管
-tip.PipePowerSterlingSilver=可替代BC石英能量管
-tip.PipePowerElectrum=可替代BC金能量管
-tip.PipePowerLead=可替代BC圆石能量管
-tip.PipePowerBronze=可替代BC石头能量管
+tip.PipeFluidsZinc=插入管道\n(可替代BC粘土液体管道)
+tip.PipeFluidsLead=无法连接至青铜及纯银\n(可替代BC圆石液体管道)
+tip.PipeFluidsBlueSteel=可分类液体\n(可替代BC钻石液体管道)
+tip.PipeFluidsRedSteel=抽取管道\n(可替代BC翡翠液体管道)
+tip.PipeFluidsWroughtIron=阀管道\n(可替代BC铁液体管道)
+tip.PipeFluidsSterlingSilver=无法连接至铅及青铜\n(可替代BC石英液体管道)
+tip.PipeFluidsSilver=只能连接同类管道\n(可替代BC沙石液体管道)
+tip.PipeFluidsBronze=无法连接至铅及纯银\n(可替代BC石头液体管道)
+tip.PipeFluidsNullify=销毁液体\n(可替代BC虚空液体管道)
+tip.PipeFluidsCopper=抽取管道\n(可替代BC木头液体管道)
+tip.PipeFluidsElectrum=可替代BC金液体管道
+tip.PipeItemsZinc=插入管道\n(可替代BC粘土管道)
+tip.PipeItemsLead=高阻力基础管道\n无法连接至青铜及纯银\n(可替代BC圆石管道)
+tip.PipeItemsFilter=引导色标物品\n(可替代BC靛金刚管道)
+tip.PipeItemsBlueSteel=分类物品\n(可替代BC钻石管道)
+tip.PipeItemsRedSteel=循环抽取管道\n(可替代BC翡翠管道)
+tip.PipeItemsMarkerExtractor=门控制抽取管道\n(可替代BC靛翡翠管道)
+tip.PipeItemsElectrum=加速运送\n(可替代BC金管道)
+tip.PipeItemsWroughtIron=引导物品\n(可替代BC铁管道)
+tip.PipeItemsMarker=颜色标记物品\n(可替代BC青金石管道)
+tip.PipeItemsBlackSteel=吸入物品\n(可替代BC黑曜石管道)
+tip.PipeItemsSterlingSilver=低阻力基础管道\n无法连接至铅及青铜\n(可替代BC石英管道)
+tip.PipeItemsSilver=无法连接同类管道\n(可替代BC沙石管道)
+tip.PipeItemsBronze=中等阻力基础管道\n无法连接至铅及纯银\n(可替代BC石头管道)
+tip.PipeItemsNullify=销毁物品\n(可替代BC虚空管道)
+tip.PipeItemsCopper=抽取物品\n(可替代BC木头管道)
+tip.PipePowerRedSteel=能量输入管道\n(可替代BC翡翠能量管道)
+tip.PipePowerWroughtIron=选择性控制管道\n(可替代BC铁能量管道)
+tip.PipePowerSilver=无法连接同类管道\n(可替代BC沙石能量管道)
+tip.PipePowerCopper=能量输入管道\n(可替代BC木能量管道)
+tip.PipeStructureLead=支撑管道\n(可替代BC圆石结构管道)
+tip.PipePowerBlueSteel=可替代BC钻石能量管道
+tip.PipePowerSterlingSilver=可替代BC石英能量管道
+tip.PipePowerElectrum=可替代BC金能量管道
+tip.PipePowerLead=可替代BC圆石能量管道
+tip.PipePowerBronze=可替代BC石头能量管道
 
 #== Options ==
