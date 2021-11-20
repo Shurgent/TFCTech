@@ -606,9 +606,9 @@ public class TEInductionSmelter extends TileEnergyConsumer implements IInventory
 	 */
 	public int[] getAccessibleSlotsFromSide(int side) {
 		if (!ModOptions.cfgAllowAutomationInductionSmelter)
-			return null;
+			return new int[0];
 		
-		return side == 0 ? slotsBottom : (side == 1 ? slotsTop : null); // Resources and molds from top, result from bottom
+		return side == 0 ? slotsBottom : (side == 1 ? slotsTop : new int[0]); // Resources and molds from top, result from bottom
 	}
 	
 	/**
